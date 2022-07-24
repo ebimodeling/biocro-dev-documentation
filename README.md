@@ -4,4 +4,4 @@ This site contains documentation for various versions of the BioCro code contain
 
 ## reorganize_documentation_workflows
 
-[Documentatin consistent to the latest version of the reorganize_documentation_workflows branch](reorganize_documentation_workflows/pkgdown/index.html)
+[Documentation consistent with the latest version of the reorganize_documentation_workflows branch](reorganize_documentation_workflows/pkgdown/index.html)
