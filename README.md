@@ -4,8 +4,8 @@ This site contains documentation for various versions of the BioCro code contain
 
 ## master
 
-[Documentation consistent with the latest version of the reorganize_documentation_workflows branch](master/pkgdown/index.html)
+[Documentation consistent with the latest version of the master branch](master/pkgdown/index.html)
 
 ## add_vignette
 
-[Documentation consistent with the latest version of the reorganize_documentation_workflows branch](add_vignette/pkgdown/index.html)
+[Documentation consistent with the latest version of the add_vignette branch](add_vignette/pkgdown/index.html)
