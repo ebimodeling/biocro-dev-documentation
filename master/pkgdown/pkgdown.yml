@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   pdf_vignette_index: pdf_vignette_index.html
-last_built: 2022-10-12T21:02Z
+last_built: 2022-10-26T17:11Z
 urls:
   reference: https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference
   article: https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles
