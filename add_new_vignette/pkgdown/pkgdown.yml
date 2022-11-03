@@ -1,0 +1,11 @@
+pandoc: 2.19.2
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  dynamical_systems: dynamical_systems.html
+  pdf_vignette_index: pdf_vignette_index.html
+last_built: 2022-11-03T17:10Z
+urls:
+  reference: https://ebimodeling.github.io/biocro-dev-documentation/add_new_vignette/pkgdown/reference
+  article: https://ebimodeling.github.io/biocro-dev-documentation/add_new_vignette/pkgdown/articles
+
