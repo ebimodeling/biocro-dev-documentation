@@ -1,5 +1,0 @@
-<map id="rand_01" name="rand_01">
-<area shape="rect" id="node1" title="A function that returns a double between 0 and 1 chosen from a uniform distribution." alt="" coords="5,31,73,57"/>
-<area shape="rect" id="node2" href="$namespacese__solver__rand.html#a9cd56662d9088a4af45557b2eeac4de6" title=" " alt="" coords="161,5,203,32"/>
-<area shape="rect" id="node3" href="$namespacese__solver__rand.html#a9df22a6d53eadaefbb839e4c2cadfd67" title=" " alt="" coords="121,56,243,83"/>
-</map>
