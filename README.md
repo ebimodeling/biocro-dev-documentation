@@ -26,6 +26,6 @@ This site contains documentation for various versions of the BioCro code contain
 
 [Documentation consistent with the add_bookdown_section_on_documentation branch](add_bookdown_section_on_documentation/pkgdown/index.html)
 
-## revise_bookdown_doxygen_section (PR #465)
+## revise_bookdown_doxygen_section (PR #467)
 
 [Documentation consistent with the revise_bookdown_doxygen_section branch](revise_bookdown_doxygen_section/pkgdown/index.html)
