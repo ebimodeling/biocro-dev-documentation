@@ -16,6 +16,7 @@ using-clang
 clang-with-the-codelite-ide
 editorconfig
 generating-documentation
+sec:on-line_documentation
 sec:when-to-generate-docs
 documentation-for-the-cc-code.
 required-software

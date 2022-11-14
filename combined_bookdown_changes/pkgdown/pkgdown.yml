@@ -1,0 +1,10 @@
+pandoc: '2.5'
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  pdf_vignette_index: pdf_vignette_index.html
+last_built: 2022-11-14T19:52Z
+urls:
+  reference: https://ebimodeling.github.io/biocro-dev-documentation/combined_bookdown_changes/pkgdown/reference
+  article: https://ebimodeling.github.io/biocro-dev-documentation/combined_bookdown_changes/pkgdown/articles
+

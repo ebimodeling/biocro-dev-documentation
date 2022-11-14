@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 The Doxygen Docker Action using Makefile Action | BioCro Development</title>
   <meta name="description" content="6 The Doxygen Docker Action using Makefile Action | BioCro Development" />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 The Doxygen Docker Action using Makefile Action | BioCro Development" />
   <meta property="og:type" content="book" />
@@ -22,7 +22,6 @@
 
 
 
-<meta name="date" content="2022-11-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,7 +130,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:documenation-types"><i class="fa fa-check"></i>Note about the types of documentation in BioCro</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-on-line-documentation"><i class="fa fa-check"></i>The on-line documentation</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-online-documentation"><i class="fa fa-check"></i>The online documentation</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#sec:generation-triggers"><i class="fa fa-check"></i>When online documentation is generated</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-layout-of-the-online-documentation"><i class="fa fa-check"></i>The layout of the online documentation</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#version-info"><i class="fa fa-check"></i>Version Info</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html"><i class="fa fa-check"></i><b>1</b> Contributing to BioCro</a><ul>
@@ -150,19 +152,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="generating-documentation.html"><a href="generating-documentation.html"><i class="fa fa-check"></i><b>2</b> Generating Documentation</a><ul>
-<li class="chapter" data-level="2.1" data-path="generating-documentation.html"><a href="generating-documentation.html#sec:when-to-generate-docs"><i class="fa fa-check"></i><b>2.1</b> When to generate documentation</a></li>
-<li class="chapter" data-level="2.2" data-path="generating-documentation.html"><a href="generating-documentation.html#documentation-for-the-cc-code."><i class="fa fa-check"></i><b>2.2</b> Documentation for the C/C++ code.</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="generating-documentation.html"><a href="generating-documentation.html#required-software"><i class="fa fa-check"></i><b>2.2.1</b> Required software</a></li>
-<li class="chapter" data-level="2.2.2" data-path="generating-documentation.html"><a href="generating-documentation.html#installation-1"><i class="fa fa-check"></i><b>2.2.2</b> Installation</a></li>
-<li class="chapter" data-level="2.2.3" data-path="generating-documentation.html"><a href="generating-documentation.html#generating-the-documentation"><i class="fa fa-check"></i><b>2.2.3</b> Generating the Documentation</a></li>
-<li class="chapter" data-level="2.2.4" data-path="generating-documentation.html"><a href="generating-documentation.html#viewing-and-using-the-documentation"><i class="fa fa-check"></i><b>2.2.4</b> Viewing and using the documentation</a></li>
+<li class="chapter" data-level="2.1" data-path="generating-documentation.html"><a href="generating-documentation.html#sec:on-line_documentation"><i class="fa fa-check"></i><b>2.1</b> Online documentation</a></li>
+<li class="chapter" data-level="2.2" data-path="generating-documentation.html"><a href="generating-documentation.html#sec:when-to-generate-docs"><i class="fa fa-check"></i><b>2.2</b> When to generate documentation</a></li>
+<li class="chapter" data-level="2.3" data-path="generating-documentation.html"><a href="generating-documentation.html#documentation-for-the-cc-code."><i class="fa fa-check"></i><b>2.3</b> Documentation for the C/C++ code.</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="generating-documentation.html"><a href="generating-documentation.html#required-software"><i class="fa fa-check"></i><b>2.3.1</b> Required software</a></li>
+<li class="chapter" data-level="2.3.2" data-path="generating-documentation.html"><a href="generating-documentation.html#installation-1"><i class="fa fa-check"></i><b>2.3.2</b> Installation</a></li>
+<li class="chapter" data-level="2.3.3" data-path="generating-documentation.html"><a href="generating-documentation.html#generating-the-documentation"><i class="fa fa-check"></i><b>2.3.3</b> Generating the Documentation</a></li>
+<li class="chapter" data-level="2.3.4" data-path="generating-documentation.html"><a href="generating-documentation.html#viewing-and-using-the-documentation"><i class="fa fa-check"></i><b>2.3.4</b> Viewing and using the documentation</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="generating-documentation.html"><a href="generating-documentation.html#building-package-vignettes"><i class="fa fa-check"></i><b>2.3</b> Building package vignettes</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="generating-documentation.html"><a href="generating-documentation.html#required-software-1"><i class="fa fa-check"></i><b>2.3.1</b> Required software</a></li>
-<li class="chapter" data-level="2.3.2" data-path="generating-documentation.html"><a href="generating-documentation.html#build-procedure"><i class="fa fa-check"></i><b>2.3.2</b> Build procedure</a></li>
-<li class="chapter" data-level="2.3.3" data-path="generating-documentation.html"><a href="generating-documentation.html#alternative-options"><i class="fa fa-check"></i><b>2.3.3</b> Alternative options</a></li>
+<li class="chapter" data-level="2.4" data-path="generating-documentation.html"><a href="generating-documentation.html#building-package-vignettes"><i class="fa fa-check"></i><b>2.4</b> Building package vignettes</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="generating-documentation.html"><a href="generating-documentation.html#required-software-1"><i class="fa fa-check"></i><b>2.4.1</b> Required software</a></li>
+<li class="chapter" data-level="2.4.2" data-path="generating-documentation.html"><a href="generating-documentation.html#build-procedure"><i class="fa fa-check"></i><b>2.4.2</b> Build procedure</a></li>
+<li class="chapter" data-level="2.4.3" data-path="generating-documentation.html"><a href="generating-documentation.html#alternative-options"><i class="fa fa-check"></i><b>2.4.3</b> Alternative options</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="generating-documentation.html"><a href="generating-documentation.html#compiling-and-viewing-the-bookdown-book"><i class="fa fa-check"></i><b>2.4</b> Compiling and viewing the <em>bookdown</em> book</a></li>
+<li class="chapter" data-level="2.5" data-path="generating-documentation.html"><a href="generating-documentation.html#compiling-and-viewing-the-bookdown-book"><i class="fa fa-check"></i><b>2.5</b> Compiling and viewing the <em>bookdown</em> book</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html"><i class="fa fa-check"></i><b>3</b> Running the <em>testthat</em> Tests</a><ul>
 <li class="chapter" data-level="3.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#requirements"><i class="fa fa-check"></i><b>3.1</b> Requirements</a></li>
@@ -310,6 +313,31 @@ change the output directory for module-docs-* targets from
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
@@ -344,7 +372,7 @@ gitbook.start({
 "fontsettings": {
 "theme": "white",
 "family": "sans",
-"size": 2
+"size": 3
 },
 "edit": {
 "link": null,
