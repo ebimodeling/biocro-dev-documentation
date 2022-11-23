@@ -135,6 +135,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#note-about-the-types-of-documentation-in-biocro"><i class="fa fa-check"></i>Note about the types of documentation in BioCro</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#version-info"><i class="fa fa-check"></i>Version Info</a></li>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#formatting-tools"><i class="fa fa-check"></i><b>0.1</b> Formatting Tools</a>
+<ul>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#clangs-formatting-tool"><i class="fa fa-check"></i><b>0.1.1</b> Clang’s formatting tool</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#editorconfig"><i class="fa fa-check"></i><b>0.1.2</b> EditorConfig</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html"><i class="fa fa-check"></i><b>1</b> Contributing to BioCro</a>
 <ul>
@@ -148,11 +153,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.2" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html#general-coding-considerations"><i class="fa fa-check"></i><b>1.2.2</b> General coding considerations</a></li>
 <li class="chapter" data-level="1.2.3" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html#formatting-code"><i class="fa fa-check"></i><b>1.2.3</b> Formatting code</a></li>
 <li class="chapter" data-level="1.2.4" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html#r-specific-coding-advice"><i class="fa fa-check"></i><b>1.2.4</b> R-specific coding advice</a></li>
-</ul></li>
-<li class="chapter" data-level="1.3" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html#formatting-tools"><i class="fa fa-check"></i><b>1.3</b> Formatting Tools</a>
-<ul>
-<li class="chapter" data-level="1.3.1" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html#clangs-formatting-tool"><i class="fa fa-check"></i><b>1.3.1</b> Clang’s formatting tool</a></li>
-<li class="chapter" data-level="1.3.2" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html#editorconfig"><i class="fa fa-check"></i><b>1.3.2</b> EditorConfig</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="generating-documentation.html"><a href="generating-documentation.html"><i class="fa fa-check"></i><b>2</b> Generating Documentation</a>
@@ -269,10 +269,71 @@ developers and maintainers.</p></li>
 <h2>Version Info<a href="index.html#version-info" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <pre><code>This document was generated from the version of BioCro specified as follows:
 
-Commit Hash: febeabf
-Date: Wed, 23 Nov 2022 13:37:41 -0600
+Commit Hash: 3addd5a
+Date: Wed, 23 Nov 2022 14:09:43 -0600
 Branch: revise_bookdown_formatting_tools_doc</code></pre>
 
+<!-- This file is raw R Markdown code.  To see this as a
+correctly-rendered web page, visit the online documentation at
+https://ebimodeling.github.io/biocro-dev-documentation/, go to the
+Developer's Manual, and find the section on formatting tools in the
+chapter on contributing to BioCro.  -->
+<!-- external references -->
+</div>
+<div id="formatting-tools" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> Formatting Tools<a href="index.html#formatting-tools" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="clangs-formatting-tool" class="section level3 hasAnchor" number="0.1.1">
+<h3><span class="header-section-number">0.1.1</span> Clang’s formatting tool<a href="index.html#clangs-formatting-tool" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Many of these BioCro formatting preferences can be applied
+automatically using the program <a href="https://clang.llvm.org/docs/ClangFormat.html" target="_blank" title="Documentation of the ClangFormat tool at the Clang documentation site">clang-format</a> with the
+<a href="https://github.com/ebimodeling/biocro-dev/tree/master/.clang-format" target="_blank" title="The Clang configuration file for BioCro">.clang-format</a> file provided in the base directory of BioCro. <strong>Do
+not apply clang-format to all files indiscriminately</strong>, as that will
+ruin manually-aligned tables.</p>
+<p>The best time to reformat a file is immediately before (or possibly
+immediately after) making substantive changes to the code in the file.
+But, as mentioned in Section <a href="contributing-to-biocro.html#general-coding-considerations">1.2.2</a>,
+<strong>sweeping formatting changes should be made in a separate commit</strong>,
+separate from any substantive changes made to the code. This way,
+changes to the functioning of the code won’t be obscured by changes to
+formatting that have no effect on code semantics.</p>
+<div id="installation" class="section level4 hasAnchor" number="0.1.1.1">
+<h4><span class="header-section-number">0.1.1.1</span> Installation<a href="index.html#installation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>One can install clang-format on Ubuntu using <code>sudo apt install clang-format</code>. On macOS, clang-format is available from the
+<a href="https://brew.sh/" target="_blank" title="The Homebrew package manager Web site">Homebrew</a> package manager.</p>
+</div>
+<div id="using-the-clang-formatting-tool" class="section level4 hasAnchor" number="0.1.1.2">
+<h4><span class="header-section-number">0.1.1.2</span> Using the Clang formatting tool<a href="index.html#using-the-clang-formatting-tool" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Files can be formatted using</p>
+<pre><code>clang-format file_name &gt; new_file</code></pre>
+<p>or edited in place using</p>
+<pre><code>clang-format -i file_name</code></pre>
+<p>If your editor has the ability to display differences between the
+original and revised versions of the file, it is a good idea to step
+through and inspect the proposed changes to ensure they are desirable.</p>
+</div>
+<div id="using-the-clang-formatting-tool-with-the-codelite-ide" class="section level4 hasAnchor" number="0.1.1.3">
+<h4><span class="header-section-number">0.1.1.3</span> Using the Clang formatting tool with the CodeLite IDE<a href="index.html#using-the-clang-formatting-tool-with-the-codelite-ide" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>On Windows, macOS, or Linux, the CodeLite IDE includes clang-format
+and provides an easy way to use it. First go to <strong>Plugins -&gt; Source
+Code Formatter -&gt; Options</strong>. In the C++ tab, select <code>use .clang-format file</code>. Now press <code>Ctrl-I</code> or click <strong>Plugins -&gt; Source Code Formatter
+-&gt; Format Current Source</strong> to format a file.</p>
+</div>
+</div>
+<div id="editorconfig" class="section level3 hasAnchor" number="0.1.2">
+<h3><span class="header-section-number">0.1.2</span> EditorConfig<a href="index.html#editorconfig" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Another tool to help with formatting is EditorConfig. EditorConfig,
+when used in conjunction with the <a href="https://github.com/ebimodeling/biocro-dev/tree/master/.editorconfig" target="_blank" title="BioCro&#39;s .editorconfig file">.editorconfig</a> file provided in
+the base directory of BioCro, provides a method for standardizing
+settings across different text editors. While some editors have native
+support, others require a plugin. See the <a href="https://editorconfig.org/" target="_blank" title="The EditorConfig Web site">EditorConfig
+website</a> for more details.</p>
+
+<!-- This file is raw R Markdown code.  To see this as a
+correctly-rendered web page, visit the online documentation at
+https://ebimodeling.github.io/biocro-dev-documentation/, go to the
+Developer's Manual, and find the chapter on contributing to BioCro.
+-->
+</div>
 </div>
 </div>
             </section>
