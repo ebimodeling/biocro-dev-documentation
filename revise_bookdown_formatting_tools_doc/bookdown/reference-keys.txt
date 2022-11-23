@@ -1,9 +1,3 @@
-formatting-tools
-clangs-formatting-tool
-installation
-using-the-clang-formatting-tool
-using-the-clang-formatting-tool-with-the-codelite-ide
-editorconfig
 contributing-to-biocro
 making-changes
 discuss-first
@@ -15,6 +9,12 @@ document-parameters
 general-coding-considerations
 formatting-code
 r-specific-coding-advice
+formatting-tools
+clangs-formatting-tool
+installation
+using-the-clang-formatting-tool
+using-the-clang-formatting-tool-with-the-codelite-ide
+editorconfig
 generating-documentation
 documentation-for-the-cc-code.
 required-software
