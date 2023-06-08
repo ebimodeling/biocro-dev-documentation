@@ -10,6 +10,12 @@
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/about_pkgdown_documentation.html</loc>
   </url>
   <url>
+    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/BioCro-II_Paper--Section-1.1-example.html</loc>
+  </url>
+  <url>
+    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/avoiding_pitfalls_fvcb.html</loc>
+  </url>
+  <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/index.html</loc>
   </url>
   <url>
@@ -52,16 +58,10 @@
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/get_growing_season_climate.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/glycine_max.html</loc>
-  </url>
-  <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/index.html</loc>
   </url>
   <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/lightME.html</loc>
-  </url>
-  <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/manihot_esculenta.html</loc>
   </url>
   <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/miscanthus_x_giganteus.html</loc>
@@ -95,9 +95,6 @@
   </url>
   <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/run_biocro.html</loc>
-  </url>
-  <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/simultaneous_equations.html</loc>
   </url>
   <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/soil_parameters.html</loc>

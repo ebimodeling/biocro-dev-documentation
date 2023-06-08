@@ -7,5 +7,6 @@ var searchData=
   ['light_5ffrom_5fsolar_4',['light_from_solar',['../classstandard_b_m_l_1_1light__from__solar.html',1,'standardBML']]],
   ['light_5fmodel_5',['Light_model',['../struct_light__model.html',1,'']]],
   ['light_5fprofile_6',['Light_profile',['../struct_light__profile.html',1,'']]],
-  ['linear_5fvmax_5ffrom_5fleaf_5fn_7',['linear_vmax_from_leaf_n',['../classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html',1,'standardBML']]]
+  ['linear_5fvmax_5ffrom_5fleaf_5fn_7',['linear_vmax_from_leaf_n',['../classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html',1,'standardBML']]],
+  ['litter_5fcover_8',['litter_cover',['../classstandard_b_m_l_1_1litter__cover.html',1,'standardBML']]]
 ];

@@ -13,7 +13,7 @@ var _aux_bio_cro_8h =
     [ "crop_phenology", "structcrop__phenology.html", "structcrop__phenology" ],
     [ "crop_phenology::minerals1", "structcrop__phenology_1_1minerals1.html", "structcrop__phenology_1_1minerals1" ],
     [ "MAXLAY", "_aux_bio_cro_8h.html#a57179778cb6aed95fb9f484b55873d6f", null ],
-    [ "arrhenius_exponent", "_aux_bio_cro_8h.html#a459a86792df0059402dcda842b5c1985", null ],
+    [ "arrhenius_exponential", "_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f", null ],
     [ "leaf_boundary_layer_conductance_nikolov", "_aux_bio_cro_8h.html#a7ffa2369991fbb92c2cf4fef41743e49", null ],
     [ "leaf_boundary_layer_conductance_thornley", "_aux_bio_cro_8h.html#a33949e3620b40eedec427390bde216f0", null ],
     [ "LNprof", "_aux_bio_cro_8h.html#aab57fdbc22cddf741a1abe634eba9616", null ],

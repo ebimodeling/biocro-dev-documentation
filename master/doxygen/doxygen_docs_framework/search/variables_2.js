@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['best_5fguess_0',['best_guess',['../classse__module_1_1base.html#ad87336a0671209035779bea1a17976ad',1,'se_module::base']]],
-  ['boost_5ferror_5fstring_1',['boost_error_string',['../classboost__ode__solver.html#a0752f71a0bb49ccbbb72cb9cf5ce45fd',1,'boost_ode_solver']]]
+  ['celsius_5fto_5fkelvin_0',['celsius_to_kelvin',['../namespaceconversion__constants.html#ac29e2ff8a2fe79bf1a6e7f5623f8f8a3',1,'conversion_constants']]]
 ];

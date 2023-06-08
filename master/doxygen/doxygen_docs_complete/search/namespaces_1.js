@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calculation_5fconstants_0',['calculation_constants',['../namespacecalculation__constants.html',1,'']]],
-  ['conversion_5fconstants_1',['conversion_constants',['../namespaceconversion__constants.html',1,'']]]
+  ['math_5fconstants_0',['math_constants',['../namespacemath__constants.html',1,'']]],
+  ['mlcp_1',['MLCP',['../namespace_m_l_c_p.html',1,'']]]
 ];

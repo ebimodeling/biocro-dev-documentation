@@ -87,7 +87,7 @@ $(function() {
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_typedef" href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a> <span class="keyword">const</span>&amp; dir_mcs,</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_typedef" href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a> <span class="keyword">const</span>&amp; differential_mcs)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    : initial_values{init_values},</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>      <a class="code hl_variable" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>{params},</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>      parameters{params},</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>      drivers{drivers},</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>      direct_mcs{},  <span class="comment">// put modules in suitable order before filling</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      differential_mcs{differential_mcs}</div>
@@ -168,7 +168,7 @@ $(function() {
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_variable" href="classdynamical__system.html#a1910c0a288bae9fa46293e9b550cb499">driver_quantity_ptr_pairs</a> = <a class="code hl_function" href="dynamical__system__helper__functions_8h.html#a4b51d7b046f2e9c2ccd7b6e9c16bb41a">get_pointer_pairs</a>(</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        driver_quantity_names,</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_variable" href="classdynamical__system.html#a123a42556bdc393720641aed76962ca5">all_quantities</a>,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_variable" href="classdynamical__system.html#afea21d5a73ed558e01ffd8c12591913b">drivers</a>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        this-&gt;drivers);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// Get a pointer to the timestep</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (params.find(<span class="stringliteral">&quot;timestep&quot;</span>) == params.end()) {</div>
@@ -240,7 +240,6 @@ $(function() {
 <div class="ttc" id="amodule__creator_8h_html_a5810cdde7994b69d99870b1a545b8e1f"><div class="ttname"><a href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a></div><div class="ttdeci">std::vector&lt; module_creator * &gt; mc_vector</div><div class="ttdoc">mc_vector serves as an alias for a type widely used to hold lists of module_creators.</div><div class="ttdef"><b>Definition:</b> <a href="module__creator_8h_source.html#l00108">module_creator.h:108</a></div></div>
 <div class="ttc" id="amodule__dependency__utilities_8cpp_html_a18b94d593588b1ed9e2e75720160b790"><div class="ttname"><a href="module__dependency__utilities_8cpp.html#a18b94d593588b1ed9e2e75720160b790">get_evaluation_order</a></div><div class="ttdeci">mc_vector get_evaluation_order(mc_vector mcs)</div><div class="ttdoc">Given a list of modules (presented as a vector of pointers to module_creator objects),...</div><div class="ttdef"><b>Definition:</b> <a href="module__dependency__utilities_8cpp_source.html#l00336">module_dependency_utilities.cpp:336</a></div></div>
 <div class="ttc" id="amodule__dependency__utilities_8h_html"><div class="ttname"><a href="module__dependency__utilities_8h.html">module_dependency_utilities.h</a></div></div>
-<div class="ttc" id="aparameters_8h_html_accbc03a63e9b3af24585c91b9d6eb7e4"><div class="ttname"><a href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a></div><div class="ttdeci">parameter_list parameters</div><div class="ttdef"><b>Definition:</b> <a href="parameters_8h_source.html#l00053">parameters.h:53</a></div></div>
 <div class="ttc" id="astate__map_8cpp_html_a698066d68dbdbd7d3afbff90e8481ae8"><div class="ttname"><a href="state__map_8cpp.html#a698066d68dbdbd7d3afbff90e8481ae8">at</a></div><div class="ttdeci">state_map at(const state_vector_map &amp;vector_map, std::vector&lt; double &gt;::size_type n)</div><div class="ttdoc">Given a sequence of states (presented as a state_vector_map) and an index n, return the n'th state in...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8cpp_source.html#l00024">state_map.cpp:24</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a1ff119048c542e2f0fa6c826e7473e62"><div class="ttname"><a href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; string_vector</div><div class="ttdoc">string_vector serves as an alias for a type widely used to hold lists of module names or lists of mod...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00019">state_map.h:19</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a4dec1ecf04058a525b4009c473a76c28"><div class="ttname"><a href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a></div><div class="ttdeci">std::unordered_map&lt; std::string, double &gt; state_map</div><div class="ttdoc">A state_map represents the state of a system.</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00056">state_map.h:56</a></div></div>
@@ -256,7 +255,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 26 2022 17:15:04 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jun 8 2023 20:34:51 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -229,6 +229,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0fb9ae91e8d383fc5b7d6e75f8b00a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb0c675fd736a14cd5074429b2d3c412"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double * &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1multilayer__canopy__properties.html#adb0c675fd736a14cd5074429b2d3c412">LeafN_ops</a></td></tr>
 <tr class="separator:adb0c675fd736a14cd5074429b2d3c412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07dc08ce564267097e0570eb39f8f64"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1multilayer__canopy__properties.html#ac07dc08ce564267097e0570eb39f8f64">canopy_direct_transmission_fraction_op</a></td></tr>
+<tr class="separator:ac07dc08ce564267097e0570eb39f8f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Calculates environmental properties for sunlit and shaded leaves in each layer of a multilayer canopy, mostly using functions found in <code><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></code>. </p>
@@ -238,12 +240,12 @@ Private Attributes</h2></td></tr>
 <ul>
 <li>multiclass_multilayer outputs: these outputs are different for each leaf class and canopy layer and should be specified by the <code><a class="el" href="classstandard_b_m_l_1_1multilayer__canopy__properties.html#a32e67a7e869cc1baa6d9efdd30ea7666" title="Define all outputs that have different values for each leaf class and layer.">define_multiclass_multilayer_outputs()</a></code> function.</li>
 <li>pure_multilayer outputs: these outputs are different for each canopy layer but not for each leaf class and should be specified by the <code><a class="el" href="classstandard_b_m_l_1_1multilayer__canopy__properties.html#a154d2a8e38b051c0eede33986ef0f9a9" title="Define all outputs that have different values for each layer, not including outputs that also depend ...">define_pure_multilayer_outputs()</a></code> function.</li>
-<li>other outputs: these outputs do not depend on the leaf class or canopy layer and do not need to be specified in a special way (there are currently no outputs of this type)</li>
+<li>other outputs: these outputs do not depend on the leaf class or canopy layer and do not need to be specified in a special way</li>
 </ul>
 <p >The base names for the multiclass_multilayer and pure_multilayer outputs will be used by the <code><a class="el" href="classstandard_b_m_l_1_1multilayer__canopy__photosynthesis.html" title="Applies a leaf photosynthesis module to each layer and leaf class of a multilayer canopy.">multilayer_canopy_photosynthesis</a></code> module to correctly pass these quantities to a leaf photosynthesis module that represents one leaf type (e.g. sunlit leaves in layer 1).</p>
 <p >Note that this module has a non-standard constructor, so it cannot be created using the <a class="el" href="classmodule__factory.html" title="A factory class that creates module_creator objects, where the list of available module_creator objec...">module_factory</a>. Rather, it is expected that directly-usable classes will be derived from this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00054">54</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00053">53</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af5e5dd8b6174d3d01bfcccc6f68fa8d8" name="af5e5dd8b6174d3d01bfcccc6f68fa8d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5e5dd8b6174d3d01bfcccc6f68fa8d8">&#9670;&nbsp;</a></span>multilayer_canopy_properties()</h2>
@@ -285,7 +287,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00057">57</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00056">56</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +319,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00037">37</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00168">ten_layer_canopy_properties::define_leaf_classes()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00176">ten_layer_canopy_properties::define_leaf_classes()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -361,7 +363,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00049">49</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00173">ten_layer_canopy_properties::define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00181">ten_layer_canopy_properties::define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -405,7 +407,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00062">62</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00179">ten_layer_canopy_properties::define_pure_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00187">ten_layer_canopy_properties::define_pure_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -450,7 +452,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00011">11</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00163">ten_layer_canopy_properties::get_inputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00171">ten_layer_canopy_properties::get_inputs()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -495,7 +497,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00037">multilayer_canopy_properties::define_leaf_classes()</a>, <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00049">multilayer_canopy_properties::define_multiclass_multilayer_outputs()</a>, <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00062">multilayer_canopy_properties::define_pure_multilayer_outputs()</a>, <a class="el" href="module__helper__functions_8cpp_source.html#l00092">generate_multiclass_quantity_names()</a>, <a class="el" href="module__helper__functions_8cpp_source.html#l00131">generate_multilayer_quantity_names()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00104">multilayer_canopy_properties::nlayers</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00185">ten_layer_canopy_properties::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00193">ten_layer_canopy_properties::get_outputs()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -550,11 +552,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">97</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">102</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="multilayer__canopy__properties_8h_source.html#l00109">multilayer_canopy_properties::absorptivity_par</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00021">Light_profile::average_absorbed_shortwave</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00133">multilayer_canopy_properties::average_absorbed_shortwave_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">Light_profile::average_incident_ppfd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">multilayer_canopy_properties::average_incident_ppfd_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00113">multilayer_canopy_properties::chil</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00111">multilayer_canopy_properties::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00024">Light_profile::height</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00135">multilayer_canopy_properties::height_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00114">multilayer_canopy_properties::heightf</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00016">Light_profile::incident_ppfd_scattered</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00134">multilayer_canopy_properties::incident_ppfd_scattered_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00112">multilayer_canopy_properties::kd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00118">multilayer_canopy_properties::kpLN</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00110">multilayer_canopy_properties::lai</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00123">multilayer_canopy_properties::leaf_reflectance</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00122">multilayer_canopy_properties::leaf_transmittance</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00117">multilayer_canopy_properties::LeafN</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00138">multilayer_canopy_properties::LeafN_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00119">multilayer_canopy_properties::lnfun</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00446">LNprof()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00104">multilayer_canopy_properties::nlayers</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00120">multilayer_canopy_properties::par_energy_content</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00121">multilayer_canopy_properties::par_energy_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00108">multilayer_canopy_properties::par_incident_diffuse</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00107">multilayer_canopy_properties::par_incident_direct</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00115">multilayer_canopy_properties::rh</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00136">multilayer_canopy_properties::rh_ops</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00427">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00020">Light_profile::shaded_absorbed_shortwave</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00131">multilayer_canopy_properties::shaded_absorbed_shortwave_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00023">Light_profile::shaded_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00129">multilayer_canopy_properties::shaded_fraction_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">Light_profile::shaded_incident_ppfd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00130">multilayer_canopy_properties::shaded_incident_ppfd_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00019">Light_profile::sunlit_absorbed_shortwave</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00128">multilayer_canopy_properties::sunlit_absorbed_shortwave_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00022">Light_profile::sunlit_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00126">multilayer_canopy_properties::sunlit_fraction_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00015">Light_profile::sunlit_incident_ppfd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00127">multilayer_canopy_properties::sunlit_incident_ppfd_ops</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00174">sunML()</a>, <a class="el" href="module_8h_source.html#l00115">direct_module::update()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00326">WINDprof()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00116">multilayer_canopy_properties::windspeed</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00137">multilayer_canopy_properties::windspeed_ops</a>.</p>
+<p class="reference">References <a class="el" href="multilayer__canopy__properties_8h_source.html#l00109">multilayer_canopy_properties::absorptivity_par</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00021">Light_profile::average_absorbed_shortwave</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00133">multilayer_canopy_properties::average_absorbed_shortwave_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">Light_profile::average_incident_ppfd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">multilayer_canopy_properties::average_incident_ppfd_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00025">Light_profile::canopy_direct_transmission_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00139">multilayer_canopy_properties::canopy_direct_transmission_fraction_op</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00113">multilayer_canopy_properties::chil</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00111">multilayer_canopy_properties::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00024">Light_profile::height</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00135">multilayer_canopy_properties::height_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00114">multilayer_canopy_properties::heightf</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00016">Light_profile::incident_ppfd_scattered</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00134">multilayer_canopy_properties::incident_ppfd_scattered_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00112">multilayer_canopy_properties::kd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00118">multilayer_canopy_properties::kpLN</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00110">multilayer_canopy_properties::lai</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00123">multilayer_canopy_properties::leaf_reflectance</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00122">multilayer_canopy_properties::leaf_transmittance</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00117">multilayer_canopy_properties::LeafN</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00138">multilayer_canopy_properties::LeafN_ops</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00119">multilayer_canopy_properties::lnfun</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00459">LNprof()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00104">multilayer_canopy_properties::nlayers</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00120">multilayer_canopy_properties::par_energy_content</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00121">multilayer_canopy_properties::par_energy_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00108">multilayer_canopy_properties::par_incident_diffuse</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00107">multilayer_canopy_properties::par_incident_direct</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00115">multilayer_canopy_properties::rh</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00136">multilayer_canopy_properties::rh_ops</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00440">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00020">Light_profile::shaded_absorbed_shortwave</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00131">multilayer_canopy_properties::shaded_absorbed_shortwave_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00023">Light_profile::shaded_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00129">multilayer_canopy_properties::shaded_fraction_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">Light_profile::shaded_incident_ppfd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00130">multilayer_canopy_properties::shaded_incident_ppfd_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00019">Light_profile::sunlit_absorbed_shortwave</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00128">multilayer_canopy_properties::sunlit_absorbed_shortwave_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00022">Light_profile::sunlit_fraction</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00126">multilayer_canopy_properties::sunlit_fraction_ops</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00015">Light_profile::sunlit_incident_ppfd</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00127">multilayer_canopy_properties::sunlit_incident_ppfd_ops</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00174">sunML()</a>, <a class="el" href="module_8h_source.html#l00115">direct_module::update()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00339">WINDprof()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00116">multilayer_canopy_properties::windspeed</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00137">multilayer_canopy_properties::windspeed_ops</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00190">ten_layer_canopy_properties::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00198">ten_layer_canopy_properties::do_operation()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -608,7 +610,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00109">109</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -634,7 +636,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00133">133</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -660,7 +662,33 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">132</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
+
+</div>
+</div>
+<a id="ac07dc08ce564267097e0570eb39f8f64" name="ac07dc08ce564267097e0570eb39f8f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07dc08ce564267097e0570eb39f8f64">&#9670;&nbsp;</a></span>canopy_direct_transmission_fraction_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* canopy_direct_transmission_fraction_op</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00139">139</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -686,7 +714,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00113">113</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -712,7 +740,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00111">111</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -738,7 +766,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00135">135</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -764,7 +792,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00114">114</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -790,7 +818,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00134">134</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -816,7 +844,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00112">112</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -842,7 +870,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00118">118</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -868,7 +896,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00110">110</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -894,7 +922,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00123">123</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -920,7 +948,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00122">122</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -946,7 +974,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00117">117</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -972,7 +1000,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00138">138</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1026,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00119">119</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1052,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00104">104</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00080">multilayer_canopy_properties::get_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1078,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00120">120</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1104,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00121">121</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1130,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00108">108</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1128,7 +1156,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00107">107</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1154,7 +1182,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00115">115</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1208,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00136">136</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1234,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00131">131</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1260,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00129">129</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1286,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00130">130</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1284,7 +1312,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00128">128</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1338,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00126">126</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1336,7 +1364,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00127">127</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1390,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00116">116</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1416,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00137">137</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00097">multilayer_canopy_properties::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1427,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 26 2022 17:13:55 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jun 8 2023 20:33:53 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

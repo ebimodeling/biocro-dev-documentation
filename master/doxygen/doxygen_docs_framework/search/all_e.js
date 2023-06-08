@@ -1,17 +1,19 @@
 var searchData=
 [
-  ['ncalls_0',['ncalls',['../classdynamical__system.html#a9c398709d2858a20536907016b4ab7f2',1,'dynamical_system::ncalls()'],['../classsimultaneous__equations.html#a9c398709d2858a20536907016b4ab7f2',1,'simultaneous_equations::ncalls()']]],
-  ['ncalls_5fop_1',['ncalls_op',['../classse__module_1_1base.html#a695acb04cd78091c531ae55f17925783',1,'se_module::base']]],
-  ['newton_5fraphson_5fbacktrack_5fboost_2',['newton_raphson_backtrack_boost',['../classnewton__raphson__backtrack__boost.html',1,'newton_raphson_backtrack_boost'],['../classnewton__raphson__backtrack__boost.html#a84b0b20253ebbffafe60dfa06e2a02ef',1,'newton_raphson_backtrack_boost::newton_raphson_backtrack_boost()']]],
-  ['newton_5fraphson_5fbacktrack_5fboost_2eh_3',['newton_raphson_backtrack_boost.h',['../newton__raphson__backtrack__boost_8h.html',1,'']]],
-  ['newton_5fraphson_5fboost_4',['newton_raphson_boost',['../classnewton__raphson__boost.html',1,'newton_raphson_boost'],['../classnewton__raphson__boost.html#a7b610c89e7c1244a645bda215469920a',1,'newton_raphson_boost::newton_raphson_boost()']]],
-  ['newton_5fraphson_5fboost_2eh_5',['newton_raphson_boost.h',['../newton__raphson__boost_8h.html',1,'']]],
-  ['newton_5fraphson_5fline_5fsearch_5fboost_6',['newton_raphson_line_search_boost',['../newton__raphson__backtrack__boost_8h.html#a8814a3b63c3ea2185a89df10e22f1ab2',1,'newton_raphson_backtrack_boost.h']]],
-  ['normal_5frand_7',['normal_rand',['../namespacese__solver__rand.html#a0002d0800e58c4c4b7e997026ad0cb3a',1,'se_solver_rand']]],
-  ['normal_5freal_5fdist_8',['normal_real_dist',['../namespacese__solver__rand.html#a0a0f5dc758d8c2ac162a7a7c355b8399',1,'se_solver_rand']]],
-  ['nrb_5fprint_9',['nrb_print',['../newton__raphson__backtrack__boost_8h.html#a89d21124d024b768069970d7051e0fe8',1,'newton_raphson_backtrack_boost.h']]],
-  ['nsteps_10',['nsteps',['../classboost__ode__solver.html#ab82d6ab9ed7d16e4b5c6d47c8b4bc589',1,'boost_ode_solver']]],
-  ['nsteps_5fop_11',['nsteps_op',['../classse__module_1_1base.html#a8e69019eac6bbda78f9553f508f7c9d6',1,'se_module::base']]],
-  ['num_5fiterations_12',['num_iterations',['../classse__solver.html#ab702e2f7530d6172eea3780d8923bd71',1,'se_solver']]],
-  ['numerical_5fjacobian_2eh_13',['numerical_jacobian.h',['../numerical__jacobian_8h.html',1,'']]]
+  ['observer_5fmessage_0',['observer_message',['../classboost__ode__solver.html#abe9d4e5b9d432971a71aafb0361e2c9c',1,'boost_ode_solver']]],
+  ['ode_5fsolver_1',['ode_solver',['../classode__solver.html#aa51c337decbe7763739785e107ae93b3',1,'ode_solver::ode_solver()'],['../classode__solver.html',1,'ode_solver']]],
+  ['ode_5fsolver_2ecpp_2',['ode_solver.cpp',['../ode__solver_8cpp.html',1,'']]],
+  ['ode_5fsolver_2eh_3',['ode_solver.h',['../ode__solver_8h.html',1,'']]],
+  ['ode_5fsolver_5fcreator_4',['ode_solver_creator',['../classode__solver__factory.html#a061142b34dcdc6d5c53591b4dc5e1de1',1,'ode_solver_factory']]],
+  ['ode_5fsolver_5fcreator_5fmap_5',['ode_solver_creator_map',['../classode__solver__factory.html#a671e77f2ef06e13c6e45911dcdd12475',1,'ode_solver_factory']]],
+  ['ode_5fsolver_5fcreators_6',['ode_solver_creators',['../classode__solver__factory.html#afc44480785a7af8cc52477717a08ff31',1,'ode_solver_factory']]],
+  ['ode_5fsolver_5ffactory_7',['ode_solver_factory',['../classode__solver__factory.html',1,'']]],
+  ['ode_5fsolver_5ffactory_2ecpp_8',['ode_solver_factory.cpp',['../ode__solver__factory_8cpp.html',1,'']]],
+  ['ode_5fsolver_5ffactory_2eh_9',['ode_solver_factory.h',['../ode__solver__factory_8h.html',1,'']]],
+  ['ode_5fsolver_5fname_10',['ode_solver_name',['../classode__solver.html#aee7f581c94e36bd508ee742c7b40b8e3',1,'ode_solver']]],
+  ['operator_28_29_11',['operator()',['../structpush__back__state__and__time.html#ac12e8d627f3c55aaca6a68bcf75d5012',1,'push_back_state_and_time::operator()()'],['../classdynamical__system__pointer__wrapper.html#a8da489de04bdb23b7729486df6bc4f92',1,'dynamical_system_pointer_wrapper::operator()(state_type const &amp;x, state_type &amp;dxdt, time_type const &amp;t)'],['../classdynamical__system__pointer__wrapper.html#a3e467d4b57d62daa470ec61486a02152',1,'dynamical_system_pointer_wrapper::operator()(state_type const &amp;x, jacobi_type &amp;jacobi, time_type const &amp;t, state_type &amp;dfdt)']]],
+  ['order_5fok_12',['order_ok',['../module__dependency__utilities_8cpp.html#a053d668d5a1cdeba1458e134f21ce131',1,'order_ok(mc_vector mcs):&#160;module_dependency_utilities.cpp'],['../module__dependency__utilities_8h.html#a053d668d5a1cdeba1458e134f21ce131',1,'order_ok(mc_vector mcs):&#160;module_dependency_utilities.cpp']]],
+  ['output_5flist_13',['output_list',['../_r__helper__functions_8cpp.html#ae7cd48b3b7f6069c84e3abe2aa449a6a',1,'output_list(SEXP const &amp;list):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8h.html#ae7cd48b3b7f6069c84e3abe2aa449a6a',1,'output_list(SEXP const &amp;list):&#160;R_helper_functions.cpp']]],
+  ['output_5fmap_14',['output_map',['../_r__helper__functions_8cpp.html#ab1ad5788019eeb84e44498c8a936021d',1,'output_map(state_map const &amp;m):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8h.html#ab1ad5788019eeb84e44498c8a936021d',1,'output_map(state_map const &amp;m):&#160;R_helper_functions.cpp']]],
+  ['output_5fstep_5fsize_15',['output_step_size',['../classode__solver.html#a6a5f01eeecba13bc2f1c03543255b590',1,'ode_solver']]]
 ];

@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 <tr class="separator:a382f770f0cf20008947aa07ff313c04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3663e16fd2cb02e7095f93993cf8f463"><td class="memTemplParams" colspan="2">template&lt;typename vector_type , typename time_type &gt; </td></tr>
 <tr class="memitem:a3663e16fd2cb02e7095f93993cf8f463"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">evaluate_equations</a> (std::shared_ptr&lt; <a class="el" href="classdynamical__system.html">dynamical_system</a> &gt; const &amp;sys, vector_type const &amp;x, time_type t, vector_type &amp;y)</td></tr>
-<tr class="memdesc:a3663e16fd2cb02e7095f93993cf8f463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define <code>evaluation</code> behavior for a set of equations defined by a <code><a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a></code> object. This is required to use <code><a class="el" href="numerical__jacobian_8h.html#abb3a48da711cdaa6426f7c0e10523aee" title="Numerically compute the Jacobian matrix of a vector valued function.">calculate_jacobian()</a></code> with a <code><a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a></code> object.  <a href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">More...</a><br /></td></tr>
+<tr class="memdesc:a3663e16fd2cb02e7095f93993cf8f463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define <code>evaluation</code> behavior for a set of equations defined by a <code><a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a></code> object. This is required to use <code><a class="el" href="numerical__jacobian_8h.html#ab9edec9fd459b0eb500dbd993b51e0f6" title="Numerically compute the Jacobian matrix of a vector valued function.">calculate_jacobian()</a></code> with a <code><a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a></code> object.  <a href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">More...</a><br /></td></tr>
 <tr class="separator:a3663e16fd2cb02e7095f93993cf8f463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Define <code>evaluation</code> behavior for a set of equations defined by a <code><a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a></code> object. This is required to use <code><a class="el" href="numerical__jacobian_8h.html#abb3a48da711cdaa6426f7c0e10523aee" title="Numerically compute the Jacobian matrix of a vector valued function.">calculate_jacobian()</a></code> with a <code><a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a></code> object. </p>
+<p>Define <code>evaluation</code> behavior for a set of equations defined by a <code><a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a></code> object. This is required to use <code><a class="el" href="numerical__jacobian_8h.html#ab9edec9fd459b0eb500dbd993b51e0f6" title="Numerically compute the Jacobian matrix of a vector valued function.">calculate_jacobian()</a></code> with a <code><a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a></code> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sys</td><td>a shared pointer to a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> object.</td></tr>
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00455">455</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="numerical__jacobian_8h_source.html#l00052">calculate_jacobian()</a>, and <a class="el" href="numerical__jacobian_8h_source.html#l00159">calculate_time_derivative()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="numerical__jacobian_8h_source.html#l00108">calculate_jacobian()</a>, <a class="el" href="numerical__jacobian_8h_source.html#l00365">calculate_jacobian_and_time_derivative()</a>, and <a class="el" href="numerical__jacobian_8h_source.html#l00264">calculate_time_derivative()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -222,16 +222,13 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dynamical__system_8h_a3663e16fd2cb02e7095f93993cf8f463_icgraph.png" border="0" usemap="#adynamical__system_8h_a3663e16fd2cb02e7095f93993cf8f463_icgraph" alt=""/></div>
 <map name="adynamical__system_8h_a3663e16fd2cb02e7095f93993cf8f463_icgraph" id="adynamical__system_8h_a3663e16fd2cb02e7095f93993cf8f463_icgraph">
-<area shape="rect" title="Define evaluation behavior for a set of equations defined by a dynamical_system object...." alt="" coords="669,111,804,138"/>
-<area shape="rect" href="numerical__jacobian_8h.html#abb3a48da711cdaa6426f7c0e10523aee" title="Numerically compute the Jacobian matrix of a vector valued function." alt="" coords="472,82,601,109"/>
-<area shape="rect" href="numerical__jacobian_8h.html#aa1de4363b80ad4deff462bdebb669ccb" title="Numerically compute the explicit time derivatives of a vector valued function." alt="" coords="452,137,621,163"/>
-<area shape="rect" href="numerical__jacobian_8h.html#aa4613d2383d8cc1f150cfda00be21ce7" title="A wrapper for calculate_jacobian(equation_ptr, x, t, f_current, jacobi) that automatically evaluates ..." alt="" coords="255,27,384,54"/>
-<area shape="rect" href="numerical__jacobian_8h.html#aa69a62289bcec362abb76d68df65e6d3" title="Numerically compute the Jacobian matrix and time derivatives of a vector valued function." alt="" coords="247,129,392,171"/>
-<area shape="rect" href="numerical__jacobian_8h.html#a38b0760046952b949613411cbcbb8ccb" title="A wrapper for calculate_jacobian(equation_ptr, x, t, f_current, jacobi) for equations that have no ti..." alt="" coords="246,78,393,105"/>
-<area shape="rect" href="classdynamical__system__pointer__wrapper.html#a3e467d4b57d62daa470ec61486a02152" title=" " alt="" coords="9,136,183,177"/>
-<area shape="rect" href="classnewton__raphson__backtrack__boost.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="5,71,187,112"/>
-<area shape="rect" href="classnewton__raphson__boost.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="18,5,174,47"/>
-<area shape="rect" href="numerical__jacobian_8h.html#a05f4dc7946e3348ed84f118aa9639458" title="A wrapper for calculate_time_derivative(equation_ptr, max_time, x, t, f_current, dfdt) that automatic..." alt="" coords="235,195,404,222"/>
+<area shape="rect" title="Define evaluation behavior for a set of equations defined by a dynamical_system object...." alt="" coords="663,64,797,91"/>
+<area shape="rect" href="numerical__jacobian_8h.html#ab9edec9fd459b0eb500dbd993b51e0f6" title="Numerically compute the Jacobian matrix of a vector valued function." alt="" coords="465,13,595,40"/>
+<area shape="rect" href="numerical__jacobian_8h.html#aa69a62289bcec362abb76d68df65e6d3" title="Numerically compute the Jacobian matrix and the explicit time derivative of a vector valued function." alt="" coords="240,57,385,98"/>
+<area shape="rect" href="numerical__jacobian_8h.html#a18e7949927b0bfc86140b3534e790e8c" title="Numerically compute the explicit time derivatives of a vector valued function." alt="" coords="445,115,615,141"/>
+<area shape="rect" href="numerical__jacobian_8h.html#aa4613d2383d8cc1f150cfda00be21ce7" title="A wrapper for the five&#45;argument version of calculate_jacobian() that automatically evaluates f_curren..." alt="" coords="248,5,377,32"/>
+<area shape="rect" href="classdynamical__system__pointer__wrapper.html#a3e467d4b57d62daa470ec61486a02152" title=" " alt="" coords="5,57,180,98"/>
+<area shape="rect" href="numerical__jacobian_8h.html#a926532563be19071bb0594d54846edcb" title="A wrapper for the six&#45;argument version of calculate_time_derivative() that automatically calculates f..." alt="" coords="228,123,397,149"/>
 </map>
 </div>
 
@@ -291,7 +288,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 26 2022 17:13:53 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jun 8 2023 20:33:52 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

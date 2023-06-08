@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['homemade_5feuler_5fode_5fsolver_0',['homemade_euler_ode_solver',['../classhomemade__euler__ode__solver.html',1,'']]]
+  ['module_0',['module',['../classmodule.html',1,'']]],
+  ['module_5fcreator_1',['module_creator',['../classmodule__creator.html',1,'']]],
+  ['module_5fcreator_5fimpl_2',['module_creator_impl',['../classmodule__creator__impl.html',1,'']]],
+  ['module_5ffactory_3',['module_factory',['../classmodule__factory.html',1,'']]]
 ];

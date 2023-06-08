@@ -2,6 +2,7 @@ var struct_light__profile =
 [
     [ "average_absorbed_shortwave", "struct_light__profile.html#a5f4b00c823c545e40c91a4b2ebc5a619", null ],
     [ "average_incident_ppfd", "struct_light__profile.html#ac3f290bdde8c99228d5842027c2fb1fe", null ],
+    [ "canopy_direct_transmission_fraction", "struct_light__profile.html#aeff6b66c9c9742d780632663a15ef8c7", null ],
     [ "height", "struct_light__profile.html#a9271d425f0a7fe98406dc25f2e148bb4", null ],
     [ "incident_ppfd_scattered", "struct_light__profile.html#a9bb181e980d9d35d2856a8710f793539", null ],
     [ "shaded_absorbed_shortwave", "struct_light__profile.html#aba2bdb68bcb2ed561da09a980ff0373b", null ],

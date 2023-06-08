@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['tan_5fdeg_0',['tan_deg',['../degree__trigonometry_8h.html#a4e4cef1598cbeee7c8a443dc9d8c6032',1,'degree_trigonometry.h']]],
-  ['threshold_1',['threshold',['../structpush__back__state__and__time.html#afcfbedec6ebde62c6a091ce335836ef1',1,'push_back_state_and_time']]],
-  ['threshold_5fincrement_2',['threshold_increment',['../structpush__back__state__and__time.html#a19e34787b4f445370088bc0b0f734bf6',1,'push_back_state_and_time']]],
-  ['time_5fvec_3',['time_vec',['../classboost__ode__solver.html#ae6ff482e88f161c66de4ba69d2115d8d',1,'boost_ode_solver']]],
-  ['times_4',['times',['../structpush__back__state__and__time.html#ac047fe6ae7861a5d8be19eaf9e3e24fc',1,'push_back_state_and_time']]],
-  ['timestep_5fptr_5',['timestep_ptr',['../classdynamical__system.html#a1a5223e31bea579ed2fb79e493a9028e',1,'dynamical_system']]]
+  ['update_0',['update',['../classmodule.html#ad80124505b87e8481aedbed068d749c8',1,'module::update()'],['../classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be',1,'direct_module::update()'],['../classdifferential__module.html#a3f5a6c165abfe31f11a5465b11d645be',1,'differential_module::update()']]],
+  ['update_5fall_5fquantities_1',['update_all_quantities',['../classdynamical__system.html#a2fef37d6ec33798ab011389b08e08bff',1,'dynamical_system']]],
+  ['update_5fdifferential_5fquantities_2',['update_differential_quantities',['../classdynamical__system.html#a8a5b457fffabc33a29724fd4eca53108',1,'dynamical_system']]],
+  ['update_5fdrivers_3',['update_drivers',['../classdynamical__system.html#ad2994d904767ac1aab548f55a7b4da65',1,'dynamical_system::update_drivers(double time_indx)'],['../classdynamical__system.html#acf85c6999f6cf78ea54e748e50c619ca',1,'dynamical_system::update_drivers(time_type time_indx)']]]
 ];

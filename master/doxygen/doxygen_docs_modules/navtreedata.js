@@ -31,7 +31,6 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -50,7 +49,6 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -60,24 +58,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classstandard_b_m_l_1_1buck__swvp.html",
-"classstandard_b_m_l_1_1c3__leaf__photosynthesis.html#aef7251c38f83faca1cb32230d9afa43c",
-"classstandard_b_m_l_1_1ed__abc__blc.html#a49931fcab531170aae227897b255bf55",
-"classstandard_b_m_l_1_1ed__c4photo.html#a3af4da2af45be7d5b4daf6573812fe02",
-"classstandard_b_m_l_1_1ed__leaf__temperature.html#ad266373a7bd989fea84b990a0a491d32",
-"classstandard_b_m_l_1_1ed__rh__to__mole__fraction.html#a993c71f463b2372eff9e62e897f0fae1",
-"classstandard_b_m_l_1_1incident__shortwave__from__ground__par.html#ae7efb5bff7d9116303426ce8627bdf2c",
-"classstandard_b_m_l_1_1multilayer__canopy__properties.html#adb0c675fd736a14cd5074429b2d3c412",
-"classstandard_b_m_l_1_1parameter__calculator.html#a74e725fca5a873310c20bbdef8b36f9a",
-"classstandard_b_m_l_1_1penman__monteith__transpiration.html#a10f95c03d0ee32604f493d7455872d92",
-"classstandard_b_m_l_1_1rue__leaf__photosynthesis.html",
-"classstandard_b_m_l_1_1song__flowering.html#a1c138dcaa6efa0b3ff64d843d7a4f466",
-"classstandard_b_m_l_1_1thermal__time__and__frost__senescence.html#a8ed91217284282fee71bb8fe08be4bf9",
-"classstandard_b_m_l_1_1two__layer__soil__profile.html",
-"classstandard_b_m_l_1_1utilization__senescence.html#ae90d6650b90c68a002a51bf551a6af82",
-"fake__solar_8hpp.html",
-"namespacenikolov.html#af08ea1f00199ed198691dd2eebe4390e",
-"utilization__growth__calculator_8hpp.html#a7769a4d82bee051ae70faf248df3c090"
+"classstandard_b_m_l_1_1buck__swvp.html#ae6517cdf4a282ddbfbb6e3b7b711b898",
+"classstandard_b_m_l_1_1c4__assimilation.html#a29678a5f4d4da10e4d36afa9f124ed8a",
+"classstandard_b_m_l_1_1example__model__mass__gain.html#ab4b3621a5f8a323afdf9cce61e1339cf",
+"classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html",
+"classstandard_b_m_l_1_1no__leaf__resp__neg__assim__partitioning__growth__calculator.html#aeb7d0f98bdc1cd0db02924c85edcf130",
+"classstandard_b_m_l_1_1partitioning__coefficient__selector.html#a1408d51fca6314319c1311056ff91de0",
+"classstandard_b_m_l_1_1poincare__clock.html#a391e9fd4e949f6e987eb654a11b1e451",
+"classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#aebaf8075767f5e2e368001dc936a3933",
+"classstandard_b_m_l_1_1song__flowering.html#aac8adc979a6acaf37896d19ffc9ac21f",
+"classstandard_b_m_l_1_1thermal__time__beta.html",
+"classstandard_b_m_l_1_1two__layer__soil__profile.html#a4e8b922d527ba4c662b5a3a7320f4d2f",
+"namespace_m_l_c_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

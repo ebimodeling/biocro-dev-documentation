@@ -145,24 +145,27 @@ Static Public Member Functions</h2></td></tr>
 <li><code><a class="el" href="classstandard_b_m_l_1_1no__leaf__resp__partitioning__growth__calculator.html" title="Uses a set of partitioning coefficients to determine net assimilation rates due to photosynthesis and...">no_leaf_resp_partitioning_growth_calculator</a></code></li>
 <li><code><a class="el" href="classstandard_b_m_l_1_1partitioning__growth__calculator.html" title="Uses a set of partitioning coefficients to determine net assimilation rates due to photosynthesis and...">partitioning_growth_calculator</a></code></li>
 </ul>
-<p >Using the following function, calculates the percentage of carbon allocated to the root, stem, leaf, and grain at a given development index.</p>
+<p >Using the following function, calculates the percentage of carbon allocated to the root, stem, leaf, shell, and grain at a given development index.</p>
 <p class="formulaDsp">
 \[ k_i = \frac{\exp{(\alpha_i+\beta_i x)}}  {\exp{(\alpha_R+\beta_R x)} +
-\exp{(\alpha_L+\beta_L x)} + \exp{(\alpha_S+\beta_S x)} + 1}, \]
+\exp{(\alpha_S+\beta_S x)} + \exp{(\alpha_L+\beta_L x)} +
+\exp{(\alpha_{Sh}+\beta_{Sh} x)} + 1}, \]
 </p>
-<p >where \( i = {R, L, S} \) for root, leaf, and stem respectively, and \( x \) is the development index. For the grain,</p>
+<p >where \( i = {R, S, L, Sh} \) for root, stem, leaf, and shell respectively, and \( x \) is the development index. For the grain,</p>
 <p class="formulaDsp">
-\[ k_G = \frac{1}{\exp{(\alpha_R+\beta_R x)} + \exp{(\alpha_L+\beta_L x)}
-+ \exp{(\alpha_S+\beta_S x)} + 1}. \]
+\[ k_G = \frac{1}{\exp{(\alpha_R+\beta_R x)} + \exp{(\alpha_S+\beta_S x)} +
+\exp{(\alpha_L+\beta_L x)} + \exp{(\alpha_{Sh}+\beta_{Sh})} + 1}. \]
 </p>
-<p >See Matthews et al. for more description of how this module was used in Soybean-BioCro and for details on the parameter fitting to identify the \( \alpha \text{ and } \beta \) parameters.</p>
+<p >See Matthews et al. for more description of how this module was used in Soybean-BioCro and for details on the parameter fitting to identify the \( \alpha \text{ and } \beta \) parameters. Note that the original model did not include a shell component.</p>
+<p >Although it is not used in the soybean model, this module also includes an option for a rhizome to contribute carbon to other organs during emergence. See comments in the code for more details.</p>
 <h3><a class="anchor" id="autotoc_md20"></a>
 References:</h3>
-<p >Matthews, M.L. et al. 2021. in preparation. "Soybean-BioCro: A
-semi-mechanistic model of soybean growth"</p>
-<p >[Osborne, T. et al. 2015. “JULES-Crop: A Parametrisation of Crops in the Joint UK Land Environment Simulator.” Geoscientific Model Development 8(4): 1139–55.] (<a href="https://doi.org/10.5194/gmd-8-1139-2015">https://doi.org/10.5194/gmd-8-1139-2015</a>) </p>
+<p >[Matthews, M. L.et al. 2021. "Soybean-BioCro: a semi-mechanistic model of
+soybean growth." in silico Plants 4, diab032.] (<a href="https://doi.org/10.1093/insilicoplants/diab032">https://doi.org/10.1093/insilicoplants/diab032</a>)</p>
+<p >[Osborne, T. et al. 2015. "JULES-Crop: A Parametrisation of Crops in the Joint
+UK Land Environment Simulator." Geoscientific Model Development 8(4): 1139–55.] (<a href="https://doi.org/10.5194/gmd-8-1139-2015">https://doi.org/10.5194/gmd-8-1139-2015</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00049">49</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00056">56</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a29f892a37410188e2fbec28291935a24" name="a29f892a37410188e2fbec28291935a24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29f892a37410188e2fbec28291935a24">&#9670;&nbsp;</a></span>partitioning_coefficient_logistic()</h2>
@@ -198,7 +201,7 @@ semi-mechanistic model of soybean growth"</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00052">52</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00059">59</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +229,7 @@ semi-mechanistic model of soybean growth"</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00101">101</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00114">114</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +256,7 @@ semi-mechanistic model of soybean growth"</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00077">77</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00087">87</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +283,7 @@ semi-mechanistic model of soybean growth"</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00115">115</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__coefficient__logistic_8h_source.html#l00130">130</a> of file <a class="el" href="partitioning__coefficient__logistic_8h_source.html">partitioning_coefficient_logistic.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +296,7 @@ semi-mechanistic model of soybean growth"</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></li><li class="navelem"><a class="el" href="classstandard_b_m_l_1_1partitioning__coefficient__logistic.html">partitioning_coefficient_logistic</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 17:14:49 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jun 8 2023 20:34:38 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

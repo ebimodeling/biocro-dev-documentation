@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['handle_5feuler_5frequirement_0',['handle_euler_requirement',['../classode__solver.html#a3c7e1ddaba7d3a2306b5a86d1d7e75a6',1,'ode_solver::handle_euler_requirement()'],['../classauto__ode__solver.html#a84ecbf4ffc22428ce7c46c4f28a19a0e',1,'auto_ode_solver::handle_euler_requirement()']]],
-  ['has_5fcycle_1',['has_cycle',['../classcycle__detector.html#a860fd2f9698aae6e9d1e8dae307bf3d1',1,'cycle_detector::has_cycle()'],['../module__dependency__utilities_8cpp.html#a3d4b95b648daed0361a13b8953f0e0d1',1,'has_cycle(Graph g):&#160;module_dependency_utilities.cpp']]],
-  ['has_5fcyclic_5fdependency_2',['has_cyclic_dependency',['../module__dependency__utilities_8cpp.html#aeb2f7f78049472073b29720684921091',1,'has_cyclic_dependency(mc_vector mcs):&#160;module_dependency_utilities.cpp'],['../module__dependency__utilities_8h.html#aeb2f7f78049472073b29720684921091',1,'has_cyclic_dependency(mc_vector mcs):&#160;module_dependency_utilities.cpp']]],
-  ['has_5fnot_5fconverged_5fabs_3',['has_not_converged_abs',['../se__solver__helper__functions_8h.html#a74a913aff78ae10751b8891d5073e837',1,'se_solver_helper_functions.h']]],
-  ['has_5fnot_5fconverged_5frel_4',['has_not_converged_rel',['../se__solver__helper__functions_8h.html#ad76b81cd312809610bed882ef12177ba',1,'se_solver_helper_functions.h']]],
-  ['homemade_5feuler_5fode_5fsolver_5',['homemade_euler_ode_solver',['../classhomemade__euler__ode__solver.html',1,'homemade_euler_ode_solver&lt; state_type &gt;'],['../classhomemade__euler__ode__solver.html#a427d4b86fbd16465bc33f2945f05817c',1,'homemade_euler_ode_solver::homemade_euler_ode_solver()']]],
-  ['homemade_5feuler_5fode_5fsolver_2eh_6',['homemade_euler_ode_solver.h',['../homemade__euler__ode__solver_8h.html',1,'']]]
+  ['ideal_5fgas_5fconstant_0',['ideal_gas_constant',['../namespacephysical__constants.html#ad897b4d9b9b0a577b0b72030d724bbc3',1,'physical_constants']]],
+  ['index_5fmap_5ft_1',['index_map_t',['../module__dependency__utilities_8cpp.html#abcff0dec8b31ac19089ab01aba460ffb',1,'module_dependency_utilities.cpp']]],
+  ['init_2ecpp_2',['init.cpp',['../init_8cpp.html',1,'']]],
+  ['initial_5fvalues_3',['initial_values',['../classdynamical__system.html#ad54cb1cdfd693c80fbc7b4816f4fcc46',1,'dynamical_system']]],
+  ['insert_5fkey_5fnames_4',['insert_key_names',['../validate__dynamical__system_8h.html#ad2321956b4c48d7bbb29b60b00722982',1,'validate_dynamical_system.h']]],
+  ['insert_5fmodule_5fparam_5fif_5fundefined_5',['insert_module_param_if_undefined',['../validate__dynamical__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced',1,'insert_module_param_if_undefined(std::string param_name, std::string module_name, string_vector defined_quantity_names, string_vector &amp;undefined_module_names):&#160;validate_dynamical_system.cpp'],['../validate__dynamical__system_8h.html#a68ab75e71590ce4a83b56f348360dced',1,'insert_module_param_if_undefined(std::string param_name, std::string module_name, string_vector defined_quantity_names, string_vector &amp;undefined_module_names):&#160;validate_dynamical_system.cpp']]],
+  ['insert_5fquantity_5fif_5fundefined_6',['insert_quantity_if_undefined',['../validate__dynamical__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9',1,'validate_dynamical_system.h']]],
+  ['insert_5fquantity_5fname_5fif_5fnew_7',['insert_quantity_name_if_new',['../validate__dynamical__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d',1,'insert_quantity_name_if_new(std::string quantity_name, string_vector &amp;target_vector, string_vector &amp;duplicates):&#160;validate_dynamical_system.cpp'],['../validate__dynamical__system_8h.html#acf127cbf0b3b1750cfd735764b958a82',1,'insert_quantity_name_if_new(std::string quantity_name, string_vector &amp;target_vector, string_vector &amp;duplicate_vector):&#160;validate_dynamical_system.cpp']]],
+  ['integrate_8',['integrate',['../classode__solver.html#a773b5258f782c6e3aa76780390ad031a',1,'ode_solver']]],
+  ['integrate_5fmethod_5fhas_5fbeen_5fcalled_9',['integrate_method_has_been_called',['../classode__solver.html#af7d8661c455dd9cb4f4ceaa27406e6a6',1,'ode_solver']]],
+  ['is_5fdifferential_10',['is_differential',['../classmodule.html#af2df2fa3eedbd1248b07817749ada4f3',1,'module']]]
 ];

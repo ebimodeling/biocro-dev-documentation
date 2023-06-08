@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['x_5fip_0',['x_ip',['../classstandard_b_m_l_1_1golden__ratio__hyperbola.html#ae1472062658ca9f5f900d17237c9d9e9',1,'standardBML::golden_ratio_hyperbola::x_ip()'],['../classstandard_b_m_l_1_1hyperbola__2d.html#ae1472062658ca9f5f900d17237c9d9e9',1,'standardBML::hyperbola_2d::x_ip()']]],
-  ['x_5fop_1',['x_op',['../classstandard_b_m_l_1_1golden__ratio__hyperbola.html#a21ec1ebea024133ce419156cac42c4e5',1,'standardBML::golden_ratio_hyperbola::x_op()'],['../classstandard_b_m_l_1_1hyperbola__2d.html#a21ec1ebea024133ce419156cac42c4e5',1,'standardBML::hyperbola_2d::x_op()']]]
+  ['y_5fip_0',['y_ip',['../classstandard_b_m_l_1_1hyperbola__2d.html#aef3cfa3ac93264470270f4ef3672aa77',1,'standardBML::hyperbola_2d']]],
+  ['y_5fop_1',['y_op',['../classstandard_b_m_l_1_1hyperbola__2d.html#af9348ec77658b5ff476b7a7c7209ce52',1,'standardBML::hyperbola_2d']]],
+  ['year_2',['year',['../classstandard_b_m_l_1_1solar__position__michalsky.html#a27f11425dbc428cf8d6312aa2f732eab',1,'standardBML::solar_position_michalsky']]]
 ];

@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="_r__system__derivatives_8cpp.html#af2583d389566f02e92a99bbab8d11b01">   41</a></span>SEXP <a class="code hl_function" href="_r__system__derivatives_8cpp.html#af2583d389566f02e92a99bbab8d11b01">R_system_derivatives</a>(</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    SEXP differential_quantities,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    SEXP time,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    SEXP <a class="code hl_variable" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    SEXP parameters,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    SEXP drivers,</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    SEXP direct_mc_vec,</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    SEXP differential_mc_vec)</div>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="comment">// Convert the inputs into the proper format</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_typedef" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> iv = <a class="code hl_function" href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a>(differential_quantities);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_typedef" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> p = <a class="code hl_function" href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a>(<a class="code hl_variable" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_typedef" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> p = <a class="code hl_function" href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a>(parameters);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_typedef" href="state__map_8h.html#acc562c42c1d464c702e0abd69e05673d">state_vector_map</a> d = <a class="code hl_function" href="_r__helper__functions_8cpp.html#a1c40ce5c7a2d8a2d3968c7d71812002c">map_vector_from_list</a>(drivers);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span> (d.begin()-&gt;second.size() == 0) {</div>
@@ -166,7 +166,6 @@ $(function() {
 <div class="ttc" id="aclassdynamical__system_html_adb9b416855bccd29bd77e2da52e32ed0"><div class="ttname"><a href="classdynamical__system.html#adb9b416855bccd29bd77e2da52e32ed0">dynamical_system::calculate_derivative</a></div><div class="ttdeci">void calculate_derivative(const vector_type &amp;x, vector_type &amp;dxdt, const time_type &amp;t)</div><div class="ttdoc">Calculates derivatives for each of the differential quantities based on supplied values for the diffe...</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00282">dynamical_system.h:282</a></div></div>
 <div class="ttc" id="adynamical__system_8h_html"><div class="ttname"><a href="dynamical__system_8h.html">dynamical_system.h</a></div></div>
 <div class="ttc" id="amodule__creator_8h_html_a5810cdde7994b69d99870b1a545b8e1f"><div class="ttname"><a href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a></div><div class="ttdeci">std::vector&lt; module_creator * &gt; mc_vector</div><div class="ttdoc">mc_vector serves as an alias for a type widely used to hold lists of module_creators.</div><div class="ttdef"><b>Definition:</b> <a href="module__creator_8h_source.html#l00108">module_creator.h:108</a></div></div>
-<div class="ttc" id="aparameters_8h_html_accbc03a63e9b3af24585c91b9d6eb7e4"><div class="ttname"><a href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a></div><div class="ttdeci">parameter_list parameters</div><div class="ttdef"><b>Definition:</b> <a href="parameters_8h_source.html#l00053">parameters.h:53</a></div></div>
 <div class="ttc" id="astate__map_8h_html"><div class="ttname"><a href="state__map_8h.html">state_map.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a1ff119048c542e2f0fa6c826e7473e62"><div class="ttname"><a href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; string_vector</div><div class="ttdoc">string_vector serves as an alias for a type widely used to hold lists of module names or lists of mod...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00019">state_map.h:19</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a4dec1ecf04058a525b4009c473a76c28"><div class="ttname"><a href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a></div><div class="ttdeci">std::unordered_map&lt; std::string, double &gt; state_map</div><div class="ttdoc">A state_map represents the state of a system.</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00056">state_map.h:56</a></div></div>
@@ -174,7 +173,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 26 2022 17:15:04 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jun 8 2023 20:34:51 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -339,11 +339,11 @@ $(function() {
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a> <span class="keyword">const</span>&amp; mcv : mc_vectors) {</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; w : mcv) {</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <a class="code hl_typedef" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> input_names = w-&gt;get_inputs();</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            std::string <a class="code hl_variable" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> = w-&gt;get_name();</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            std::string module_name = w-&gt;get_name();</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            <span class="keywordflow">for</span> (std::string input : input_names) {</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                <a class="code hl_function" href="validate__dynamical__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced">insert_module_param_if_undefined</a>(</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                    input,</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                    <a class="code hl_variable" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                    module_name,</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                    quantity_names,</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                    undefined_module_inputs);</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            }</div>
@@ -362,11 +362,11 @@ $(function() {
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a> <span class="keyword">const</span>&amp; mcv : mc_vectors) {</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; w : mcv) {</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            <a class="code hl_typedef" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> output_names = w-&gt;get_outputs();</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            std::string <a class="code hl_variable" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> = w-&gt;get_name();</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            std::string module_name = w-&gt;get_name();</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>            <span class="keywordflow">for</span> (std::string output : output_names) {</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                <a class="code hl_function" href="validate__dynamical__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced">insert_module_param_if_undefined</a>(</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>                    output,</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                    <a class="code hl_variable" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                    module_name,</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                    quantity_names,</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                    undefined_module_outputs);</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            }</div>
@@ -435,8 +435,8 @@ $(function() {
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="stringliteral">&quot;hour&quot;</span>};</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> <span class="keyword">const</span>&amp; m : state_maps) {</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        <a class="code hl_typedef" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> <a class="code hl_variable" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a> = <a class="code hl_function" href="state__map_8h.html#a5505795a40869494568f362567ff51e8">keys</a>(m);</div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; name : <a class="code hl_variable" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>) {</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        <a class="code hl_typedef" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> parameters = <a class="code hl_function" href="state__map_8h.html#a5505795a40869494568f362567ff51e8">keys</a>(m);</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; name : parameters) {</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>            <span class="keywordflow">if</span> (std::find(ignored_names.begin(), ignored_names.end(), name) == ignored_names.end()) {</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>                <a class="code hl_function" href="validate__dynamical__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9">insert_quantity_if_undefined</a>(name, all_module_inputs, unused_params);</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>            }</div>
@@ -569,12 +569,12 @@ $(function() {
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="validate__dynamical__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced">  652</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="validate__dynamical__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced">insert_module_param_if_undefined</a>(</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    std::string param_name,</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    std::string <a class="code hl_variable" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    std::string module_name,</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <a class="code hl_typedef" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> defined_quantity_names,</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <a class="code hl_typedef" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&amp; undefined_module_names)</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>{</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="keywordflow">if</span> (std::find(defined_quantity_names.begin(), defined_quantity_names.end(), param_name) == defined_quantity_names.end()) {</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        undefined_module_names.push_back(param_name + std::string(<span class="stringliteral">&quot; from the &#39;&quot;</span>) + <a class="code hl_variable" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> + std::string(<span class="stringliteral">&quot;&#39; module&quot;</span>));</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        undefined_module_names.push_back(param_name + std::string(<span class="stringliteral">&quot; from the &#39;&quot;</span>) + module_name + std::string(<span class="stringliteral">&quot;&#39; module&quot;</span>));</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    }</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>}</div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
@@ -613,8 +613,6 @@ $(function() {
 <div class="ttc" id="amodule__dependency__utilities_8cpp_html_a18b94d593588b1ed9e2e75720160b790"><div class="ttname"><a href="module__dependency__utilities_8cpp.html#a18b94d593588b1ed9e2e75720160b790">get_evaluation_order</a></div><div class="ttdeci">mc_vector get_evaluation_order(mc_vector mcs)</div><div class="ttdoc">Given a list of modules (presented as a vector of pointers to module_creator objects),...</div><div class="ttdef"><b>Definition:</b> <a href="module__dependency__utilities_8cpp_source.html#l00336">module_dependency_utilities.cpp:336</a></div></div>
 <div class="ttc" id="amodule__dependency__utilities_8cpp_html_aeb2f7f78049472073b29720684921091"><div class="ttname"><a href="module__dependency__utilities_8cpp.html#aeb2f7f78049472073b29720684921091">has_cyclic_dependency</a></div><div class="ttdeci">bool has_cyclic_dependency(mc_vector mcs)</div><div class="ttdoc">Given a list of modules (presented as a vector of module wrapper pointers), determine if the list can...</div><div class="ttdef"><b>Definition:</b> <a href="module__dependency__utilities_8cpp_source.html#l00250">module_dependency_utilities.cpp:250</a></div></div>
 <div class="ttc" id="amodule__dependency__utilities_8h_html"><div class="ttname"><a href="module__dependency__utilities_8h.html">module_dependency_utilities.h</a></div></div>
-<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a0b37c5938e82da1fb19ed599f7c71217"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">ed_c4_leaf_photosynthesis_stuff::module_name</a></div><div class="ttdeci">std::string const module_name</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00030">ed_c4_leaf_photosynthesis.h:30</a></div></div>
-<div class="ttc" id="aparameters_8h_html_accbc03a63e9b3af24585c91b9d6eb7e4"><div class="ttname"><a href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a></div><div class="ttdeci">parameter_list parameters</div><div class="ttdef"><b>Definition:</b> <a href="parameters_8h_source.html#l00053">parameters.h:53</a></div></div>
 <div class="ttc" id="astate__map_8cpp_html_a698066d68dbdbd7d3afbff90e8481ae8"><div class="ttname"><a href="state__map_8cpp.html#a698066d68dbdbd7d3afbff90e8481ae8">at</a></div><div class="ttdeci">state_map at(const state_vector_map &amp;vector_map, std::vector&lt; double &gt;::size_type n)</div><div class="ttdoc">Given a sequence of states (presented as a state_vector_map) and an index n, return the n'th state in...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8cpp_source.html#l00024">state_map.cpp:24</a></div></div>
 <div class="ttc" id="astate__map_8h_html"><div class="ttname"><a href="state__map_8h.html">state_map.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a1ff119048c542e2f0fa6c826e7473e62"><div class="ttname"><a href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; string_vector</div><div class="ttdoc">string_vector serves as an alias for a type widely used to hold lists of module names or lists of mod...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00019">state_map.h:19</a></div></div>
@@ -651,7 +649,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 26 2022 17:13:53 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jun 8 2023 20:33:52 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -5,6 +5,7 @@ var classstandard_b_m_l_1_1multilayer__canopy__properties =
     [ "absorptivity_par", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#ade547db6ec4eb0491dc4c02f0e31a905", null ],
     [ "average_absorbed_shortwave_ops", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#af823b69fea62d8d8183493cd3b976680", null ],
     [ "average_incident_ppfd_ops", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#ae58b083acd1d6542d27a2c1d660d2b33", null ],
+    [ "canopy_direct_transmission_fraction_op", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#ac07dc08ce564267097e0570eb39f8f64", null ],
     [ "chil", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#a5433516ce27f6da1da71fcfe74d87e4b", null ],
     [ "cosine_zenith_angle", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#a3c1908a7e7f090bf800fe9b3fdd85594", null ],
     [ "height_ops", "classstandard_b_m_l_1_1multilayer__canopy__properties.html#ad2a5f5763377f026763e88d6722c8a1f", null ],

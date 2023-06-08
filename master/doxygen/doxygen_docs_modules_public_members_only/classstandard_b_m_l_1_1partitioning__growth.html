@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classstandard_b_m_l_1_1partitioning__g
 <p>This module determines the growth rate for several plant organs from the net rate of carbon assimilation due to photosynthesis (determined by a "partitioning growth calculator" module) and any additional carbon that may come from retranslocation.  
  <a href="classstandard_b_m_l_1_1partitioning__growth.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for partitioning_growth:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -144,7 +144,7 @@ Static Public Member Functions</h2></td></tr>
 <p >If the partitioning coefficient for an organ is positive, it is growing. Its derivative will have a positive term representing the contribution from photosynthesis, and possibly other terms representing retranslocated carbon from other organs.</p>
 <p >Conceptually, there are some problems with this type of carbon allocation model.</p>
 <p >One issue is that the final rates depend on the order in which the organs are addressed when mass is being remobilized. In practice this is rarely an issue since it is uncommon for multiple organs to act as carbon sources at the same time.</p>
-<p >Another issue is that an organ's mass may become negative when it is being retranslocated if the system is being solved using the Euler method with a large step size. The rhizome is especially prone to suffer from this issue, so a clunky check has been included here to try to prevent it from occurring. Note that this check introduces a weird discontinuity and is only relevant when using the Euler solver with a step size of one hour. Strange behavior may occur when using other solvers for a plant with a remobilizing rhizome.</p>
+<p >Another issue is that an organ's mass may become negative when it is being retranslocated if the system is being solved using the Euler method with a large step size. The rhizome is especially prone to suffer from this issue, so a clunky check has been included here to try to prevent it from occurring. Note that this check introduces a weird discontinuity and is predicated on using the Euler solver with a step size of one hour. Strange behavior may occur when using other solvers for a plant with a remobilizing rhizome.</p>
 <p >The model represented by this module is not officially described anywhere, although it has been used for carbon allocation in several published BioCro papers, such as the following:</p>
 <ul>
 <li>Miguez, F. E., Zhu, X., Humphries, S., Bollero, G. A. &amp; Long, S. P. "A
@@ -162,7 +162,7 @@ Some discussion of similar models can also be found at several points in
  target="_blank" &gt;Penning de Vries, F. W. T. &amp; Laar, H. H. van. \"Simulation of plant growth and crop production\" (Pudoc, 1982) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00062">62</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8h_source.html#l00062">62</a> of file <a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6eb9d634c686e326053d848f3bd04c40" name="a6eb9d634c686e326053d848f3bd04c40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6eb9d634c686e326053d848f3bd04c40">&#9670;&nbsp;</a></span>partitioning_growth()</h2>
@@ -198,7 +198,7 @@ Some discussion of similar models can also be found at several points in
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00065">65</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8h_source.html#l00065">65</a> of file <a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Some discussion of similar models can also be found at several points in
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00130">130</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8h_source.html#l00136">136</a> of file <a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Some discussion of similar models can also be found at several points in
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00098">98</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8h_source.html#l00101">101</a> of file <a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a>.</p>
 
 </div>
 </div>
@@ -280,12 +280,12 @@ Some discussion of similar models can also be found at several points in
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00152">152</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8h_source.html#l00160">160</a> of file <a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/github/workspace/src/module_library/<a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a></li>
+<li>/github/workspace/src/module_library/<a class="el" href="partitioning__growth_8h_source.html">partitioning_growth.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -293,7 +293,7 @@ Some discussion of similar models can also be found at several points in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></li><li class="navelem"><a class="el" href="classstandard_b_m_l_1_1partitioning__growth.html">partitioning_growth</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 17:14:49 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jun 8 2023 20:34:38 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

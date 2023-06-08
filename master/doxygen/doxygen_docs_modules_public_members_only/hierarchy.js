@@ -1,13 +1,5 @@
 var hierarchy =
 [
-    [ "base", null, [
-      [ "ed_c4_leaf_photosynthesis", "classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis.html", null ],
-      [ "ed_c4_leaf_photosynthesis2", "classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis2.html", null ],
-      [ "ed_c4_leaf_photosynthesis3", "classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis3.html", null ],
-      [ "ed_c4_leaf_photosynthesis4", "classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis4.html", null ],
-      [ "ed_nikolov_conductance_free_solve", "classstandard_b_m_l_1_1ed__nikolov__conductance__free__solve.html", null ],
-      [ "ed_p_m_temperature_solve", "classstandard_b_m_l_1_1ed__p__m__temperature__solve.html", null ]
-    ] ],
     [ "c3_str", "structc3__str.html", null ],
     [ "c4_str", "structc4__str.html", null ],
     [ "Can_Str", "struct_can___str.html", null ],
@@ -39,14 +31,9 @@ var hierarchy =
       [ "thermal_time_linear_extended", "classstandard_b_m_l_1_1thermal__time__linear__extended.html", null ],
       [ "thermal_time_senescence", "classstandard_b_m_l_1_1thermal__time__senescence.html", null ],
       [ "thermal_time_trilinear", "classstandard_b_m_l_1_1thermal__time__trilinear.html", null ],
-      [ "two_layer_soil_profile", "classstandard_b_m_l_1_1two__layer__soil__profile.html", null ],
-      [ "utilization_growth", "classstandard_b_m_l_1_1utilization__growth.html", null ],
-      [ "utilization_senescence", "classstandard_b_m_l_1_1utilization__senescence.html", null ]
+      [ "two_layer_soil_profile", "classstandard_b_m_l_1_1two__layer__soil__profile.html", null ]
     ] ],
     [ "direct_module", null, [
-      [ "multilayer_canopy_photosynthesis< ed_ten_layer_canopy_properties, ed_c4_leaf_photosynthesis4 >", "classstandard_b_m_l_1_1multilayer__canopy__photosynthesis.html", [
-        [ "ed_ten_layer_c4_canopy", "classstandard_b_m_l_1_1ed__ten__layer__c4__canopy.html", null ]
-      ] ],
       [ "FvCB", "classstandard_b_m_l_1_1_fv_c_b.html", null ],
       [ "Module_1", "classstandard_b_m_l_1_1_module__1.html", null ],
       [ "Module_2", "classstandard_b_m_l_1_1_module__2.html", null ],
@@ -60,32 +47,6 @@ var hierarchy =
       [ "c4_assimilation", "classstandard_b_m_l_1_1c4__assimilation.html", null ],
       [ "c4_canopy", "classstandard_b_m_l_1_1c4__canopy.html", null ],
       [ "c4_leaf_photosynthesis", "classstandard_b_m_l_1_1c4__leaf__photosynthesis.html", null ],
-      [ "ed_abc_blc", "classstandard_b_m_l_1_1ed__abc__blc.html", null ],
-      [ "ed_apply_stomatal_water_stress_via_assimilation", "classstandard_b_m_l_1_1ed__apply__stomatal__water__stress__via__assimilation.html", null ],
-      [ "ed_apply_stomatal_water_stress_via_conductance", "classstandard_b_m_l_1_1ed__apply__stomatal__water__stress__via__conductance.html", null ],
-      [ "ed_ball_berry", "classstandard_b_m_l_1_1ed__ball__berry.html", null ],
-      [ "ed_boundary_conductance_max", "classstandard_b_m_l_1_1ed__boundary__conductance__max.html", null ],
-      [ "ed_boundary_conductance_quadrature", "classstandard_b_m_l_1_1ed__boundary__conductance__quadrature.html", null ],
-      [ "ed_c4photo", "classstandard_b_m_l_1_1ed__c4photo.html", null ],
-      [ "ed_canac_leaf", "classstandard_b_m_l_1_1ed__canac__leaf.html", null ],
-      [ "ed_collatz_c4_assimilation", "classstandard_b_m_l_1_1ed__collatz__c4__assimilation.html", null ],
-      [ "ed_evapotrans2", "classstandard_b_m_l_1_1ed__evapotrans2.html", null ],
-      [ "ed_gas_concentrations", "classstandard_b_m_l_1_1ed__gas__concentrations.html", null ],
-      [ "ed_leaf_temperature", "classstandard_b_m_l_1_1ed__leaf__temperature.html", null ],
-      [ "ed_long_wave_energy_loss", "classstandard_b_m_l_1_1ed__long__wave__energy__loss.html", null ],
-      [ "ed_multilayer_canopy_integrator", "classstandard_b_m_l_1_1ed__multilayer__canopy__integrator.html", [
-        [ "ed_ten_layer_canopy_integrator", "classstandard_b_m_l_1_1ed__ten__layer__canopy__integrator.html", null ]
-      ] ],
-      [ "ed_multilayer_canopy_properties", "classstandard_b_m_l_1_1ed__multilayer__canopy__properties.html", [
-        [ "ed_ten_layer_canopy_properties", "classstandard_b_m_l_1_1ed__ten__layer__canopy__properties.html", null ]
-      ] ],
-      [ "ed_nikolov_conductance_forced", "classstandard_b_m_l_1_1ed__nikolov__conductance__forced.html", null ],
-      [ "ed_nikolov_conductance_free", "classstandard_b_m_l_1_1ed__nikolov__conductance__free.html", null ],
-      [ "ed_penman_monteith_leaf_temperature", "classstandard_b_m_l_1_1ed__penman__monteith__leaf__temperature.html", null ],
-      [ "ed_penman_monteith_transpiration", "classstandard_b_m_l_1_1ed__penman__monteith__transpiration.html", null ],
-      [ "ed_rh_to_mole_fraction", "classstandard_b_m_l_1_1ed__rh__to__mole__fraction.html", null ],
-      [ "ed_stomata_water_stress_linear", "classstandard_b_m_l_1_1ed__stomata__water__stress__linear.html", null ],
-      [ "ed_water_vapor_properties", "classstandard_b_m_l_1_1ed__water__vapor__properties.html", null ],
       [ "example_model_mass_gain", "classstandard_b_m_l_1_1example__model__mass__gain.html", null ],
       [ "fake_solar", "classstandard_b_m_l_1_1fake__solar.html", null ],
       [ "golden_ratio_hyperbola", "classstandard_b_m_l_1_1golden__ratio__hyperbola.html", null ],
@@ -99,6 +60,7 @@ var hierarchy =
       [ "leaf_water_stress_exponential", "classstandard_b_m_l_1_1leaf__water__stress__exponential.html", null ],
       [ "light_from_solar", "classstandard_b_m_l_1_1light__from__solar.html", null ],
       [ "linear_vmax_from_leaf_n", "classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html", null ],
+      [ "litter_cover", "classstandard_b_m_l_1_1litter__cover.html", null ],
       [ "multilayer_canopy_integrator", "classstandard_b_m_l_1_1multilayer__canopy__integrator.html", [
         [ "ten_layer_canopy_integrator", "classstandard_b_m_l_1_1ten__layer__canopy__integrator.html", null ]
       ] ],
@@ -126,6 +88,7 @@ var hierarchy =
       [ "senescence_coefficient_logistic", "classstandard_b_m_l_1_1senescence__coefficient__logistic.html", null ],
       [ "shortwave_atmospheric_scattering", "classstandard_b_m_l_1_1shortwave__atmospheric__scattering.html", null ],
       [ "soil_evaporation", "classstandard_b_m_l_1_1soil__evaporation.html", null ],
+      [ "soil_sunlight", "classstandard_b_m_l_1_1soil__sunlight.html", null ],
       [ "solar_position_michalsky", "classstandard_b_m_l_1_1solar__position__michalsky.html", null ],
       [ "soybean_development_rate_calculator", "classstandard_b_m_l_1_1soybean__development__rate__calculator.html", null ],
       [ "stomata_water_stress_exponential", "classstandard_b_m_l_1_1stomata__water__stress__exponential.html", null ],
@@ -134,8 +97,7 @@ var hierarchy =
       [ "stomata_water_stress_sigmoid", "classstandard_b_m_l_1_1stomata__water__stress__sigmoid.html", null ],
       [ "thermal_time_development_rate_calculator", "classstandard_b_m_l_1_1thermal__time__development__rate__calculator.html", null ],
       [ "total_biomass", "classstandard_b_m_l_1_1total__biomass.html", null ],
-      [ "utilization_growth_calculator", "classstandard_b_m_l_1_1utilization__growth__calculator.html", null ],
-      [ "utilization_senescence_calculator", "classstandard_b_m_l_1_1utilization__senescence__calculator.html", null ],
+      [ "varying_Jmax25", "classstandard_b_m_l_1_1varying___jmax25.html", null ],
       [ "water_vapor_properties_from_air_temperature", "classstandard_b_m_l_1_1water__vapor__properties__from__air__temperature.html", null ]
     ] ],
     [ "ET_Str", "struct_e_t___str.html", null ],

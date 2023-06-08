@@ -83,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287">c3photoC()</a></code>.  
+<p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58">c3photoC()</a></code>.  
  <a href="classstandard_b_m_l_1_1c3__assimilation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>&gt;</code></p>
@@ -206,7 +206,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad80124505b87e8481aedbed068d749c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287">c3photoC()</a></code>. </p>
+<div class="textblock"><p >Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58">c3photoC()</a></code>. </p>
 <h3><a class="anchor" id="autotoc_md7"></a>
 Model overview</h3>
 <p >The Ball-Berry stomatal conductance model and the Farquar-von-Cammerer-Berry model for C3 photosynthesis, along with simple 1D gas diffusion, define a set of coupled equations with three unknowns: net assimilation, intercellular CO2 concetration, and stomatal conductance. This function attempts to numerically determine these unknowns using a fixed-point iteration method. Beware: the code often fails to find the true solution, and some parts of the models are implemented incorrectly.</p>
@@ -308,7 +308,7 @@ BioCro module implementation</h3>
 
 <p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00162">162</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00005">c3_str::Assim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00119">c3_assimilation::Assim_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00110">c3_assimilation::atmospheric_pressure</a>, <a class="el" href="c3__assimilation_8h_source.html#l00106">c3_assimilation::b0</a>, <a class="el" href="c3__assimilation_8h_source.html#l00107">c3_assimilation::b1</a>, <a class="el" href="c3photo_8cpp_source.html#l00024">c3photoC()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00109">c3_assimilation::Catm</a>, <a class="el" href="c3photo_8hpp_source.html#l00007">c3_str::Ci</a>, <a class="el" href="c3__assimilation_8h_source.html#l00121">c3_assimilation::Ci_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00115">c3_assimilation::electrons_per_carboxylation</a>, <a class="el" href="c3__assimilation_8h_source.html#l00116">c3_assimilation::electrons_per_oxygenation</a>, <a class="el" href="c3photo_8hpp_source.html#l00008">c3_str::GrossAssim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00122">c3_assimilation::GrossAssim_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00006">c3_str::Gs</a>, <a class="el" href="c3__assimilation_8h_source.html#l00108">c3_assimilation::Gs_min</a>, <a class="el" href="c3__assimilation_8h_source.html#l00120">c3_assimilation::Gs_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00103">c3_assimilation::jmax</a>, <a class="el" href="c3__assimilation_8h_source.html#l00111">c3_assimilation::O2</a>, <a class="el" href="c3__assimilation_8h_source.html#l00099">c3_assimilation::Qp</a>, <a class="el" href="c3__assimilation_8h_source.html#l00105">c3_assimilation::Rd</a>, <a class="el" href="c3__assimilation_8h_source.html#l00101">c3_assimilation::rh</a>, <a class="el" href="c3__assimilation_8h_source.html#l00113">c3_assimilation::StomataWS</a>, <a class="el" href="c3__assimilation_8h_source.html#l00112">c3_assimilation::theta</a>, <a class="el" href="c3__assimilation_8h_source.html#l00100">c3_assimilation::Tleaf</a>, <a class="el" href="c3__assimilation_8h_source.html#l00104">c3_assimilation::tpu_rate_max</a>, <a class="el" href="module_8h_source.html#l00115">direct_module::update()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00102">c3_assimilation::vmax1</a>, and <a class="el" href="c3__assimilation_8h_source.html#l00114">c3_assimilation::water_stress_approach</a>.</p>
+<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00005">c3_str::Assim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00119">c3_assimilation::Assim_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00110">c3_assimilation::atmospheric_pressure</a>, <a class="el" href="c3__assimilation_8h_source.html#l00106">c3_assimilation::b0</a>, <a class="el" href="c3__assimilation_8h_source.html#l00107">c3_assimilation::b1</a>, <a class="el" href="c3photo_8cpp_source.html#l00009">c3photoC()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00109">c3_assimilation::Catm</a>, <a class="el" href="c3photo_8hpp_source.html#l00007">c3_str::Ci</a>, <a class="el" href="c3__assimilation_8h_source.html#l00121">c3_assimilation::Ci_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00115">c3_assimilation::electrons_per_carboxylation</a>, <a class="el" href="c3__assimilation_8h_source.html#l00116">c3_assimilation::electrons_per_oxygenation</a>, <a class="el" href="c3photo_8hpp_source.html#l00008">c3_str::GrossAssim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00122">c3_assimilation::GrossAssim_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00006">c3_str::Gs</a>, <a class="el" href="c3__assimilation_8h_source.html#l00108">c3_assimilation::Gs_min</a>, <a class="el" href="c3__assimilation_8h_source.html#l00120">c3_assimilation::Gs_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00103">c3_assimilation::jmax</a>, <a class="el" href="c3__assimilation_8h_source.html#l00111">c3_assimilation::O2</a>, <a class="el" href="c3__assimilation_8h_source.html#l00099">c3_assimilation::Qp</a>, <a class="el" href="c3__assimilation_8h_source.html#l00105">c3_assimilation::Rd</a>, <a class="el" href="c3__assimilation_8h_source.html#l00101">c3_assimilation::rh</a>, <a class="el" href="c3__assimilation_8h_source.html#l00113">c3_assimilation::StomataWS</a>, <a class="el" href="c3__assimilation_8h_source.html#l00112">c3_assimilation::theta</a>, <a class="el" href="c3__assimilation_8h_source.html#l00100">c3_assimilation::Tleaf</a>, <a class="el" href="c3__assimilation_8h_source.html#l00104">c3_assimilation::tpu_rate_max</a>, <a class="el" href="module_8h_source.html#l00115">direct_module::update()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00102">c3_assimilation::vmax1</a>, and <a class="el" href="c3__assimilation_8h_source.html#l00114">c3_assimilation::water_stress_approach</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -317,12 +317,12 @@ BioCro module implementation</h3>
 <div class="center"><img src="classstandard_b_m_l_1_1c3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph.png" border="0" usemap="#aclassstandard_b_m_l_1_1c3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph" alt=""/></div>
 <map name="aclassstandard_b_m_l_1_1c3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph" id="aclassstandard_b_m_l_1_1c3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,101,133"/>
-<area shape="rect" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287" title=" " alt="" coords="185,81,262,108"/>
+<area shape="rect" href="c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58" title=" " alt="" coords="185,81,262,108"/>
 <area shape="rect" href="classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be" title="In a valid dynamical_system object, a given quantity may be defined by only one direct module...." alt="" coords="149,132,297,159"/>
-<area shape="rect" href="state__map_8h.html#a2ffa14ffb8d0754a8bece80bb8a68481" title=" " alt="" coords="391,5,434,32"/>
-<area shape="rect" href="c3photo_8cpp.html#ac8d9cf6f3c59fd37185c7f95a3bd665c" title=" " alt="" coords="345,56,480,83"/>
-<area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="374,107,451,133"/>
-<area shape="rect" href="c3photo_8cpp.html#a2c2b79a3f622d45a0dc9017ef87a4f98" title=" " alt="" coords="389,157,436,184"/>
+<area shape="rect" href="state__map_8h.html#a2ffa14ffb8d0754a8bece80bb8a68481" title=" " alt="" coords="397,5,440,32"/>
+<area shape="rect" href="_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f" title="Calculates the exponential term of the Arrhenius equation." alt="" coords="345,56,492,83"/>
+<area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="380,107,457,133"/>
+<area shape="rect" href="c3photo_8cpp.html#a2c2b79a3f622d45a0dc9017ef87a4f98" title=" " alt="" coords="395,157,442,184"/>
 </map>
 </div>
 
@@ -988,7 +988,7 @@ BioCro module implementation</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 26 2022 17:13:54 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jun 8 2023 20:33:53 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

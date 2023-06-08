@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['newton_5fraphson_5fbacktrack_5fboost_2eh_0',['newton_raphson_backtrack_boost.h',['../newton__raphson__backtrack__boost_8h.html',1,'']]],
-  ['newton_5fraphson_5fboost_2eh_1',['newton_raphson_boost.h',['../newton__raphson__boost_8h.html',1,'']]],
-  ['numerical_5fjacobian_2eh_2',['numerical_jacobian.h',['../numerical__jacobian_8h.html',1,'']]]
+  ['ode_5fsolver_2ecpp_0',['ode_solver.cpp',['../ode__solver_8cpp.html',1,'']]],
+  ['ode_5fsolver_2eh_1',['ode_solver.h',['../ode__solver_8h.html',1,'']]],
+  ['ode_5fsolver_5ffactory_2ecpp_2',['ode_solver_factory.cpp',['../ode__solver__factory_8cpp.html',1,'']]],
+  ['ode_5fsolver_5ffactory_2eh_3',['ode_solver_factory.h',['../ode__solver__factory_8h.html',1,'']]]
 ];

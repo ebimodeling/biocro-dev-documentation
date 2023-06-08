@@ -31,7 +31,6 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -50,7 +49,6 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -60,11 +58,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classstandard_b_m_l_1_1ed__gas__concentrations.html",
-"classstandard_b_m_l_1_1senescence__logistic.html#a768b255b07bcdc5d3843342e3f041658",
-"ed__collatz__c4__assimilation_8h.html#ab1f7fbaa766c29954b02566feb73f364",
-"namespaceed__c4__leaf__photosynthesis__stuff.html#a02ad278d599190e2a7d610a2371b2230",
-"structsoil_m_l__str.html#a9da7a4e25e646b0be31ac3bbec73f60d"
+"classstandard_b_m_l_1_1litter__cover.html",
+"files.html",
+"structcrop__phenology.html#a368c5d9027045426132cf396fca3d8c8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

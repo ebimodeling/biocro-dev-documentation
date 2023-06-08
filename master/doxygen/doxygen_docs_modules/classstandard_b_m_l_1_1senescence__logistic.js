@@ -11,6 +11,7 @@ var classstandard_b_m_l_1_1senescence__logistic =
     [ "kSeneRhizome", "classstandard_b_m_l_1_1senescence__logistic.html#a046c8dfca6ca4c1c3e318245235ffad3", null ],
     [ "kSeneRoot", "classstandard_b_m_l_1_1senescence__logistic.html#ab8bc57be3938f5db07c2b63a8b23ff02", null ],
     [ "kSeneStem", "classstandard_b_m_l_1_1senescence__logistic.html#a99764fd831a3f2883876efeb999f949c", null ],
+    [ "kShell", "classstandard_b_m_l_1_1senescence__logistic.html#af1f421ba05a6a3e89154148ed0187aa8", null ],
     [ "kStem", "classstandard_b_m_l_1_1senescence__logistic.html#aeb7d0f98bdc1cd0db02924c85edcf130", null ],
     [ "Leaf", "classstandard_b_m_l_1_1senescence__logistic.html#aa18a68c5599a2556741e443074750f17", null ],
     [ "Leaf_op", "classstandard_b_m_l_1_1senescence__logistic.html#a25eb6f4c83c3fd814388baa6be71ef4e", null ],
@@ -22,6 +23,7 @@ var classstandard_b_m_l_1_1senescence__logistic =
     [ "Root", "classstandard_b_m_l_1_1senescence__logistic.html#aeca51a1473ef04a3276ab4401811d37b", null ],
     [ "Root_op", "classstandard_b_m_l_1_1senescence__logistic.html#a9c9473cb9dc1a7006f1b796dcf54977f", null ],
     [ "RootLitter_op", "classstandard_b_m_l_1_1senescence__logistic.html#a17c858d906214df3171e1f334cc79ef8", null ],
+    [ "Shell_op", "classstandard_b_m_l_1_1senescence__logistic.html#a9372f1c0c9b606f4f1d9c43cc8cff9b4", null ],
     [ "Stem", "classstandard_b_m_l_1_1senescence__logistic.html#a4d45566ef15e4151304fdc6c630642cb", null ],
     [ "Stem_op", "classstandard_b_m_l_1_1senescence__logistic.html#a7c3a2ceb12a843f3404a65dcc54a8fba", null ],
     [ "StemLitter_op", "classstandard_b_m_l_1_1senescence__logistic.html#a0f055f2c8875dab320fc9347d93df99f", null ]
