@@ -52,7 +52,6 @@
     <module name="penman_monteith_transpiration" type="direct" euler_required="FALSE"/>
     <module name="phase_clock" type="differential" euler_required="FALSE"/>
     <module name="poincare_clock" type="differential" euler_required="FALSE"/>
-    <module name="pokhilko_circadian_clock" type="differential" euler_required="FALSE"/>
     <module name="priestley_transpiration" type="direct" euler_required="FALSE"/>
     <module name="rasmussen_specific_heat" type="direct" euler_required="FALSE"/>
     <module name="rh_to_mole_fraction" type="direct" euler_required="FALSE"/>
@@ -174,9 +173,6 @@
     <quantity name="clock_r_scale" units="No units found"/>
     <quantity name="clock_r0" units="No units found"/>
     <quantity name="clock_width_asymm" units="No units found"/>
-    <quantity name="COP1_cytoplasm" units="No units found"/>
-    <quantity name="COP1_nuclear_day" units="No units found"/>
-    <quantity name="COP1_nuclear_night" units="No units found"/>
     <quantity name="cosine_zenith_angle" units="dimensionless"/>
     <quantity name="cPn" units="No units found"/>
     <quantity name="cTc" units="No units found"/>
@@ -210,16 +206,10 @@
     <quantity name="DVI" units="dimensionless; development index, see Osborne et al. 2015"/>
     <quantity name="DVI0_jmax" units="dimensionless"/>
     <quantity name="E" units="No units found"/>
-    <quantity name="EC" units="No units found"/>
     <quantity name="electrons_per_carboxylation" units="self-explanatory units"/>
     <quantity name="electrons_per_carboxylation" units="electron / carboxylation"/>
     <quantity name="electrons_per_oxygenation" units="self-explanatory units"/>
     <quantity name="electrons_per_oxygenation" units="electron / oxygenation"/>
-    <quantity name="ELF3_cytoplasm" units="No units found"/>
-    <quantity name="ELF3_mRNA" units="No units found"/>
-    <quantity name="ELF3_nuclear" units="No units found"/>
-    <quantity name="ELF4_mRNA" units="No units found"/>
-    <quantity name="ELF4_prot" units="No units found"/>
     <quantity name="EPenman" units="mmol / m^2 / s"/>
     <quantity name="EPriestly" units="mmol / m^2 / s"/>
     <quantity name="et_equation" units="a dimensionless switch"/>
@@ -227,10 +217,6 @@
     <quantity name="f_leaf" units="dimensionless from kg / kg"/>
     <quantity name="f_root" units="dimensionless from kg / kg"/>
     <quantity name="gbw" units="mol / m^2 / s"/>
-    <quantity name="GI_ELF3_cytoplasm" units="No units found"/>
-    <quantity name="GI_mRNA" units="No units found"/>
-    <quantity name="GI_prot_cytoplasm" units="No units found"/>
-    <quantity name="GI_ZTL" units="No units found"/>
     <quantity name="gmst" units="hours"/>
     <quantity name="Grain" units="Mg / ha / hour"/>
     <quantity name="Grain" units="Mg / ha"/>
@@ -271,8 +257,6 @@
     <quantity name="height_layer_8" units="m"/>
     <quantity name="height_layer_9" units="m"/>
     <quantity name="heightf" units="m^-1 from (m^2 / m^2) / m.  Leaf area density; LAI per height of canopy."/>
-    <quantity name="HFR1" units="No units found"/>
-    <quantity name="HY5" units="No units found"/>
     <quantity name="hydrDist" units="No units found"/>
     <quantity name="incident_ppfd" units="micromol / (m^2 leaf) / s"/>
     <quantity name="incident_ppfd_scattered_layer_0" units="micromol / (m^2 leaf) / s"/>
@@ -397,9 +381,6 @@
     <quantity name="leafwidth" units="m"/>
     <quantity name="LeafWS" units="dimensionless"/>
     <quantity name="lha" units="degrees"/>
-    <quantity name="LHY_mRNA" units="No units found"/>
-    <quantity name="LHY_prot" units="No units found"/>
-    <quantity name="LHY_prot_modif" units="No units found"/>
     <quantity name="light" units="No units found"/>
     <quantity name="light_exp_at_zero" units="No units found"/>
     <quantity name="light_threshold" units="No units found"/>
@@ -411,8 +392,6 @@
     <quantity name="longitude" units="degrees (East is positive)"/>
     <quantity name="lowerT" units="degrees C"/>
     <quantity name="lowerT" units="deg. C"/>
-    <quantity name="LUX_mRNA" units="No units found"/>
-    <quantity name="LUX_prot" units="No units found"/>
     <quantity name="mass" units="kg"/>
     <quantity name="mass_gain" units="kg / s"/>
     <quantity name="maturity_group" units="dimensionless; maturity group of soybean cultivar"/>
@@ -447,7 +426,6 @@
     <quantity name="nvmaxb1" units="No units found"/>
     <quantity name="O2" units="millimol / mol"/>
     <quantity name="O2" units="mmol / mol"/>
-    <quantity name="P" units="No units found"/>
     <quantity name="par_energy_content" units="J / micromol"/>
     <quantity name="par_energy_fraction" units="dimensionless"/>
     <quantity name="par_incident_diffuse" units="J / m^2 / s        [through any plane]"/>
@@ -460,12 +438,6 @@
     <quantity name="position" units="m / s"/>
     <quantity name="precip" units="No units found"/>
     <quantity name="precipitation_rate" units="No units found"/>
-    <quantity name="PRR5_NI_mRNA" units="No units found"/>
-    <quantity name="PRR5_NI_prot" units="No units found"/>
-    <quantity name="PRR7_mRNA" units="No units found"/>
-    <quantity name="PRR7_prot" units="No units found"/>
-    <quantity name="PRR9_mRNA" units="No units found"/>
-    <quantity name="PRR9_prot" units="No units found"/>
     <quantity name="psychrometric_parameter" units="kg / m^3 / K"/>
     <quantity name="Q" units="mol / m^2 / s"/>
     <quantity name="Qp" units="micromol / m^2 / s"/>
@@ -862,8 +834,6 @@
     <quantity name="Tmin_emrV0" units="degrees C"/>
     <quantity name="Tmin_R0R1" units="degrees C"/>
     <quantity name="Tmin_R1R7" units="degrees C"/>
-    <quantity name="TOC1_mRNA" units="No units found"/>
-    <quantity name="TOC1_prot" units="No units found"/>
     <quantity name="topt" units="degrees C"/>
     <quantity name="Topt_emrV0" units="degrees C"/>
     <quantity name="topt_lower" units="degrees C"/>
@@ -922,7 +892,6 @@
     <quantity name="x" units="unitless"/>
     <quantity name="y" units="unitless"/>
     <quantity name="year" units="a year between 1950 and 2050"/>
-    <quantity name="ZTL" units="No units found"/>
   </quantities>
   <usage_info>
     <quantity module_name="aba_decay" quantity_name="aba_decay_constant" quantity_type="input"/>
@@ -1539,67 +1508,6 @@
     <quantity module_name="poincare_clock" quantity_name="dusk_a" quantity_type="output"/>
     <quantity module_name="poincare_clock" quantity_name="ref_b" quantity_type="output"/>
     <quantity module_name="poincare_clock" quantity_name="ref_a" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="solar" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LHY_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="P" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_ZTL" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_ELF3_cytoplasm" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LHY_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="TOC1_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR9_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR5_NI_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR5_NI_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_prot_cytoplasm" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="TOC1_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ZTL" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="EC" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR9_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR7_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR7_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF4_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF4_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LHY_prot_modif" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="HY5" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="HFR1" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF3_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF3_cytoplasm" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF3_nuclear" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="COP1_nuclear_night" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="COP1_nuclear_day" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LUX_mRNA" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LUX_prot" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="COP1_cytoplasm" quantity_type="input"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LHY_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="P" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_ZTL" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_ELF3_cytoplasm" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LHY_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="TOC1_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR9_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR5_NI_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR5_NI_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_prot_cytoplasm" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="TOC1_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ZTL" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="EC" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="GI_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR9_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR7_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="PRR7_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF4_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF4_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LHY_prot_modif" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="HY5" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="HFR1" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF3_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF3_cytoplasm" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="ELF3_nuclear" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="COP1_nuclear_night" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="COP1_nuclear_day" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LUX_mRNA" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="LUX_prot" quantity_type="output"/>
-    <quantity module_name="pokhilko_circadian_clock" quantity_name="COP1_cytoplasm" quantity_type="output"/>
     <quantity module_name="priestley_transpiration" quantity_name="slope_water_vapor" quantity_type="input"/>
     <quantity module_name="priestley_transpiration" quantity_name="psychrometric_parameter" quantity_type="input"/>
     <quantity module_name="priestley_transpiration" quantity_name="latent_heat_vaporization_of_water" quantity_type="input"/>
