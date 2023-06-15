@@ -54,7 +54,6 @@ var namespacestandard_b_m_l =
     [ "penman_monteith_transpiration", "classstandard_b_m_l_1_1penman__monteith__transpiration.html", "classstandard_b_m_l_1_1penman__monteith__transpiration" ],
     [ "phase_clock", "classstandard_b_m_l_1_1phase__clock.html", "classstandard_b_m_l_1_1phase__clock" ],
     [ "poincare_clock", "classstandard_b_m_l_1_1poincare__clock.html", "classstandard_b_m_l_1_1poincare__clock" ],
-    [ "pokhilko_circadian_clock", "classstandard_b_m_l_1_1pokhilko__circadian__clock.html", "classstandard_b_m_l_1_1pokhilko__circadian__clock" ],
     [ "priestley_transpiration", "classstandard_b_m_l_1_1priestley__transpiration.html", "classstandard_b_m_l_1_1priestley__transpiration" ],
     [ "rasmussen_specific_heat", "classstandard_b_m_l_1_1rasmussen__specific__heat.html", "classstandard_b_m_l_1_1rasmussen__specific__heat" ],
     [ "rh_to_mole_fraction", "classstandard_b_m_l_1_1rh__to__mole__fraction.html", "classstandard_b_m_l_1_1rh__to__mole__fraction" ],

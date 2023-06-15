@@ -9,6 +9,5 @@ var searchData=
   ['penman_5fmonteith_5ftranspiration_6',['penman_monteith_transpiration',['../classstandard_b_m_l_1_1penman__monteith__transpiration.html',1,'standardBML']]],
   ['phase_5fclock_7',['phase_clock',['../classstandard_b_m_l_1_1phase__clock.html',1,'standardBML']]],
   ['poincare_5fclock_8',['poincare_clock',['../classstandard_b_m_l_1_1poincare__clock.html',1,'standardBML']]],
-  ['pokhilko_5fcircadian_5fclock_9',['pokhilko_circadian_clock',['../classstandard_b_m_l_1_1pokhilko__circadian__clock.html',1,'standardBML']]],
-  ['priestley_5ftranspiration_10',['priestley_transpiration',['../classstandard_b_m_l_1_1priestley__transpiration.html',1,'standardBML']]]
+  ['priestley_5ftranspiration_9',['priestley_transpiration',['../classstandard_b_m_l_1_1priestley__transpiration.html',1,'standardBML']]]
 ];

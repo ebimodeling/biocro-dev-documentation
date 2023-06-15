@@ -10,6 +10,5 @@ var searchData=
   ['penman_5fmonteith_5ftranspiration_2ehpp_7',['penman_monteith_transpiration.hpp',['../penman__monteith__transpiration_8hpp.html',1,'']]],
   ['phase_5fclock_2ehpp_8',['phase_clock.hpp',['../phase__clock_8hpp.html',1,'']]],
   ['poincare_5fclock_2ehpp_9',['poincare_clock.hpp',['../poincare__clock_8hpp.html',1,'']]],
-  ['pokhilko_5fcircadian_5fclock_2ehpp_10',['pokhilko_circadian_clock.hpp',['../pokhilko__circadian__clock_8hpp.html',1,'']]],
-  ['priestley_5ftranspiration_2ehpp_11',['priestley_transpiration.hpp',['../priestley__transpiration_8hpp.html',1,'']]]
+  ['priestley_5ftranspiration_2ehpp_10',['priestley_transpiration.hpp',['../priestley__transpiration_8hpp.html',1,'']]]
 ];

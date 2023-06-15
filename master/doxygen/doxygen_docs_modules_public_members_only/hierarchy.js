@@ -21,7 +21,6 @@ var hierarchy =
       [ "partitioning_growth", "classstandard_b_m_l_1_1partitioning__growth.html", null ],
       [ "phase_clock", "classstandard_b_m_l_1_1phase__clock.html", null ],
       [ "poincare_clock", "classstandard_b_m_l_1_1poincare__clock.html", null ],
-      [ "pokhilko_circadian_clock", "classstandard_b_m_l_1_1pokhilko__circadian__clock.html", null ],
       [ "senescence_logistic", "classstandard_b_m_l_1_1senescence__logistic.html", null ],
       [ "song_flowering", "classstandard_b_m_l_1_1song__flowering.html", null ],
       [ "thermal_time_and_frost_senescence", "classstandard_b_m_l_1_1thermal__time__and__frost__senescence.html", null ],

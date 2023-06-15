@@ -21,9 +21,7 @@ var searchData=
   ['poincare_5fclock_18',['poincare_clock',['../classstandard_b_m_l_1_1poincare__clock.html#ad2adaab841dd301e74888e8a18063c78',1,'standardBML::poincare_clock::poincare_clock()'],['../classstandard_b_m_l_1_1poincare__clock.html',1,'poincare_clock']]],
   ['poincare_5fclock_2ehpp_19',['poincare_clock.hpp',['../poincare__clock_8hpp.html',1,'']]],
   ['poisson_5fdensity_20',['poisson_density',['../_aux_bio_cro_8cpp.html#add002b19ebc8390b467dd10c31bb2cb5',1,'AuxBioCro.cpp']]],
-  ['pokhilko_5fcircadian_5fclock_21',['pokhilko_circadian_clock',['../classstandard_b_m_l_1_1pokhilko__circadian__clock.html#a0a73c34677f02946b1a88c69f92d0b40',1,'standardBML::pokhilko_circadian_clock::pokhilko_circadian_clock()'],['../classstandard_b_m_l_1_1pokhilko__circadian__clock.html',1,'pokhilko_circadian_clock']]],
-  ['pokhilko_5fcircadian_5fclock_2ehpp_22',['pokhilko_circadian_clock.hpp',['../pokhilko__circadian__clock_8hpp.html',1,'']]],
-  ['priestley_5ftranspiration_23',['priestley_transpiration',['../classstandard_b_m_l_1_1priestley__transpiration.html#a65f6f7902a1eca9e804d3d31baa0dab7',1,'standardBML::priestley_transpiration::priestley_transpiration()'],['../classstandard_b_m_l_1_1priestley__transpiration.html',1,'priestley_transpiration']]],
-  ['priestley_5ftranspiration_2ehpp_24',['priestley_transpiration.hpp',['../priestley__transpiration_8hpp.html',1,'']]],
-  ['psim_25',['psim',['../structws__str.html#ac2f458ad74016a5af57f18d9774bb0d9',1,'ws_str']]]
+  ['priestley_5ftranspiration_21',['priestley_transpiration',['../classstandard_b_m_l_1_1priestley__transpiration.html#a65f6f7902a1eca9e804d3d31baa0dab7',1,'standardBML::priestley_transpiration::priestley_transpiration()'],['../classstandard_b_m_l_1_1priestley__transpiration.html',1,'priestley_transpiration']]],
+  ['priestley_5ftranspiration_2ehpp_22',['priestley_transpiration.hpp',['../priestley__transpiration_8hpp.html',1,'']]],
+  ['psim_23',['psim',['../structws__str.html#ac2f458ad74016a5af57f18d9774bb0d9',1,'ws_str']]]
 ];

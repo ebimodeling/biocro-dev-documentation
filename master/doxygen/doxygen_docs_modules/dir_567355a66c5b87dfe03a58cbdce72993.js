@@ -79,7 +79,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "penman_monteith_transpiration.hpp", "penman__monteith__transpiration_8hpp.html", "penman__monteith__transpiration_8hpp" ],
     [ "phase_clock.hpp", "phase__clock_8hpp.html", "phase__clock_8hpp" ],
     [ "poincare_clock.hpp", "poincare__clock_8hpp.html", "poincare__clock_8hpp" ],
-    [ "pokhilko_circadian_clock.hpp", "pokhilko__circadian__clock_8hpp.html", "pokhilko__circadian__clock_8hpp" ],
     [ "priestley_transpiration.hpp", "priestley__transpiration_8hpp.html", "priestley__transpiration_8hpp" ],
     [ "rasmussen_specific_heat.cpp", "rasmussen__specific__heat_8cpp.html", "rasmussen__specific__heat_8cpp" ],
     [ "rasmussen_specific_heat.h", "rasmussen__specific__heat_8h.html", "rasmussen__specific__heat_8h" ],
