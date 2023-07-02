@@ -100,9 +100,6 @@
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/soil_parameters.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/sorghum.html</loc>
-  </url>
-  <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/soybean.html</loc>
   </url>
   <url>
@@ -119,8 +116,5 @@
   </url>
   <url>
     <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/willow.html</loc>
-  </url>
-  <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/zea_mays.html</loc>
   </url>
 </urlset>
