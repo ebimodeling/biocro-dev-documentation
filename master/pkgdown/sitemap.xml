@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/404.html</loc>
+    <loc>/404.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/LICENSE.html</loc>
+    <loc>/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/about_pkgdown_documentation.html</loc>
+    <loc>/about_pkgdown_documentation.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/BioCro-II_Paper--Section-1.1-example.html</loc>
+    <loc>/articles/BioCro-II_Paper--Section-1.1-example.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/avoiding_pitfalls_fvcb.html</loc>
+    <loc>/articles/avoiding_pitfalls_fvcb.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/index.html</loc>
+    <loc>/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/articles/pdf_vignette_index.html</loc>
+    <loc>/articles/pdf_vignette_index.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/authors.html</loc>
+    <loc>/authors.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/index.html</loc>
+    <loc>/index.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/news/index.html</loc>
+    <loc>/news/index.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/add_time_to_weather_data.html</loc>
+    <loc>/reference/add_time_to_weather_data.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/annualDB.html</loc>
+    <loc>/reference/annualDB.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/catm_data.html</loc>
+    <loc>/reference/catm_data.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/cmi_soybean_weather_data.html</loc>
+    <loc>/reference/cmi_soybean_weather_data.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/cmi_weather_data.html</loc>
+    <loc>/reference/cmi_weather_data.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/crop_model_definitions.html</loc>
+    <loc>/reference/crop_model_definitions.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/dynamical_system.html</loc>
+    <loc>/reference/dynamical_system.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/get_all.html</loc>
+    <loc>/reference/get_all.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/get_growing_season_climate.html</loc>
+    <loc>/reference/get_growing_season_climate.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/index.html</loc>
+    <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/lightME.html</loc>
+    <loc>/reference/lightME.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/miscanthus_x_giganteus.html</loc>
+    <loc>/reference/miscanthus_x_giganteus.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/module_case_files.html</loc>
+    <loc>/reference/module_case_files.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/module_creators.html</loc>
+    <loc>/reference/module_creators.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/module_paste.html</loc>
+    <loc>/reference/module_paste.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/module_testing.html</loc>
+    <loc>/reference/module_testing.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/modules.html</loc>
+    <loc>/reference/modules.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/obsBea.html</loc>
+    <loc>/reference/obsBea.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/obsBeaC.html</loc>
+    <loc>/reference/obsBeaC.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/obsNaid.html</loc>
+    <loc>/reference/obsNaid.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/partial_application.html</loc>
+    <loc>/reference/partial_application.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/run_biocro.html</loc>
+    <loc>/reference/run_biocro.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/soil_parameters.html</loc>
+    <loc>/reference/soil_parameters.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/soybean.html</loc>
+    <loc>/reference/soybean.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/soybean_clock.html</loc>
+    <loc>/reference/soybean_clock.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/system_derivatives.html</loc>
+    <loc>/reference/system_derivatives.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/test_module.html</loc>
+    <loc>/reference/test_module.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/test_module_library.html</loc>
+    <loc>/reference/test_module_library.html</loc>
   </url>
   <url>
-    <loc>https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/reference/willow.html</loc>
+    <loc>/reference/willow.html</loc>
   </url>
 </urlset>
