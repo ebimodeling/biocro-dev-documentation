@@ -92,14 +92,19 @@ Variables</h2></td></tr>
 <tr class="separator:aea5621455b66be4b7f4b027a890d3d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a942ef2e6b3483c7d4e7942a83d61a743"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacephysical__constants.html#a942ef2e6b3483c7d4e7942a83d61a743">atmospheric_pressure_at_sea_level</a> = 101325</td></tr>
 <tr class="separator:a942ef2e6b3483c7d4e7942a83d61a743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e313fe41d5c3f8d1d45071447edd97d"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacephysical__constants.html#a4e313fe41d5c3f8d1d45071447edd97d">dr_boundary</a> = 1.37</td></tr>
+<tr class="separator:a4e313fe41d5c3f8d1d45071447edd97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3064b016568d5517af32b5e983d958"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacephysical__constants.html#a1d3064b016568d5517af32b5e983d958">dr_stomata</a> = 1.6</td></tr>
+<tr class="separator:a1d3064b016568d5517af32b5e983d958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Various physical constants are collected here. </p>
 <p >These physical constants may be subdivided according to how "constant" they are:</p>
 <ul>
 <li><code>stefan_boltzmann</code> and <code>ideal_gas_constant</code>: These are truly constant, and as of the 2019 redefinition of SI base units, they have exact numerical values when expressed in SI units.</li>
-<li><code>molar_mass_of_water</code>: This depends on the relative frequency of the water's isotopologues, but for practical purposes, and because this composition doesn't usually vary greatly, we treat it as constant with the approximate value given.</li>
-<li><code>atmospheric_pressure_at_sea_level</code>: More precisely, this is <b>standard sea-level pressure</b>, which has the value given here <em>by definition</em> and represents the near-average atmospheric pressure at sea level on the Earth. The actual atmospheric pressure at any sea-level location changes continuously over time and may vary considerably from this. </li>
+<li><code>molar_mass_of_water</code> and other molar masses: These depend on the relative frequency of the molecule's isotopologues, but for practical purposes, and because the composition doesn't usually vary greatly, we treat the molar masses as constant with the approximate values given.</li>
+<li><code>atmospheric_pressure_at_sea_level</code>: More precisely, this is <b>standard sea-level pressure</b>, which has the value given here <em>by definition</em> and represents the near-average atmospheric pressure at sea level on the Earth. The actual atmospheric pressure at any sea-level location changes continuously over time and may vary considerably from this.</li>
+<li><code>dr_boundary</code> and <code>dr_stomata</code>: These are diffusivity ratios of H2O and CO2 (D_H2O / D_CO2) in the boundary layer and stomata, respectively. The diffusivity of H2O is larger since the molecules are smaller. These values are estimated from different conductance mechanisms in the associated regions. The true values might not be constant, but they are commonly treated as being constant. For more information, see the discussion following Equation B16 in [von Caemmerer &amp; Farquhar "Some relationships between the biochemistry of photosynthesis and the gas exchange of leaves. Planta 153, 376–387 (1981)] (<a href="http://dx.doi.org/10.1007/BF00384257">http://dx.doi.org/10.1007/BF00384257</a>). </li>
 </ul>
 </div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a942ef2e6b3483c7d4e7942a83d61a743" name="a942ef2e6b3483c7d4e7942a83d61a743"></a>
@@ -122,9 +127,57 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00066">66</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00078">78</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="shortwave__atmospheric__scattering_8h_source.html#l00081">shortwave_atmospheric_scattering::do_operation()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00826">leaf_boundary_layer_conductance_nikolov()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00051">lightME()</a>.</p>
+
+</div>
+</div>
+<a id="a4e313fe41d5c3f8d1d45071447edd97d" name="a4e313fe41d5c3f8d1d45071447edd97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e313fe41d5c3f8d1d45071447edd97d">&#9670;&nbsp;</a></span>dr_boundary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double dr_boundary = 1.37</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00080">80</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+
+</div>
+</div>
+<a id="a1d3064b016568d5517af32b5e983d958" name="a1d3064b016568d5517af32b5e983d958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3064b016568d5517af32b5e983d958">&#9670;&nbsp;</a></span>dr_stomata</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double dr_stomata = 1.6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00081">81</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 </div>
 </div>
@@ -148,7 +201,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00061">61</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00072">72</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8h_source.html#l00177">arrhenius_exponential()</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00015">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00009">c3photoC()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00078">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00513">dry_air_density()</a>, <a class="el" href="e_c4photo_8cpp_source.html#l00005">eC4photoC()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00642">EvapoTrans2()</a>.</p>
 
@@ -174,7 +227,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00064">64</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00076">76</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l00513">dry_air_density()</a>.</p>
 
@@ -200,7 +253,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00063">63</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00075">75</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00005">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00005">CanAC()</a>, and <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00143">multilayer_canopy_integrator::run()</a>.</p>
 
@@ -226,7 +279,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00062">62</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00074">74</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00005">c3CanAC()</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00015">c3EvapoTrans()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00005">CanAC()</a>, <a class="el" href="one__layer__soil__profile__derivatives_8hpp_source.html#l00089">one_layer_soil_profile_derivatives::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00078">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00642">EvapoTrans2()</a>, <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00143">multilayer_canopy_integrator::run()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l01140">soilML()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l01085">watstr()</a>.</p>
 
@@ -252,7 +305,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00060">60</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="constants_8h_source.html#l00071">71</a> of file <a class="el" href="constants_8h_source.html">constants.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00015">c3EvapoTrans()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00642">EvapoTrans2()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00962">SoilEvapo()</a>.</p>
 
@@ -261,7 +314,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 19:44:07 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Wed Jul 12 2023 16:20:48 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

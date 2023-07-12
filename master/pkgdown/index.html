@@ -141,18 +141,28 @@
 <div class="section level4">
 <h4 id="installation-steps">Installation steps<a class="anchor" aria-label="anchor" href="#installation-steps"></a>
 </h4>
-<p>Download the BioCro source code from GitHub, unzip the file, and install from the either the command line or from within R using one of the following sets of commands.</p>
-<p>Do one of the sets of instruction below. These assume that the source files are in a directory named “biocro”.</p>
-<ul>
-<li>From the command line</li>
-</ul>
-<pre><code>cd path_to_unzipped_directory
+<ol style="list-style-type: decimal">
+<li>Obtain a local copy of this repository, making sure to include the Git submodule code. This can be accomplished using either of two methods:
+<ol style="list-style-type: decimal">
+<li>If you are new to Git, the easiest way to get a local copy is to install GitHub Desktop and use the “Open with GitHub Desktop” option in the “Code” dropdown on the GitHub page for this repository.</li>
+<li>Alternatively, clone the repository using Git on the command line in the usual fashion by running <code>git clone &lt;https://github.com/ebimodeling/biocro-dev&gt;</code> The repository contains a Git submodule, so you will need to take the additional step of running <code>git submodule update --init</code> to obtain it.</li>
+</ol>
+</li>
+<li>Install the BioCro R package using one of the following sets of comands. These assume that the source files are in a directory named “biocro” residing in a parent directory located at “path_to_source_code_parent_directory”.
+<ol style="list-style-type: decimal">
+<li>
+<p>To install from the command line:</p>
+<pre><code>cd path_to_source_code_parent_directory
 R CMD INSTALL biocro</code></pre>
-<ul>
-<li>Or from within R</li>
-</ul>
-<pre><code><span><span class="fu"><a href="https://rdrr.io/r/base/getwd.html" class="external-link">setwd</a></span><span class="op">(</span><span class="st">'path_to_unzipped_directory'</span><span class="op">)</span></span>
+</li>
+<li>
+<p>To install from within R:</p>
+<pre><code><span><span class="fu"><a href="https://rdrr.io/r/base/getwd.html" class="external-link">setwd</a></span><span class="op">(</span><span class="st">'path_to_source_code_parent_directory'</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'biocro'</span>, repos<span class="op">=</span><span class="cn">NULL</span>, type<span class="op">=</span><span class="st">'SOURCE'</span><span class="op">)</span></span></code></pre>
+</li>
+</ol>
+</li>
+</ol>
 </div>
 </div>
 <div class="section level3">
@@ -165,6 +175,11 @@ R CMD INSTALL biocro</code></pre>
 </h3>
 <p>See the <a href="https://ebimodeling.github.io/biocro-dev-documentation/master/pkgdown/index.html" class="external-link">BioCro Documentation Web Site</a>. There will be found not only the standard package documentation, but also documentation of the C++ code, including notes on the biological models used in BioCro and their implementation. Also included is documentation for BioCro package developers and maintainers.</p>
 <p>There is also a separate <a href="https://ebimodeling.github.io/biocro-dev-documentation/quantity_docs/quantities.html" class="external-link">page that documents all of the quantities used by the Standard BioCro Module Library</a>.</p>
+</div>
+<div class="section level3">
+<h3 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
+</h3>
+<p>The <code>BioCro</code> R package is licensed under the MIT license, while the BioCro C++ framework is licensed under version 3 or greater of the GNU Lesser General Public License (LGPL). This scheme allows people to freely develop models for any use (public or private) under the MIT license, but any changes to the framework that assembles and solves models must make source code changes available to all users under the LGPL. See <code>LICENSE.note</code> for more details.</p>
 </div>
 </div>
 <div class="section level2">
@@ -193,7 +208,7 @@ R CMD INSTALL biocro</code></pre>
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small>GPL (&gt;= 2)</small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 

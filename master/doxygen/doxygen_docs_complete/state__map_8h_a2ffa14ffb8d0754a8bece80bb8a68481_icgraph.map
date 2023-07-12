@@ -1,8 +1,13 @@
 <map id="abs" name="abs">
-<area shape="rect" id="node1" title=" " alt="" coords="591,71,633,98"/>
-<area shape="rect" id="node2" href="$c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58" title=" " alt="" coords="465,71,543,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="617,191,660,218"/>
+<area shape="rect" id="node2" href="$c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58" title=" " alt="" coords="479,105,556,131"/>
+<area shape="rect" id="node7" href="$quadratic__root_8cpp.html#a71025edea157c7c14d87962f1c5713db" title="Computes one of the roots of a quadratic equation." alt="" coords="465,246,569,273"/>
 <area shape="rect" id="node3" href="$c3_can_a_c_8cpp.html#aff7abf2d4810aabaeb139d57bcc7c11e" title=" " alt="" coords="281,13,358,39"/>
 <area shape="rect" id="node5" href="$classstandard_b_m_l_1_1c3__assimilation.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,64,417,105"/>
 <area shape="rect" id="node6" href="$classstandard_b_m_l_1_1c3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,129,417,171"/>
 <area shape="rect" id="node4" href="$classstandard_b_m_l_1_1c3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node8" href="$quadratic__root_8h.html#aa3b46a4792d04e755719b4429a01e097" title="A wrapper for quadratic_root() that returns the larger root." alt="" coords="252,195,387,222"/>
+<area shape="rect" id="node9" href="$quadratic__root_8h.html#a4dc2d69ad306119e4a18501e73d2f5f4" title="A wrapper for quadratic_root() that returns the smaller root." alt="" coords="253,246,385,273"/>
+<area shape="rect" id="node10" href="$quadratic__root_8h.html#a47b8cdcd5d108d0fe6de8a5473ae0375" title="A wrapper for quadratic_root() that returns the &quot;minus&quot; root." alt="" coords="246,297,393,323"/>
+<area shape="rect" id="node11" href="$quadratic__root_8h.html#ad8e1928a7fe5ae96f1d841e5f236920a" title="A wrapper for quadratic_root() that returns the &quot;plus&quot; root." alt="" coords="252,347,387,374"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['physical_5fconstants_0',['physical_constants',['../namespacephysical__constants.html',1,'']]]
+  ['math_5fconstants_0',['math_constants',['../namespacemath__constants.html',1,'']]]
 ];

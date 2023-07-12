@@ -43,5 +43,6 @@ var searchData=
   ['get_5fresults_5ffrom_5fsystem_40',['get_results_from_system',['../dynamical__system_8h.html#a382f770f0cf20008947aa07ff313c04b',1,'dynamical_system.h']]],
   ['get_5fsolution_5finfo_41',['get_solution_info',['../classboost__ode__solver.html#afdc133b379070dccfa42c8e0c948d11f',1,'boost_ode_solver::get_solution_info()'],['../classhomemade__euler__ode__solver.html#afdc133b379070dccfa42c8e0c948d11f',1,'homemade_euler_ode_solver::get_solution_info()'],['../classauto__ode__solver.html#afdc133b379070dccfa42c8e0c948d11f',1,'auto_ode_solver::get_solution_info()'],['../classode__solver.html#ab324d0e63cab3bf8645be77963cffa96',1,'ode_solver::get_solution_info()']]],
   ['get_5ftopological_5fordering_42',['get_topological_ordering',['../module__dependency__utilities_8cpp.html#aad2dcce921e2edbfd9c97e3b0648233e',1,'module_dependency_utilities.cpp']]],
-  ['graph_43',['Graph',['../module__dependency__utilities_8cpp.html#ad083037d051819b19590942368af04ac',1,'module_dependency_utilities.cpp']]]
+  ['gnu_20lesser_20general_20public_20license_43',['GNU Lesser General Public License',['../md__github_workspace_src_framework__l_i_c_e_n_s_e.html',1,'']]],
+  ['graph_44',['Graph',['../module__dependency__utilities_8cpp.html#ad083037d051819b19590942368af04ac',1,'module_dependency_utilities.cpp']]]
 ];
