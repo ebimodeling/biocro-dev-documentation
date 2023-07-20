@@ -49,6 +49,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -58,9 +59,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classstandard_b_m_l_1_1litter__cover.html",
-"functions_c.html",
-"structcrop__phenology_1_1minerals1.html#a0e7b19c28b5d6ac05fd0915481cfdd26"
+"classstandard_b_m_l_1_1module__library.html",
+"functions_func.html",
+"structcollatz__result.html#ac5285b0eb6beb7cb27b0b115f1997bf0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

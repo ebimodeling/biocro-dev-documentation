@@ -80,9 +80,9 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &quot;<a class="el" href="c3photo_8hpp_source.html">c3photo.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_aux_bio_cro_8h_source.html">AuxBioCro.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="c3photo_8h_source.html">c3photo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bio_cro_8h_source.html">BioCro.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="water__and__air__properties_8h_source.html">water_and_air_properties.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constants_8h_source.html">../framework/constants.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for c3EvapoTrans.cpp:</div>
@@ -91,15 +91,17 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="c3_evapo_trans_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2src_2module__library_2c3_evapo_trans_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2src_2module__library_2c3_evapo_trans_8cpp" id="a_2github_2workspace_2src_2module__library_2c3_evapo_trans_8cpp">
-<area shape="rect" title=" " alt="" coords="169,5,389,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" title=" " alt="" coords="89,95,167,121"/>
-<area shape="rect" href="c3photo_8hpp.html" title=" " alt="" coords="191,95,283,121"/>
-<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="315,169,408,196"/>
-<area shape="rect" href="constants_8h.html" title=" " alt="" coords="386,244,550,271"/>
-<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="359,95,430,121"/>
-<area shape="rect" title=" " alt="" coords="315,244,362,271"/>
-<area shape="rect" title=" " alt="" coords="394,319,542,360"/>
+<area shape="rect" title=" " alt="" coords="166,5,386,47"/>
+<area shape="rect" title=" " alt="" coords="21,169,80,196"/>
+<area shape="rect" title=" " alt="" coords="372,95,451,121"/>
+<area shape="rect" href="c3photo_8h.html" title=" " alt="" coords="475,95,554,121"/>
+<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="278,95,348,121"/>
+<area shape="rect" href="constants_8h.html" title=" " alt="" coords="135,244,299,271"/>
+<area shape="rect" href="water__and__air__properties_8h.html" title=" " alt="" coords="24,95,202,121"/>
+<area shape="rect" href="photosynthesis__outputs_8h.html" title=" " alt="" coords="430,169,599,196"/>
+<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="277,169,370,196"/>
+<area shape="rect" title=" " alt="" coords="323,244,370,271"/>
+<area shape="rect" title=" " alt="" coords="143,319,291,360"/>
 </map>
 </div>
 </div>
@@ -181,11 +183,11 @@ Functions</h2></td></tr>
 <p >Many of the equations used in this function come from Chapter 14 of Thornley and Johnson (1990).</p>
 <p >Thornley, J.H.M. and Johnson, I.R. (1990) Plant and Crop Modelling. A Mathematical Approach to Plant and Crop Physiology. </p>
 
-<p class="definition">Definition at line <a class="el" href="c3_evapo_trans_8cpp_source.html#l00015">15</a> of file <a class="el" href="c3_evapo_trans_8cpp_source.html">c3EvapoTrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3_evapo_trans_8cpp_source.html#l00016">16</a> of file <a class="el" href="c3_evapo_trans_8cpp_source.html">c3EvapoTrans.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00033">ET_Str::boundary_layer_conductance</a>, <a class="el" href="constants_8h_source.html#l00032">conversion_constants::celsius_to_kelvin</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">ET_Str::EPriestly</a>, <a class="el" href="constants_8h_source.html#l00072">physical_constants::ideal_gas_constant</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00919">leaf_boundary_layer_conductance_thornley()</a>, <a class="el" href="constants_8h_source.html#l00074">physical_constants::molar_mass_of_water</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00633">saturation_vapor_pressure()</a>, <a class="el" href="constants_8h_source.html#l00071">physical_constants::stefan_boltzmann</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00494">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00550">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00603">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00029">ET_Str::TransR</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00019">ET_Str::boundary_layer_conductance</a>, <a class="el" href="constants_8h_source.html#l00032">conversion_constants::celsius_to_kelvin</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00016">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">ET_Str::EPriestly</a>, <a class="el" href="constants_8h_source.html#l00072">physical_constants::ideal_gas_constant</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00467">leaf_boundary_layer_conductance_thornley()</a>, <a class="el" href="constants_8h_source.html#l00074">physical_constants::molar_mass_of_water</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00030">saturation_vapor_pressure()</a>, <a class="el" href="constants_8h_source.html#l00071">physical_constants::stefan_boltzmann</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00064">TempToDdryA()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00120">TempToLHV()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00173">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00015">ET_Str::TransR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00005">c3CanAC()</a>, <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00052">c3_leaf_photosynthesis::do_operation()</a>, and <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00008">c3CanAC()</a>, <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00055">c3_leaf_photosynthesis::do_operation()</a>, and <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -194,11 +196,11 @@ Functions</h2></td></tr>
 <div class="center"><img src="c3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph.png" border="0" usemap="#ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph" alt=""/></div>
 <map name="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph" id="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph">
 <area shape="rect" title=" " alt="" coords="5,122,111,149"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,..." alt="" coords="169,5,323,47"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="159,71,333,98"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="193,122,299,149"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="197,173,295,199"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="198,223,294,250"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="169,5,323,47"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="159,71,333,98"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="193,122,299,149"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="197,173,295,199"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="198,223,294,250"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -209,7 +211,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="c3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph.png" border="0" usemap="#ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph" alt=""/></div>
 <map name="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph" id="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph">
 <area shape="rect" title=" " alt="" coords="465,71,571,98"/>
-<area shape="rect" href="c3_can_a_c_8cpp.html#aff7abf2d4810aabaeb139d57bcc7c11e" title=" " alt="" coords="281,13,358,39"/>
+<area shape="rect" href="c3_can_a_c_8cpp.html#a5ae95949fd0f55e5d42bc4c4f0f6e052" title=" " alt="" coords="281,13,358,39"/>
 <area shape="rect" href="classstandard_b_m_l_1_1c3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,64,417,105"/>
 <area shape="rect" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,129,417,171"/>
 <area shape="rect" href="classstandard_b_m_l_1_1c3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,173,47"/>
@@ -221,7 +223,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 12 2023 16:20:48 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Thu Jul 20 2023 14:43:50 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

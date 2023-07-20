@@ -90,17 +90,19 @@ $(document).ready(function(){initNavTree('rue__leaf__photosynthesis_8cpp.html','
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">rue_leaf_photosynthesis.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>&quot;</code><br />
-<code>#include &quot;../framework/constants.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ball__berry_8hpp_source.html">ball_berry.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="ball__berry__gs_8h_source.html">ball_berry_gs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bio_cro_8h_source.html">BioCro.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_aux_bio_cro_8h_source.html">AuxBioCro.h</a>&quot;</code><br />
-<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="photosynthesis__outputs_8h_source.html">photosynthesis_outputs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="conductance__limited__assim_8h_source.html">conductance_limited_assim.h</a>&quot;</code><br />
+<code>#include &quot;../framework/constants.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for rue_leaf_photosynthesis.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,40 +110,39 @@ $(document).ready(function(){initNavTree('rue__leaf__photosynthesis_8cpp.html','
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rue__leaf__photosynthesis_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2src_2module__library_2rue__leaf__photosynthesis_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2src_2module__library_2rue__leaf__photosynthesis_8cpp" id="a_2github_2workspace_2src_2module__library_2rue__leaf__photosynthesis_8cpp">
-<area shape="rect" title=" " alt="" coords="418,5,577,61"/>
-<area shape="rect" href="rue__leaf__photosynthesis_8h.html" title=" " alt="" coords="145,109,317,136"/>
-<area shape="rect" title=" " alt="" coords="307,273,471,300"/>
-<area shape="rect" href="ball__berry_8hpp.html" title=" " alt="" coords="392,109,493,136"/>
-<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="518,109,589,136"/>
-<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="507,191,600,218"/>
-<area shape="rect" title=" " alt="" coords="664,109,723,136"/>
-<area shape="rect" title=" " alt="" coords="5,191,155,218"/>
-<area shape="rect" title=" " alt="" coords="179,184,306,225"/>
-<area shape="rect" title=" " alt="" coords="530,273,577,300"/>
+<area shape="rect" title=" " alt="" coords="349,5,507,61"/>
+<area shape="rect" title=" " alt="" coords="5,109,80,136"/>
+<area shape="rect" title=" " alt="" coords="104,109,163,136"/>
+<area shape="rect" href="ball__berry__gs_8h.html" title=" " alt="" coords="187,109,295,136"/>
+<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="319,109,390,136"/>
+<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="340,191,433,218"/>
+<area shape="rect" title=" " alt="" coords="415,273,579,300"/>
+<area shape="rect" href="photosynthesis__outputs_8h.html" title=" " alt="" coords="517,109,686,136"/>
+<area shape="rect" href="conductance__limited__assim_8h.html" title=" " alt="" coords="561,184,703,225"/>
+<area shape="rect" href="rue__leaf__photosynthesis_8h.html" title=" " alt="" coords="762,109,934,136"/>
+<area shape="rect" href="stomata__outputs_8h.html" title=" " alt="" coords="177,191,306,218"/>
+<area shape="rect" title=" " alt="" coords="345,273,391,300"/>
+<area shape="rect" title=" " alt="" coords="749,191,899,218"/>
+<area shape="rect" title=" " alt="" coords="923,184,1050,225"/>
 </map>
 </div>
 </div>
 <p><a href="rue__leaf__photosynthesis_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrue__str.html">rue_str</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab54975de7b4226b18ea2e61592fdf51f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structrue__str.html">rue_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rue__leaf__photosynthesis_8cpp.html#ab54975de7b4226b18ea2e61592fdf51f">rue_photo</a> (double Qp, double alpha_rue, double Tleaf, double RH, double Rd0, double bb0, double bb1, double Ca)</td></tr>
-<tr class="separator:ab54975de7b4226b18ea2e61592fdf51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b346475d16f0842796a4953de13384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structphotosynthesis__outputs.html">photosynthesis_outputs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rue__leaf__photosynthesis_8cpp.html#a79b346475d16f0842796a4953de13384">rue_photo</a> (double Qp, double alpha_rue, double Tleaf, double RH, double Rd0, double bb0, double bb1, double Ca, double gbw)</td></tr>
+<tr class="separator:a79b346475d16f0842796a4953de13384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab54975de7b4226b18ea2e61592fdf51f" name="ab54975de7b4226b18ea2e61592fdf51f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab54975de7b4226b18ea2e61592fdf51f">&#9670;&nbsp;</a></span>rue_photo()</h2>
+<a id="a79b346475d16f0842796a4953de13384" name="a79b346475d16f0842796a4953de13384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b346475d16f0842796a4953de13384">&#9670;&nbsp;</a></span>rue_photo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structrue__str.html">rue_str</a> rue_photo </td>
+          <td class="memname"><a class="el" href="structphotosynthesis__outputs.html">photosynthesis_outputs</a> rue_photo </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>Qp</em>, </td>
@@ -186,7 +187,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>Ca</em>&#160;</td>
+          <td class="paramname"><em>Ca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gbw</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,21 +203,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00023">23</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00022">22</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00177">arrhenius_exponential()</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00012">rue_str::Assim</a>, <a class="el" href="ball__berry_8cpp_source.html#l00006">ball_berry()</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00014">rue_str::Ci</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00015">rue_str::GrossAssim</a>, and <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00013">rue_str::Gs</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00153">arrhenius_exponential()</a>, <a class="el" href="photosynthesis__outputs_8h_source.html#l00009">photosynthesis_outputs::Assim</a>, <a class="el" href="ball__berry__gs_8cpp_source.html#l00097">ball_berry_gs()</a>, <a class="el" href="conductance__limited__assim_8h_source.html#l00069">conductance_limited_assim()</a>, <a class="el" href="stomata__outputs_8h_source.html#l00009">stomata_outputs::cs</a>, <a class="el" href="stomata__outputs_8h_source.html#l00011">stomata_outputs::gsw</a>, and <a class="el" href="stomata__outputs_8h_source.html#l00010">stomata_outputs::hs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_cgraph.png" border="0" usemap="#arue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_cgraph" alt=""/></div>
-<map name="arue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_cgraph" id="arue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,84,57"/>
+<div class="center"><img src="rue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_cgraph.png" border="0" usemap="#arue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_cgraph" alt=""/></div>
+<map name="arue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_cgraph" id="arue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,84,83"/>
 <area shape="rect" href="_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f" title="Calculates the exponential term of the Arrhenius equation." alt="" coords="132,5,279,32"/>
-<area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="167,56,244,83"/>
+<area shape="rect" href="ball__berry__gs_8cpp.html#ad24d3b65b48b6defb685a6bd3094d0f1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="156,56,255,83"/>
+<area shape="rect" href="conductance__limited__assim_8h.html#a9912249fe80a1a615d0316c7778cd6cf" title="Computes the conductance&#45;limited net CO2 assimilation rate." alt="" coords="135,107,276,149"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="327,56,501,83"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -218,8 +227,8 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_icgraph.png" border="0" usemap="#arue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_icgraph" alt=""/></div>
-<map name="arue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_icgraph" id="arue__leaf__photosynthesis_8cpp_ab54975de7b4226b18ea2e61592fdf51f_icgraph">
+<div class="center"><img src="rue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_icgraph.png" border="0" usemap="#arue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_icgraph" alt=""/></div>
+<map name="arue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_icgraph" id="arue__leaf__photosynthesis_8cpp_a79b346475d16f0842796a4953de13384_icgraph">
 <area shape="rect" title=" " alt="" coords="249,13,328,39"/>
 <area shape="rect" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,201,47"/>
 </map>
@@ -233,7 +242,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="rue__leaf__photosynthesis_8cpp.html">rue_leaf_photosynthesis.cpp</a></li>
-    <li class="footer">Generated on Wed Jul 12 2023 16:21:13 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jul 20 2023 14:44:23 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

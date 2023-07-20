@@ -1,7 +1,7 @@
 var searchData=
 [
   ['bad_5fstate_5fvector_5fmap_5findex_0',['bad_state_vector_map_index',['../structbad__state__vector__map__index.html',1,'']]],
-  ['ball_5fberry_5fmodule_1',['ball_berry_module',['../classstandard_b_m_l_1_1ball__berry__module.html',1,'standardBML']]],
+  ['ball_5fberry_1',['ball_berry',['../classstandard_b_m_l_1_1ball__berry.html',1,'standardBML']]],
   ['biocro_5fsimulation_2',['biocro_simulation',['../classbiocro__simulation.html',1,'']]],
   ['biomass_5fleaf_5fn_5flimitation_3',['biomass_leaf_n_limitation',['../classstandard_b_m_l_1_1biomass__leaf__n__limitation.html',1,'standardBML']]],
   ['boost_5feuler_5fode_5fsolver_4',['boost_euler_ode_solver',['../classboost__euler__ode__solver.html',1,'']]],

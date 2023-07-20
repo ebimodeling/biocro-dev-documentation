@@ -5,11 +5,14 @@ var classstandard_b_m_l_1_1c4__canopy =
     [ "absorptivity_par", "classstandard_b_m_l_1_1c4__canopy.html#ade547db6ec4eb0491dc4c02f0e31a905", null ],
     [ "alpha1", "classstandard_b_m_l_1_1c4__canopy.html#a09fcd80c93740f01dfade8c4b2406207", null ],
     [ "atmospheric_pressure", "classstandard_b_m_l_1_1c4__canopy.html#aad6da92b059dda2eb15b87844f975cec", null ],
+    [ "atmospheric_scattering", "classstandard_b_m_l_1_1c4__canopy.html#a17fda3cbb74a9ac2dfb880c944966568", null ],
+    [ "atmospheric_transmittance", "classstandard_b_m_l_1_1c4__canopy.html#a1345531ba44bd0a8c3f3c40fc1e09b96", null ],
     [ "b0", "classstandard_b_m_l_1_1c4__canopy.html#ad6e27daca623aa836eaa82805dc4757c", null ],
     [ "b1", "classstandard_b_m_l_1_1c4__canopy.html#aef7251c38f83faca1cb32230d9afa43c", null ],
     [ "beta", "classstandard_b_m_l_1_1c4__canopy.html#afef381ff87afd26726073b4177547f13", null ],
     [ "canopy_assimilation_rate_op", "classstandard_b_m_l_1_1c4__canopy.html#a4fdddf6c5bb5cfc4d42787b3d89e6097", null ],
     [ "canopy_conductance_op", "classstandard_b_m_l_1_1c4__canopy.html#a2df34ae8a48eb7285cee41082dea6523", null ],
+    [ "canopy_photorespiration_rate_op", "classstandard_b_m_l_1_1c4__canopy.html#acc06b6bc48112bc434fef1d8813e7a44", null ],
     [ "canopy_transpiration_rate_op", "classstandard_b_m_l_1_1c4__canopy.html#a7386f613dfe2c4999b3a8818e00dabac", null ],
     [ "Catm", "classstandard_b_m_l_1_1c4__canopy.html#a919fc3e37d4f8a3b9037ffcc80efcbdc", null ],
     [ "chil", "classstandard_b_m_l_1_1c4__canopy.html#a5433516ce27f6da1da71fcfe74d87e4b", null ],
@@ -51,6 +54,5 @@ var classstandard_b_m_l_1_1c4__canopy =
     [ "theta", "classstandard_b_m_l_1_1c4__canopy.html#a445246433426d1729d266a2074c97fb5", null ],
     [ "upperT", "classstandard_b_m_l_1_1c4__canopy.html#adb8cfa0563d3a0a51839bec44babd5e8", null ],
     [ "vmax1", "classstandard_b_m_l_1_1c4__canopy.html#a72102c8a0062c66b8e290f2adb7024bc", null ],
-    [ "water_stress_approach", "classstandard_b_m_l_1_1c4__canopy.html#a71b149842a57c9e197411f556cf68853", null ],
     [ "windspeed", "classstandard_b_m_l_1_1c4__canopy.html#a4e8b922d527ba4c662b5a3a7320f4d2f", null ]
 ];

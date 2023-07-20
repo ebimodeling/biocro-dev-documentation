@@ -1,7 +1,7 @@
 var namespacestandard_b_m_l =
 [
     [ "aba_decay", "classstandard_b_m_l_1_1aba__decay.html", "classstandard_b_m_l_1_1aba__decay" ],
-    [ "ball_berry_module", "classstandard_b_m_l_1_1ball__berry__module.html", "classstandard_b_m_l_1_1ball__berry__module" ],
+    [ "ball_berry", "classstandard_b_m_l_1_1ball__berry.html", "classstandard_b_m_l_1_1ball__berry" ],
     [ "biomass_leaf_n_limitation", "classstandard_b_m_l_1_1biomass__leaf__n__limitation.html", "classstandard_b_m_l_1_1biomass__leaf__n__limitation" ],
     [ "buck_swvp", "classstandard_b_m_l_1_1buck__swvp.html", "classstandard_b_m_l_1_1buck__swvp" ],
     [ "bucket_soil_drainage", "classstandard_b_m_l_1_1bucket__soil__drainage.html", "classstandard_b_m_l_1_1bucket__soil__drainage" ],

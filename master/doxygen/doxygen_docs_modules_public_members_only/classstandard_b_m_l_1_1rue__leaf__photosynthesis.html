@@ -169,11 +169,11 @@ This particular RUE model</h3>
 </ul>
 <p >Unlike the C3 and C4 versions of leaf photosynthesis, no attempt was made to modify <code>A_n</code> according to water stress, as this would not be included in a pure RUE model. (However, in principle, the value of <code>alpha_rue</code> could be modified according to water stress or other factors by a hypothetical associated module.) In all other respects besides the calculations for <code>A_g</code> and the lack of water stress, this module is the same as the <code><a class="el" href="classstandard_b_m_l_1_1c3__leaf__photosynthesis.html" title="Uses the method from c3CanAC() to calculate leaf photosynthesis parameters for C3 plants.">c3_leaf_photosynthesis</a></code> module:</p>
 <ul>
-<li>It uses the same equation to calculate respiration from leaf temperature.</li>
+<li>It uses the same equation to calculate day respiration from leaf temperature.</li>
 <li>It uses the Ball-Berry model to calculate stomatal conductance from <code>A_n</code>.</li>
-<li>It uses the <code><a class="el" href="_bio_cro_8h.html#a61b7d88adafff31f703008da477eb090">c3EvapoTrans()</a></code> function to handle transpiration and determine leaf temperature.</li>
+<li>It uses the <code><a class="el" href="_bio_cro_8h.html#ac0b25b95c1332fd048c962f10d6c3ff2">c3EvapoTrans()</a></code> function to handle transpiration and determine leaf temperature.</li>
 </ul>
-<p >However, it is important to note that assimilation and stomatal conductance are not determined iteratively since stomatal conductance has no impact on assimilation, in contrast to the C3 and C4 cases (described by <code><a class="el" href="c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58">c3photoC()</a></code> and <code><a class="el" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC()</a></code> functions, respectively).</p>
+<p >However, it is important to note that assimilation and stomatal conductance are not determined iteratively since stomatal conductance has no impact on assimilation, in contrast to the C3 and C4 cases (described by <code><a class="el" href="c3photo_8cpp.html#aeeeb3f80125433932e0c8a7468e71df2">c3photoC()</a></code> and <code><a class="el" href="c4photo_8cpp.html#a0ac8af0343c49f4ab5cf95fe21333179">c4photoC()</a></code> functions, respectively).</p>
 <h3><a class="anchor" id="autotoc_md25"></a>
 Sources</h3>
 <ul>
@@ -185,7 +185,7 @@ Sources</h3>
   the dynamics of plant leaf and canopy photosynthesis" <a href="https://doi.org/10.1093/bioinformatics/11.4.361" target="_blank">Bioinformatics 11, 361–371 (1995)</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00127">127</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00128">128</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a539f69e61df6d3068b99b59aa6bccf09" name="a539f69e61df6d3068b99b59aa6bccf09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a539f69e61df6d3068b99b59aa6bccf09">&#9670;&nbsp;</a></span>rue_leaf_photosynthesis()</h2>
@@ -221,7 +221,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00130">130</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00131">131</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00070">70</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00086">86</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00165">165</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00167">167</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00090">90</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00106">106</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +317,7 @@ Sources</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></li><li class="navelem"><a class="el" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html">rue_leaf_photosynthesis</a></li>
-    <li class="footer">Generated on Wed Jul 12 2023 16:21:26 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jul 20 2023 14:44:40 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

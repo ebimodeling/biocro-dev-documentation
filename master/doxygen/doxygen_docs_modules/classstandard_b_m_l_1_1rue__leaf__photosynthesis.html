@@ -179,6 +179,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a29678a5f4d4da10e4d36afa9f124ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebaf8075767f5e2e368001dc936a3933"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#aebaf8075767f5e2e368001dc936a3933">GrossAssim_op</a></td></tr>
 <tr class="separator:aebaf8075767f5e2e368001dc936a3933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7347a449af04f83a5d0265df8fba7b5b"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a7347a449af04f83a5d0265df8fba7b5b">Rp_op</a></td></tr>
+<tr class="separator:a7347a449af04f83a5d0265df8fba7b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45fc0251d3da47ec22a2b2850c2129f"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#aa45fc0251d3da47ec22a2b2850c2129f">Ci_op</a></td></tr>
 <tr class="separator:aa45fc0251d3da47ec22a2b2850c2129f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbabbd380e168b43d94e0c3f48063f2"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a2bbabbd380e168b43d94e0c3f48063f2">Gs_op</a></td></tr>
@@ -225,11 +227,11 @@ This particular RUE model</h3>
 </ul>
 <p >Unlike the C3 and C4 versions of leaf photosynthesis, no attempt was made to modify <code>A_n</code> according to water stress, as this would not be included in a pure RUE model. (However, in principle, the value of <code>alpha_rue</code> could be modified according to water stress or other factors by a hypothetical associated module.) In all other respects besides the calculations for <code>A_g</code> and the lack of water stress, this module is the same as the <code><a class="el" href="classstandard_b_m_l_1_1c3__leaf__photosynthesis.html" title="Uses the method from c3CanAC() to calculate leaf photosynthesis parameters for C3 plants.">c3_leaf_photosynthesis</a></code> module:</p>
 <ul>
-<li>It uses the same equation to calculate respiration from leaf temperature.</li>
+<li>It uses the same equation to calculate day respiration from leaf temperature.</li>
 <li>It uses the Ball-Berry model to calculate stomatal conductance from <code>A_n</code>.</li>
-<li>It uses the <code><a class="el" href="_bio_cro_8h.html#a61b7d88adafff31f703008da477eb090">c3EvapoTrans()</a></code> function to handle transpiration and determine leaf temperature.</li>
+<li>It uses the <code><a class="el" href="_bio_cro_8h.html#ac0b25b95c1332fd048c962f10d6c3ff2">c3EvapoTrans()</a></code> function to handle transpiration and determine leaf temperature.</li>
 </ul>
-<p >However, it is important to note that assimilation and stomatal conductance are not determined iteratively since stomatal conductance has no impact on assimilation, in contrast to the C3 and C4 cases (described by <code><a class="el" href="c3photo_8cpp.html#a7d40a201aa67283b3f3a87a076966a58">c3photoC()</a></code> and <code><a class="el" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC()</a></code> functions, respectively).</p>
+<p >However, it is important to note that assimilation and stomatal conductance are not determined iteratively since stomatal conductance has no impact on assimilation, in contrast to the C3 and C4 cases (described by <code><a class="el" href="c3photo_8cpp.html#aeeeb3f80125433932e0c8a7468e71df2">c3photoC()</a></code> and <code><a class="el" href="c4photo_8cpp.html#a0ac8af0343c49f4ab5cf95fe21333179">c4photoC()</a></code> functions, respectively).</p>
 <h3><a class="anchor" id="autotoc_md25"></a>
 Sources</h3>
 <ul>
@@ -241,7 +243,7 @@ Sources</h3>
   the dynamics of plant leaf and canopy photosynthesis" <a href="https://doi.org/10.1093/bioinformatics/11.4.361" target="_blank">Bioinformatics 11, 361–371 (1995)</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00127">127</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00128">128</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a539f69e61df6d3068b99b59aa6bccf09" name="a539f69e61df6d3068b99b59aa6bccf09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a539f69e61df6d3068b99b59aa6bccf09">&#9670;&nbsp;</a></span>rue_leaf_photosynthesis()</h2>
@@ -277,7 +279,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00130">130</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00131">131</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
 </div>
 </div>
@@ -305,9 +307,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">105</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">122</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00170">rue_leaf_photosynthesis::alpha_rue</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00012">rue_str::Assim</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00185">rue_leaf_photosynthesis::Assim_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00177">rue_leaf_photosynthesis::average_absorbed_shortwave</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00174">rue_leaf_photosynthesis::b0</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00175">rue_leaf_photosynthesis::b1</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">ET_Str::boundary_layer_conductance</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00015">c3EvapoTrans()</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00176">rue_leaf_photosynthesis::Catm</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00014">rue_str::Ci</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00187">rue_leaf_photosynthesis::Ci_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">ET_Str::EPenman</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00190">rue_leaf_photosynthesis::EPenman_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">ET_Str::EPriestly</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00191">rue_leaf_photosynthesis::EPriestly_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00193">rue_leaf_photosynthesis::gbw_op</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00015">rue_str::GrossAssim</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00186">rue_leaf_photosynthesis::GrossAssim_op</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00013">rue_str::Gs</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00188">rue_leaf_photosynthesis::Gs_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00179">rue_leaf_photosynthesis::height</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00169">rue_leaf_photosynthesis::incident_ppfd</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00192">rue_leaf_photosynthesis::leaf_temperature_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00181">rue_leaf_photosynthesis::minimum_gbw</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00173">rue_leaf_photosynthesis::Rd</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00172">rue_leaf_photosynthesis::rh</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00023">rue_photo()</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00180">rue_leaf_photosynthesis::specific_heat_of_air</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00171">rue_leaf_photosynthesis::temp</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">ET_Str::TransR</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00189">rue_leaf_photosynthesis::TransR_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00178">rue_leaf_photosynthesis::windspeed</a>, and <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00182">rue_leaf_photosynthesis::windspeed_height</a>.</p>
+<p class="reference">References <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00172">rue_leaf_photosynthesis::alpha_rue</a>, <a class="el" href="photosynthesis__outputs_8h_source.html#l00009">photosynthesis_outputs::Assim</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00187">rue_leaf_photosynthesis::Assim_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00179">rue_leaf_photosynthesis::average_absorbed_shortwave</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00176">rue_leaf_photosynthesis::b0</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00177">rue_leaf_photosynthesis::b1</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00019">ET_Str::boundary_layer_conductance</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00016">c3EvapoTrans()</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00178">rue_leaf_photosynthesis::Catm</a>, <a class="el" href="photosynthesis__outputs_8h_source.html#l00011">photosynthesis_outputs::Ci</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00190">rue_leaf_photosynthesis::Ci_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00016">ET_Str::EPenman</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00193">rue_leaf_photosynthesis::EPenman_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">ET_Str::EPriestly</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00194">rue_leaf_photosynthesis::EPriestly_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00196">rue_leaf_photosynthesis::gbw_op</a>, <a class="el" href="photosynthesis__outputs_8h_source.html#l00012">photosynthesis_outputs::GrossAssim</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00188">rue_leaf_photosynthesis::GrossAssim_op</a>, <a class="el" href="photosynthesis__outputs_8h_source.html#l00013">photosynthesis_outputs::Gs</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00191">rue_leaf_photosynthesis::Gs_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00181">rue_leaf_photosynthesis::height</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00171">rue_leaf_photosynthesis::incident_ppfd</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00195">rue_leaf_photosynthesis::leaf_temperature_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00183">rue_leaf_photosynthesis::minimum_gbw</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00175">rue_leaf_photosynthesis::Rd</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00174">rue_leaf_photosynthesis::rh</a>, <a class="el" href="photosynthesis__outputs_8h_source.html#l00016">photosynthesis_outputs::Rp</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00189">rue_leaf_photosynthesis::Rp_op</a>, <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00022">rue_photo()</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00182">rue_leaf_photosynthesis::specific_heat_of_air</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00173">rue_leaf_photosynthesis::temp</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00015">ET_Str::TransR</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00192">rue_leaf_photosynthesis::TransR_op</a>, <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00180">rue_leaf_photosynthesis::windspeed</a>, and <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00184">rue_leaf_photosynthesis::windspeed_height</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -315,16 +317,17 @@ Sources</h3>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classstandard_b_m_l_1_1rue__leaf__photosynthesis_a391e9fd4e949f6e987eb654a11b1e451_cgraph.png" border="0" usemap="#aclassstandard_b_m_l_1_1rue__leaf__photosynthesis_a391e9fd4e949f6e987eb654a11b1e451_cgraph" alt=""/></div>
 <map name="aclassstandard_b_m_l_1_1rue__leaf__photosynthesis_a391e9fd4e949f6e987eb654a11b1e451_cgraph" id="aclassstandard_b_m_l_1_1rue__leaf__photosynthesis_a391e9fd4e949f6e987eb654a11b1e451_cgraph">
-<area shape="rect" title=" " alt="" coords="5,223,101,250"/>
+<area shape="rect" title=" " alt="" coords="5,249,101,275"/>
 <area shape="rect" href="c3_evapo_trans_8cpp.html#a61b7d88adafff31f703008da477eb090" title=" " alt="" coords="149,147,255,174"/>
-<area shape="rect" href="rue__leaf__photosynthesis_8cpp.html#ab54975de7b4226b18ea2e61592fdf51f" title=" " alt="" coords="163,274,241,301"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,..." alt="" coords="313,5,467,47"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="303,71,477,98"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="337,122,443,149"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="341,173,439,199"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="342,223,438,250"/>
-<area shape="rect" href="_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f" title="Calculates the exponential term of the Arrhenius equation." alt="" coords="317,274,463,301"/>
-<area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="351,325,429,351"/>
+<area shape="rect" href="rue__leaf__photosynthesis_8cpp.html#a79b346475d16f0842796a4953de13384" title=" " alt="" coords="163,299,241,326"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="303,5,457,47"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="505,198,680,225"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="327,122,433,149"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="331,173,429,199"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="332,223,428,250"/>
+<area shape="rect" href="_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f" title="Calculates the exponential term of the Arrhenius equation." alt="" coords="307,274,453,301"/>
+<area shape="rect" href="ball__berry__gs_8cpp.html#ad24d3b65b48b6defb685a6bd3094d0f1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="331,325,429,351"/>
+<area shape="rect" href="conductance__limited__assim_8h.html#a9912249fe80a1a615d0316c7778cd6cf" title="Computes the conductance&#45;limited net CO2 assimilation rate." alt="" coords="309,376,451,417"/>
 </map>
 </div>
 
@@ -353,7 +356,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00070">70</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00086">86</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
 </div>
 </div>
@@ -380,7 +383,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00165">165</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00167">167</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +410,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00090">90</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00106">106</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
 </div>
 </div>
@@ -432,9 +435,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00170">170</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00172">172</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -458,9 +461,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00185">185</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00187">187</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -484,9 +487,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00177">177</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00179">179</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -510,9 +513,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00174">174</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00176">176</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -536,9 +539,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00175">175</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00177">177</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -562,9 +565,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00176">176</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00178">178</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -588,9 +591,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00187">187</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00190">190</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -614,9 +617,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00190">190</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00193">193</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -640,9 +643,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00191">191</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00194">194</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -666,9 +669,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00193">193</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00196">196</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -692,9 +695,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00186">186</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00188">188</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -718,9 +721,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00188">188</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00191">191</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -744,9 +747,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00179">179</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00181">181</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -770,9 +773,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00169">169</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00171">171</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -796,9 +799,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00192">192</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00195">195</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -822,9 +825,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00181">181</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00183">183</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -848,9 +851,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00173">173</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00175">175</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -874,9 +877,35 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00172">172</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00174">174</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
+
+</div>
+</div>
+<a id="a7347a449af04f83a5d0265df8fba7b5b" name="a7347a449af04f83a5d0265df8fba7b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7347a449af04f83a5d0265df8fba7b5b">&#9670;&nbsp;</a></span>Rp_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* Rp_op</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00189">189</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -900,9 +929,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00180">180</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00182">182</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -926,9 +955,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00171">171</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00173">173</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -952,9 +981,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00189">189</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00192">192</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -978,9 +1007,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00178">178</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00180">180</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1004,9 +1033,9 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00182">182</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8h_source.html#l00184">184</a> of file <a class="el" href="rue__leaf__photosynthesis_8h_source.html">rue_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00105">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00122">rue_leaf_photosynthesis::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1049,7 @@ Sources</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></li><li class="navelem"><a class="el" href="classstandard_b_m_l_1_1rue__leaf__photosynthesis.html">rue_leaf_photosynthesis</a></li>
-    <li class="footer">Generated on Wed Jul 12 2023 16:21:13 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jul 20 2023 14:44:23 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -53,8 +53,9 @@ cat(
 
 ## ----plotting_tools,echo=FALSE------------------------------------------------
 time_range <- c(142, 298)
-ppfd_range <- c(-100, 1100)
-assim_range <- c(-2, 40)
+biomass_range <- c(-0.5, 6.5)
+ppfd_range <- c(-100, 1200)
+assim_range <- c(-2, 32)
 biomass_columns <- c('time', 'Grain', 'Leaf', 'Root', 'Stem')
 
 ## ----helping_functions,echo=FALSE---------------------------------------------
@@ -148,18 +149,20 @@ rue_fvcb_square_difference = function(alpha_rue) {
 }
 
 ## ----alpha_rue_optimization---------------------------------------------------
+min_alpha <- 0.021
+max_alpha <- 0.031
 opt_par = optim(
-    0.035,
+    0.03,
     rue_fvcb_square_difference,
     method='Brent',
-    lower=0.03,
-    upper=0.04
+    lower=min_alpha,
+    upper=max_alpha
 )
 
 best_alpha_rue = opt_par$par
 
 ## ----figure_s1,echo=FALSE,results=FALSE---------------------------------------
-alpha_rue_sequence = seq(0.03, 0.04, length=31)
+alpha_rue_sequence = seq(min_alpha, max_alpha, by = 2.5e-4)
 differences = sapply(alpha_rue_sequence, rue_fvcb_square_difference)
 
 alpha_rue_optimization_plot <- xyplot(
@@ -207,7 +210,7 @@ biomass_comparison_2002_plot <- xyplot(
     auto = TRUE,
     grid = TRUE,
     xlim = time_range,
-    ylim = c(-0.7, 8.7),
+    ylim = biomass_range,
     xlab = 'Day of year (2002)',
     ylab = 'Biomass (Mg / ha)',
 )
@@ -284,6 +287,12 @@ pdf_print(rue_aq_scatter_plot, 'rue_aq_scatter_plot.pdf')
 # Choose a set of incident PPFD values to use (micromol / m^2 / s)
 incident_ppfd <- seq(0, 1000, length.out = 501)
 
+# Determine corresponding absorbed PPFD values (micromol / m^2 / s) using the
+# soybean leaf reflectance and transmittance
+absorbed_ppfd <- incident_ppfd *
+    (1 - cmi_soybean$parameters$leaf_reflectance -
+        cmi_soybean$parameters$leaf_transmittance)
+
 # Determine corresponding incident PAR values (J / m^2 / s) using the average
 # energy per micromole of photosynthetically active photons in sunlight
 incident_par <- incident_ppfd * cmi_soybean$parameters$par_energy_content
@@ -304,6 +313,7 @@ average_absorbed_shortwave <-
 # we also include values of a few other required parameters
 light_curve_inputs <- data.frame(
     incident_ppfd = incident_ppfd,
+    absorbed_ppfd = absorbed_ppfd,
     average_absorbed_shortwave = average_absorbed_shortwave,
     rh = 0.75,
     temp = 25,
@@ -554,7 +564,7 @@ biomass_catm_sensitivity_plot <- xyplot(
   auto = TRUE,
   grid = TRUE,
   xlim = time_range,
-  ylim = c(-0.1, 0.9),
+  ylim = c(-60, 60),
   xlab = 'Day of year (2002)',
   ylab = 'dM / dCa / (M / Ca)'
 )
@@ -598,7 +608,7 @@ biomass_comparison_2006_plot <- xyplot(
     auto = TRUE,
     grid = TRUE,
     xlim = time_range,
-    ylim = c(-0.7, 8.7),
+    ylim = biomass_range,
     xlab = 'Day of year (2006)',
     ylab = 'Biomass (Mg / ha)',
 )
@@ -665,7 +675,7 @@ multiyear_biomass_plot <- xyplot(
   type = 'l',
   auto = TRUE,
   grid = TRUE,
-  ylim = c(8, 13),
+  ylim = c(7, 12),
   xlab = 'Year',
   ylab = 'Final biomass (Mg / ha)'
 )

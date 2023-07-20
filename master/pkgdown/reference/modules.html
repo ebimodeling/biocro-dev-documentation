@@ -51,17 +51,20 @@ module_response_curve runs a BioCro module repeatedly with different
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <h6 class="dropdown-header" data-toc-skip>GENERAL BIOCRO USAGE</h6>
+    <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="../articles/a_practical_guide_to_biocro.pdf">A Practical Guide to BioCro (PDF)</a>
-    <a class="dropdown-item" href="../articles/a_practical_guide_to_biocro.R">    R code</a>
-    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/a_practical_guide_to_biocro.R">    [R code]</a>
     <a class="dropdown-item" href="../articles/quantitative_model_comparison.pdf">Quantitative Comparison Between Two Photosynthesis Models (PDF)</a>
-    <a class="dropdown-item" href="../articles/quantitative_model_comparison.R">    R code</a>
-    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/quantitative_model_comparison.R">    [R code]</a>
     <a class="dropdown-item" href="../articles/BioCro-II_Paper--Section-1.1-example.html">BioCro II Paper: Section 1.1 Example (HTML)</a>
-    <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="../articles/an_introduction_to_biocro.pdf">An Introduction to BioCro for Those Who Want to Add Models (PDF)</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="../articles/avoiding_pitfalls_fvcb.html">Avoiding Pitfalls When Using the FvCB Model</a>
+    <h6 class="dropdown-header" data-toc-skip>CROP GROWTH MODELING TOPICS</h6>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/avoiding_pitfalls_fvcb.html">Avoiding Pitfalls When Using the FvCB Model (HTML)</a>
+    <a class="dropdown-item" href="../articles/thick_layer_absorption.html">Light Absorption by a Thick Layer (HTML)</a>
+    <a class="dropdown-item" href="../articles/ball_berry_model.html">Using the Ball-Berry Model (HTML)</a>
   </div>
 </li>
 <li class="nav-item">
@@ -234,8 +237,9 @@ module_response_curve runs a BioCro module repeatedly with different
 <span class="r-out co"><span class="r-pr">#&gt;</span>   c3_assimilation</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Module input quantities:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Qp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Qabs</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Tleaf</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   temp</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   rh</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   vmax1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   jmax</span>
@@ -249,15 +253,21 @@ module_response_curve runs a BioCro module repeatedly with different
 <span class="r-out co"><span class="r-pr">#&gt;</span>   O2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   theta</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   StomataWS</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   water_stress_approach</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   electrons_per_carboxylation</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   electrons_per_oxygenation</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   beta_PSII</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   gbw</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Module output quantities:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Assim</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Gs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Cs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   RHs</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   Ci</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   GrossAssim</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Assim_conductance</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Rp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   iterations</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Module type (differential or direct):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   direct</span>
@@ -278,15 +288,20 @@ module_response_curve runs a BioCro module repeatedly with different
 <span class="r-in"><span><span class="co"># stress using the 'BioCro' module library's 'c3_assimilation' module and</span></span></span>
 <span class="r-in"><span><span class="co"># the default soybean parameters. Here, the leaf temperature and humidity values</span></span></span>
 <span class="r-in"><span><span class="co"># are independent of each other, so we use the `expand.grid` function to form a</span></span></span>
-<span class="r-in"><span><span class="co"># data frame of all possible combinations of their values.</span></span></span>
+<span class="r-in"><span><span class="co"># data frame of all possible combinations of their values. Then we set the</span></span></span>
+<span class="r-in"><span><span class="co"># ambient temperature equal to the leaf temperature.</span></span></span>
 <span class="r-in"><span><span class="va">rc</span> <span class="op">&lt;-</span> <span class="fu">module_response_curve</span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="st">'BioCro:c3_assimilation'</span>,</span></span>
-<span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span><span class="va">soybean</span><span class="op">$</span><span class="va">parameters</span>, <span class="op">{</span><span class="va">Qp</span> <span class="op">=</span> <span class="fl">2000</span>; <span class="va">StomataWS</span> <span class="op">=</span> <span class="fl">1</span><span class="op">}</span><span class="op">)</span>,</span></span>
-<span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/expand.grid.html" class="external-link">expand.grid</a></span><span class="op">(</span></span></span>
-<span class="r-in"><span>    Tleaf <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span>from <span class="op">=</span> <span class="fl">0</span>, to <span class="op">=</span> <span class="fl">40</span>, length.out <span class="op">=</span> <span class="fl">201</span><span class="op">)</span>,</span></span>
-<span class="r-in"><span>    rh <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.2</span>, <span class="fl">0.5</span>, <span class="fl">0.8</span><span class="op">)</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span><span class="va">soybean</span><span class="op">$</span><span class="va">parameters</span>, <span class="op">{</span><span class="va">Qabs</span> <span class="op">=</span> <span class="fl">2000</span>; <span class="va">StomataWS</span> <span class="op">=</span> <span class="fl">1</span>; <span class="va">gbw</span> <span class="op">=</span> <span class="fl">1.2</span><span class="op">}</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">within</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>    <span class="fu"><a href="https://rdrr.io/r/base/expand.grid.html" class="external-link">expand.grid</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>      Tleaf <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span>from <span class="op">=</span> <span class="fl">0</span>, to <span class="op">=</span> <span class="fl">40</span>, length.out <span class="op">=</span> <span class="fl">201</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>      rh <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.2</span>, <span class="fl">0.5</span>, <span class="fl">0.8</span><span class="op">)</span></span></span>
+<span class="r-in"><span>    <span class="op">)</span>,</span></span>
+<span class="r-in"><span>    <span class="op">{</span><span class="va">temp</span> <span class="op">=</span> <span class="va">Tleaf</span><span class="op">}</span></span></span>
 <span class="r-in"><span>  <span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">caption</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="st">"Response curves calculated with several RH\nvalues and Q ="</span>,</span></span>
 <span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">rc</span><span class="op">$</span><span class="va">Qp</span><span class="op">)</span>,</span></span>
@@ -294,6 +309,7 @@ module_response_curve runs a BioCro module repeatedly with different
 <span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">rc</span><span class="op">$</span><span class="va">module_name</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  <span class="st">"module"</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">lattice</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/lattice/man/xyplot.html" class="external-link">xyplot</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>  <span class="va">Assim</span> <span class="op">~</span> <span class="va">Tleaf</span>,</span></span>
 <span class="r-in"><span>  group <span class="op">=</span> <span class="va">rh</span>,</span></span>

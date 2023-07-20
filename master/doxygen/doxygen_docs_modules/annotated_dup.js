@@ -2,7 +2,7 @@ var annotated_dup =
 [
     [ "standardBML", "namespacestandard_b_m_l.html", [
       [ "aba_decay", "classstandard_b_m_l_1_1aba__decay.html", "classstandard_b_m_l_1_1aba__decay" ],
-      [ "ball_berry_module", "classstandard_b_m_l_1_1ball__berry__module.html", "classstandard_b_m_l_1_1ball__berry__module" ],
+      [ "ball_berry", "classstandard_b_m_l_1_1ball__berry.html", "classstandard_b_m_l_1_1ball__berry" ],
       [ "biomass_leaf_n_limitation", "classstandard_b_m_l_1_1biomass__leaf__n__limitation.html", "classstandard_b_m_l_1_1biomass__leaf__n__limitation" ],
       [ "buck_swvp", "classstandard_b_m_l_1_1buck__swvp.html", "classstandard_b_m_l_1_1buck__swvp" ],
       [ "bucket_soil_drainage", "classstandard_b_m_l_1_1bucket__soil__drainage.html", "classstandard_b_m_l_1_1bucket__soil__drainage" ],
@@ -89,20 +89,20 @@ var annotated_dup =
       [ "varying_Jmax25", "classstandard_b_m_l_1_1varying___jmax25.html", "classstandard_b_m_l_1_1varying___jmax25" ],
       [ "water_vapor_properties_from_air_temperature", "classstandard_b_m_l_1_1water__vapor__properties__from__air__temperature.html", "classstandard_b_m_l_1_1water__vapor__properties__from__air__temperature" ]
     ] ],
-    [ "c3_str", "structc3__str.html", "structc3__str" ],
-    [ "c4_str", "structc4__str.html", "structc4__str" ],
-    [ "Can_Str", "struct_can___str.html", "struct_can___str" ],
+    [ "canopy_photosynthesis_outputs", "structcanopy__photosynthesis__outputs.html", "structcanopy__photosynthesis__outputs" ],
     [ "collatz_result", "structcollatz__result.html", "structcollatz__result" ],
     [ "crop_phenology", "structcrop__phenology.html", "structcrop__phenology" ],
     [ "dbp_str", "structdbp__str.html", "structdbp__str" ],
     [ "ET_Str", "struct_e_t___str.html", "struct_e_t___str" ],
     [ "frostParms", "structfrost_parms.html", "structfrost_parms" ],
+    [ "FvCB_outputs", "struct_fv_c_b__outputs.html", "struct_fv_c_b__outputs" ],
     [ "Light_model", "struct_light__model.html", "struct_light__model" ],
     [ "Light_profile", "struct_light__profile.html", "struct_light__profile" ],
     [ "nitroParms", "structnitro_parms.html", "structnitro_parms" ],
+    [ "photosynthesis_outputs", "structphotosynthesis__outputs.html", "structphotosynthesis__outputs" ],
     [ "rd_str", "structrd__str.html", "structrd__str" ],
-    [ "rue_str", "structrue__str.html", "structrue__str" ],
     [ "seqRD_str", "structseq_r_d__str.html", "structseq_r_d__str" ],
     [ "soilML_str", "structsoil_m_l__str.html", "structsoil_m_l__str" ],
+    [ "stomata_outputs", "structstomata__outputs.html", "structstomata__outputs" ],
     [ "ws_str", "structws__str.html", "structws__str" ]
 ];

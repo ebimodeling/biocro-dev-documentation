@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['magic_5fclock_2ehpp_0',['magic_clock.hpp',['../magic__clock_8hpp.html',1,'']]],
-  ['module_5fgraph_5ftest_2ehpp_1',['module_graph_test.hpp',['../module__graph__test_8hpp.html',1,'']]],
+  ['magic_5fclock_2eh_0',['magic_clock.h',['../magic__clock_8h.html',1,'']]],
+  ['module_5fgraph_5ftest_2eh_1',['module_graph_test.h',['../module__graph__test_8h.html',1,'']]],
   ['module_5flibrary_2ecpp_2',['module_library.cpp',['../module__library_8cpp.html',1,'']]],
   ['module_5flibrary_2eh_3',['module_library.h',['../module__library_8h.html',1,'']]],
   ['multilayer_5fc3_5fcanopy_2ecpp_4',['multilayer_c3_canopy.cpp',['../multilayer__c3__canopy_8cpp.html',1,'']]],

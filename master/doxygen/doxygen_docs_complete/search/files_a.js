@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['magic_5fclock_2ehpp_0',['magic_clock.hpp',['../magic__clock_8hpp.html',1,'']]],
+  ['magic_5fclock_2eh_0',['magic_clock.h',['../magic__clock_8h.html',1,'']]],
   ['module_2eh_1',['module.h',['../module_8h.html',1,'']]],
   ['module_5fcreator_2eh_2',['module_creator.h',['../module__creator_8h.html',1,'']]],
   ['module_5fdependency_5futilities_2ecpp_3',['module_dependency_utilities.cpp',['../module__dependency__utilities_8cpp.html',1,'']]],
   ['module_5fdependency_5futilities_2eh_4',['module_dependency_utilities.h',['../module__dependency__utilities_8h.html',1,'']]],
   ['module_5ffactory_2eh_5',['module_factory.h',['../module__factory_8h.html',1,'']]],
-  ['module_5fgraph_5ftest_2ehpp_6',['module_graph_test.hpp',['../module__graph__test_8hpp.html',1,'']]],
+  ['module_5fgraph_5ftest_2eh_6',['module_graph_test.h',['../module__graph__test_8h.html',1,'']]],
   ['module_5fhelper_5ffunctions_2ecpp_7',['module_helper_functions.cpp',['../module__helper__functions_8cpp.html',1,'']]],
   ['module_5fhelper_5ffunctions_2eh_8',['module_helper_functions.h',['../module__helper__functions_8h.html',1,'']]],
   ['module_5flibrary_2ecpp_9',['module_library.cpp',['../module__library_8cpp.html',1,'']]],

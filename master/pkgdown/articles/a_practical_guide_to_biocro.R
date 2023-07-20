@@ -213,9 +213,11 @@ outputs <- evaluate_module(
   'BioCro:c3_assimilation',
   within(soybean$parameters, {
     rh = 0.7      # dimensionless
-    Qp = 1800     # micromol / m^2 / s
+    Qabs = 1800   # micromol / m^2 / s
     Tleaf = 27    # degrees C
+    gbw = 1.2     # mol / m^2 / s
     StomataWS = 1 # dimensionless; 1 indicates no water stress
+    temp = 25     # degrees C
   })
 )
 
@@ -225,9 +227,11 @@ rc <- module_response_curve(
   within(soybean$parameters, {
     rh = 0.7
     Tleaf = 27
+    gbw = 1.2
     StomataWS = 1
+    temp = 25
   }),
-  data.frame(Qp = seq(from = 0, to = 2000, length.out = 501))
+  data.frame(Qabs = seq(from = 0, to = 2000, length.out = 501))
 )
 
 caption <- paste0(
@@ -237,10 +241,10 @@ caption <- paste0(
 )
 
 xyplot(
-  Assim ~ Qp,
+  Assim ~ Qabs,
   data = rc,
   type = 'l',
-  xlab = 'Incident PPFD (micromol / m^2 / s)',
+  xlab = 'Absorbed PPFD (micromol / m^2 / s)',
   ylab = 'Net CO2 assimilation rate\n(micromol / m^2 / s)',
   main = caption,
   grid = TRUE

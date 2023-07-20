@@ -95,7 +95,10 @@ $(document).ready(function(){initNavTree('c4photo_8cpp.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
-<code>#include &quot;<a class="el" href="ball__berry_8hpp_source.html">ball_berry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ball__berry__gs_8h_source.html">ball_berry_gs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="conductance__limited__assim_8h_source.html">conductance_limited_assim.h</a>&quot;</code><br />
+<code>#include &quot;../framework/constants.h&quot;</code><br />
+<code>#include &quot;../framework/quadratic_root.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="c4photo_8h_source.html">c4photo.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for c4photo.cpp:</div>
@@ -104,10 +107,15 @@ $(document).ready(function(){initNavTree('c4photo_8cpp.html',''); initResizable(
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="c4photo_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2src_2module__library_2c4photo_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2src_2module__library_2c4photo_8cpp" id="a_2github_2workspace_2src_2module__library_2c4photo_8cpp">
-<area shape="rect" title=" " alt="" coords="47,5,230,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" href="ball__berry_8hpp.html" title=" " alt="" coords="88,95,189,121"/>
-<area shape="rect" href="c4photo_8h.html" title=" " alt="" coords="214,95,293,121"/>
+<area shape="rect" title=" " alt="" coords="254,5,437,47"/>
+<area shape="rect" title=" " alt="" coords="5,102,64,129"/>
+<area shape="rect" href="ball__berry__gs_8h.html" title=" " alt="" coords="89,102,197,129"/>
+<area shape="rect" href="conductance__limited__assim_8h.html" title=" " alt="" coords="221,95,363,136"/>
+<area shape="rect" title=" " alt="" coords="275,184,439,211"/>
+<area shape="rect" title=" " alt="" coords="438,95,589,136"/>
+<area shape="rect" href="c4photo_8h.html" title=" " alt="" coords="613,102,691,129"/>
+<area shape="rect" href="stomata__outputs_8h.html" title=" " alt="" coords="78,184,207,211"/>
+<area shape="rect" href="photosynthesis__outputs_8h.html" title=" " alt="" coords="567,184,737,211"/>
 </map>
 </div>
 </div>
@@ -115,123 +123,129 @@ $(document).ready(function(){initNavTree('c4photo_8cpp.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2613ca2f3d1f34c768aacfbd0de1dd3e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structc4__str.html">c4_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC</a> (double Qp, double leaf_temperature, double relative_humidity, double vmax, double alpha, double kparm, double theta, double beta, double Rd, double bb0, double bb1, double Gs_min, double StomaWS, double Ca, double atmospheric_pressure, int water_stress_approach, double upperT, double lowerT)</td></tr>
-<tr class="separator:a2613ca2f3d1f34c768aacfbd0de1dd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac8af0343c49f4ab5cf95fe21333179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structphotosynthesis__outputs.html">photosynthesis_outputs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c4photo_8cpp.html#a0ac8af0343c49f4ab5cf95fe21333179">c4photoC</a> (double const Qp, double const leaf_temperature, double const ambient_temperature, double const relative_humidity, double const vmax, double const alpha, double const kparm, double const theta, double const beta, double const Rd, double const bb0, double const bb1, double const Gs_min, double const StomaWS, double const Ca, double const atmospheric_pressure, double const upperT, double const lowerT, double const gbw)</td></tr>
+<tr class="separator:a0ac8af0343c49f4ab5cf95fe21333179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2613ca2f3d1f34c768aacfbd0de1dd3e" name="a2613ca2f3d1f34c768aacfbd0de1dd3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2613ca2f3d1f34c768aacfbd0de1dd3e">&#9670;&nbsp;</a></span>c4photoC()</h2>
+<a id="a0ac8af0343c49f4ab5cf95fe21333179" name="a0ac8af0343c49f4ab5cf95fe21333179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac8af0343c49f4ab5cf95fe21333179">&#9670;&nbsp;</a></span>c4photoC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structc4__str.html">c4_str</a> c4photoC </td>
+          <td class="memname"><a class="el" href="structphotosynthesis__outputs.html">photosynthesis_outputs</a> c4photoC </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>Qp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>leaf_temperature</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
+          <td class="paramname"><em>ambient_temperature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>relative_humidity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>vmax</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>kparm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>theta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>Rd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>bb0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>bb1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>Gs_min</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>StomaWS</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>Ca</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>atmospheric_pressure</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>water_stress_approach</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">double const&#160;</td>
           <td class="paramname"><em>upperT</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lowerT</em>&#160;</td>
+          <td class="paramtype">double const&#160;</td>
+          <td class="paramname"><em>lowerT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double const&#160;</td>
+          <td class="paramname"><em>gbw</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -241,20 +255,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c4photo_8cpp_source.html#l00005">5</a> of file <a class="el" href="c4photo_8cpp_source.html">c4photo.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c4photo_8cpp_source.html#l00011">11</a> of file <a class="el" href="c4photo_8cpp_source.html">c4photo.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="c4photo_8h_source.html#l00005">c4_str::Assim</a>, <a class="el" href="ball__berry_8cpp_source.html#l00006">ball_berry()</a>, <a class="el" href="c4photo_8h_source.html#l00007">c4_str::Ci</a>, and <a class="el" href="c4photo_8h_source.html#l00006">c4_str::Gs</a>.</p>
+<p class="reference">References <a class="el" href="photosynthesis__outputs_8h_source.html#l00009">photosynthesis_outputs::Assim</a>, <a class="el" href="ball__berry__gs_8cpp_source.html#l00097">ball_berry_gs()</a>, <a class="el" href="conductance__limited__assim_8h_source.html#l00069">conductance_limited_assim()</a>, <a class="el" href="stomata__outputs_8h_source.html#l00009">stomata_outputs::cs</a>, <a class="el" href="stomata__outputs_8h_source.html#l00011">stomata_outputs::gsw</a>, and <a class="el" href="stomata__outputs_8h_source.html#l00010">stomata_outputs::hs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00005">CanAC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00008">CanAC()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="c4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_cgraph.png" border="0" usemap="#ac4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_cgraph" alt=""/></div>
-<map name="ac4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_cgraph" id="ac4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,83,32"/>
-<area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="131,5,208,32"/>
+<div class="center"><img src="c4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_cgraph.png" border="0" usemap="#ac4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_cgraph" alt=""/></div>
+<map name="ac4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_cgraph" id="ac4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,83,61"/>
+<area shape="rect" href="ball__berry__gs_8cpp.html#ad24d3b65b48b6defb685a6bd3094d0f1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="152,5,251,32"/>
+<area shape="rect" href="conductance__limited__assim_8h.html#a9912249fe80a1a615d0316c7778cd6cf" title="Computes the conductance&#45;limited net CO2 assimilation rate." alt="" coords="131,57,272,98"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="320,5,495,32"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -262,10 +278,10 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="c4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_icgraph.png" border="0" usemap="#ac4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_icgraph" alt=""/></div>
-<map name="ac4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_icgraph" id="ac4photo_8cpp_a2613ca2f3d1f34c768aacfbd0de1dd3e_icgraph">
+<div class="center"><img src="c4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_icgraph.png" border="0" usemap="#ac4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_icgraph" alt=""/></div>
+<map name="ac4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_icgraph" id="ac4photo_8cpp_a0ac8af0343c49f4ab5cf95fe21333179_icgraph">
 <area shape="rect" title=" " alt="" coords="116,5,193,32"/>
-<area shape="rect" href="_can_a_c_8cpp.html#a6fa729b5ad5a8d83d7f724b942403d13" title=" " alt="" coords="5,5,68,32"/>
+<area shape="rect" href="_can_a_c_8cpp.html#aa03215296e449dcccc448cf6a8e345d3" title=" " alt="" coords="5,5,68,32"/>
 </map>
 </div>
 
@@ -277,7 +293,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c4photo_8cpp.html">c4photo.cpp</a></li>
-    <li class="footer">Generated on Wed Jul 12 2023 16:21:26 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jul 20 2023 14:44:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

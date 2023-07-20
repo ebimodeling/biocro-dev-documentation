@@ -20,6 +20,7 @@ var classstandard_b_m_l_1_1rue__leaf__photosynthesis =
     [ "minimum_gbw", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a273f7a0753a1249da6440f646f0a8f86", null ],
     [ "Rd", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a5b7135a958d52f6ec3d1f9be8643aaf6", null ],
     [ "rh", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a6f67da21f6e79f0947abccc50100475d", null ],
+    [ "Rp_op", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a7347a449af04f83a5d0265df8fba7b5b", null ],
     [ "specific_heat_of_air", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2", null ],
     [ "temp", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a677d8e15fc11df2b4559409565c2a269", null ],
     [ "TransR_op", "classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a07fdcd33ba853ee7b9fee7baa38d2fb8", null ],

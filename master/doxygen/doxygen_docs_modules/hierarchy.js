@@ -1,8 +1,6 @@
 var hierarchy =
 [
-    [ "c3_str", "structc3__str.html", null ],
-    [ "c4_str", "structc4__str.html", null ],
-    [ "Can_Str", "struct_can___str.html", null ],
+    [ "canopy_photosynthesis_outputs", "structcanopy__photosynthesis__outputs.html", null ],
     [ "collatz_result", "structcollatz__result.html", null ],
     [ "crop_phenology", "structcrop__phenology.html", null ],
     [ "dbp_str", "structdbp__str.html", null ],
@@ -37,7 +35,7 @@ var hierarchy =
       [ "Module_1", "classstandard_b_m_l_1_1_module__1.html", null ],
       [ "Module_2", "classstandard_b_m_l_1_1_module__2.html", null ],
       [ "Module_3", "classstandard_b_m_l_1_1_module__3.html", null ],
-      [ "ball_berry_module", "classstandard_b_m_l_1_1ball__berry__module.html", null ],
+      [ "ball_berry", "classstandard_b_m_l_1_1ball__berry.html", null ],
       [ "biomass_leaf_n_limitation", "classstandard_b_m_l_1_1biomass__leaf__n__limitation.html", null ],
       [ "buck_swvp", "classstandard_b_m_l_1_1buck__swvp.html", null ],
       [ "c3_assimilation", "classstandard_b_m_l_1_1c3__assimilation.html", null ],
@@ -101,14 +99,16 @@ var hierarchy =
     ] ],
     [ "ET_Str", "struct_e_t___str.html", null ],
     [ "frostParms", "structfrost_parms.html", null ],
+    [ "FvCB_outputs", "struct_fv_c_b__outputs.html", null ],
     [ "Light_model", "struct_light__model.html", null ],
     [ "Light_profile", "struct_light__profile.html", null ],
     [ "crop_phenology::minerals1", "structcrop__phenology_1_1minerals1.html", null ],
     [ "module_library", "classstandard_b_m_l_1_1module__library.html", null ],
     [ "nitroParms", "structnitro_parms.html", null ],
+    [ "photosynthesis_outputs", "structphotosynthesis__outputs.html", null ],
     [ "rd_str", "structrd__str.html", null ],
-    [ "rue_str", "structrue__str.html", null ],
     [ "seqRD_str", "structseq_r_d__str.html", null ],
     [ "soilML_str", "structsoil_m_l__str.html", null ],
+    [ "stomata_outputs", "structstomata__outputs.html", null ],
     [ "ws_str", "structws__str.html", null ]
 ];

@@ -26,11 +26,11 @@
 <area shape="rect" id="node24" href="$classstandard_b_m_l_1_1thermal__time__senescence.html" title="Determines senescence rates for several plant organs based on thermal time thresholds and magical tim..." alt="" coords="300,1117,475,1144"/>
 <area shape="rect" id="node25" href="$classstandard_b_m_l_1_1thermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model." alt="" coords="314,1168,461,1195"/>
 <area shape="rect" id="node26" href="$classstandard_b_m_l_1_1two__layer__soil__profile.html" title=" " alt="" coords="315,1219,460,1245"/>
-<area shape="rect" id="node28" href="$classstandard_b_m_l_1_1_fv_c_b.html" title=" " alt="" coords="360,1269,415,1296"/>
+<area shape="rect" id="node28" href="$classstandard_b_m_l_1_1_fv_c_b.html" title="Uses FvCB_assim() to evaluate the Farquhar&#45;von&#45;Caemmerer&#45;Berry model for C3 photosynthesis." alt="" coords="360,1269,415,1296"/>
 <area shape="rect" id="node29" href="$classstandard_b_m_l_1_1_module__1.html" title=" " alt="" coords="348,1320,427,1347"/>
 <area shape="rect" id="node30" href="$classstandard_b_m_l_1_1_module__2.html" title=" " alt="" coords="348,1371,427,1397"/>
 <area shape="rect" id="node31" href="$classstandard_b_m_l_1_1_module__3.html" title=" " alt="" coords="348,1421,427,1448"/>
-<area shape="rect" id="node32" href="$classstandard_b_m_l_1_1ball__berry__module.html" title=" " alt="" coords="324,1472,451,1499"/>
+<area shape="rect" id="node32" href="$classstandard_b_m_l_1_1ball__berry.html" title="Uses ball_berry_gs() to evaluate the Ball&#45;Berry model for stomatal conductance." alt="" coords="349,1472,426,1499"/>
 <area shape="rect" id="node33" href="$classstandard_b_m_l_1_1biomass__leaf__n__limitation.html" title=" " alt="" coords="301,1523,473,1549"/>
 <area shape="rect" id="node34" href="$classstandard_b_m_l_1_1buck__swvp.html" title="Determines the saturation water vapor pressure of atmospheric air using the saturation_vapor_pressure..." alt="" coords="343,1573,431,1600"/>
 <area shape="rect" id="node35" href="$classstandard_b_m_l_1_1c3__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf ..." alt="" coords="331,1624,443,1651"/>

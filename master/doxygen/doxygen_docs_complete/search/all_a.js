@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kc_5fip_0',['Kc_ip',['../classstandard_b_m_l_1_1_fv_c_b.html#aeec0df87dbfa5faac56843d895207e67',1,'standardBML::FvCB']]],
+  ['kc_0',['Kc',['../classstandard_b_m_l_1_1_fv_c_b.html#a29d3fa53e6d917e932e7edbf9f620765',1,'standardBML::FvCB']]],
   ['kcoeff_1',['kcoeff',['../namespacestandard_b_m_l.html#a2419ba0999a70240547aa4e03c20e271',1,'standardBML']]],
   ['kd_2',['kd',['../classstandard_b_m_l_1_1c3__canopy.html#a5ef1a437439bcf519c80591f238b5bda',1,'standardBML::c3_canopy::kd()'],['../classstandard_b_m_l_1_1c4__canopy.html#a5ef1a437439bcf519c80591f238b5bda',1,'standardBML::c4_canopy::kd()'],['../classstandard_b_m_l_1_1multilayer__canopy__properties.html#a5ef1a437439bcf519c80591f238b5bda',1,'standardBML::multilayer_canopy_properties::kd()']]],
   ['keys_3',['keys',['../state__map_8h.html#a5505795a40869494568f362567ff51e8',1,'state_map.h']]],
@@ -25,7 +25,7 @@ var searchData=
   ['kln_22',['kln',['../structnitro_parms.html#afa6e61581291da46a7e59c7eb3cde4a2',1,'nitroParms']]],
   ['kln_5fip_23',['kln_ip',['../classstandard_b_m_l_1_1biomass__leaf__n__limitation.html#a0d78d82cbb54c0925171cf1c22d17e00',1,'standardBML::biomass_leaf_n_limitation']]],
   ['km_5fleaf_5flitter_24',['km_leaf_litter',['../classstandard_b_m_l_1_1litter__cover.html#a3c5fa0dff6496efa5e67382789fc3c2c',1,'standardBML::litter_cover']]],
-  ['ko_5fip_25',['Ko_ip',['../classstandard_b_m_l_1_1_fv_c_b.html#ac52a4ea3bafa9ac284a918f284cd0096',1,'standardBML::FvCB']]],
+  ['ko_25',['Ko',['../classstandard_b_m_l_1_1_fv_c_b.html#aa1e0c2df6299690d975e69b47ef1a7f5',1,'standardBML::FvCB']]],
   ['kparm_26',['kparm',['../classstandard_b_m_l_1_1c4__assimilation.html#a0eda2c7cc457aab07d1378fb291661fc',1,'standardBML::c4_assimilation::kparm()'],['../classstandard_b_m_l_1_1c4__canopy.html#a0eda2c7cc457aab07d1378fb291661fc',1,'standardBML::c4_canopy::kparm()'],['../classstandard_b_m_l_1_1c4__leaf__photosynthesis.html#a0eda2c7cc457aab07d1378fb291661fc',1,'standardBML::c4_leaf_photosynthesis::kparm()']]],
   ['kpln_27',['kpLN',['../classstandard_b_m_l_1_1c4__canopy.html#a739c210020ca179054ffde8e0f5fea8d',1,'standardBML::c4_canopy::kpLN()'],['../classstandard_b_m_l_1_1multilayer__canopy__properties.html#a739c210020ca179054ffde8e0f5fea8d',1,'standardBML::multilayer_canopy_properties::kpLN()'],['../classstandard_b_m_l_1_1c3__canopy.html#a739c210020ca179054ffde8e0f5fea8d',1,'standardBML::c3_canopy::kpLN()'],['../structnitro_parms.html#a89b04bb673ac5d9fd455e0b9317bdb83',1,'nitroParms::kpLN()']]],
   ['krhiz_28',['kRhiz',['../structdbp__str.html#aefb719fe6ebb8b2b4df490d403233884',1,'dbp_str']]],

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classstandard_b_m_l_1_1leaf__gbw__niko
 </div><!--header-->
 <div class="contents">
 
-<p>Calculates the boundary layer conductance using the <code><a class="el" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,...">leaf_boundary_layer_conductance_nikolov()</a></code> function.  
+<p>Calculates the boundary layer conductance using the <code><a class="el" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model...">leaf_boundary_layer_conductance_nikolov()</a></code> function.  
  <a href="classstandard_b_m_l_1_1leaf__gbw__nikolov.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>&gt;</code></p>
@@ -165,17 +165,17 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8c7f7db8765cf428198920015d8cd5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Calculates the boundary layer conductance using the <code><a class="el" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,...">leaf_boundary_layer_conductance_nikolov()</a></code> function. </p>
-<p >The <code><a class="el" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,...">leaf_boundary_layer_conductance_nikolov()</a></code> function returns a conductance with units of m / s. However, in BioCro, we prefer to use molecular conductances, so we convert using an approximate conversion factor that is only exact when both the leaf and air temperatures are 20 degrees C. Errors due to this conversion are expected to be smaller than the errors associated with calculating a boundary layer conductance from environmental parameters.</p>
+<div class="textblock"><p >Calculates the boundary layer conductance using the <code><a class="el" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model...">leaf_boundary_layer_conductance_nikolov()</a></code> function. </p>
+<p >The <code><a class="el" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model...">leaf_boundary_layer_conductance_nikolov()</a></code> function returns a conductance with units of m / s. However, in BioCro, we prefer to use molecular conductances, so we convert using an approximate conversion factor that is only exact when both the leaf and air temperatures are 20 degrees C. Errors due to this conversion are expected to be smaller than the errors associated with calculating a boundary layer conductance from environmental parameters.</p>
 <h3><a class="anchor" id="autotoc_md12"></a>
 BioCro module implementation</h3>
 <p >In BioCro, we use the following names for this model's inputs and outputs:</p><ul>
 <li><code>'height'</code> for the canopy height above the ground</li>
 <li><code>'windspeed'</code> for the wind speed</li>
-<li><code>'gbw'</code> for the boundary layer conductance to water </li>
+<li><code>'gbw'</code> for the leaf boundary layer conductance to water </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00031">31</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00032">32</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1707c13ca92223905f1c172409cedbb5" name="a1707c13ca92223905f1c172409cedbb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1707c13ca92223905f1c172409cedbb5">&#9670;&nbsp;</a></span>leaf_gbw_nikolov()</h2>
@@ -211,7 +211,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00034">34</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00035">35</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
 </div>
 </div>
@@ -239,9 +239,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">93</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">94</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">References <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00060">leaf_gbw_nikolov::air_temperature</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00067">leaf_gbw_nikolov::gbw_op</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00062">leaf_gbw_nikolov::Gs</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00826">leaf_boundary_layer_conductance_nikolov()</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00061">leaf_gbw_nikolov::leaf_temperature</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00059">leaf_gbw_nikolov::leafwidth</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00064">leaf_gbw_nikolov::minimum_gbw</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00063">leaf_gbw_nikolov::rh</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00633">saturation_vapor_pressure()</a>, and <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00058">leaf_gbw_nikolov::windspeed</a>.</p>
+<p class="reference">References <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00061">leaf_gbw_nikolov::air_temperature</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00068">leaf_gbw_nikolov::gbw_op</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00063">leaf_gbw_nikolov::Gs</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00369">leaf_boundary_layer_conductance_nikolov()</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00062">leaf_gbw_nikolov::leaf_temperature</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00060">leaf_gbw_nikolov::leafwidth</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00065">leaf_gbw_nikolov::minimum_gbw</a>, <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00064">leaf_gbw_nikolov::rh</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00030">saturation_vapor_pressure()</a>, and <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00059">leaf_gbw_nikolov::windspeed</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -250,8 +250,8 @@ BioCro module implementation</h3>
 <div class="center"><img src="classstandard_b_m_l_1_1leaf__gbw__nikolov_a391e9fd4e949f6e987eb654a11b1e451_cgraph.png" border="0" usemap="#aclassstandard_b_m_l_1_1leaf__gbw__nikolov_a391e9fd4e949f6e987eb654a11b1e451_cgraph" alt=""/></div>
 <map name="aclassstandard_b_m_l_1_1leaf__gbw__nikolov_a391e9fd4e949f6e987eb654a11b1e451_cgraph" id="aclassstandard_b_m_l_1_1leaf__gbw__nikolov_a391e9fd4e949f6e987eb654a11b1e451_cgraph">
 <area shape="rect" title=" " alt="" coords="5,42,101,69"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,..." alt="" coords="149,5,300,47"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="348,42,523,69"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="149,5,300,47"/>
+<area shape="rect" href="water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="348,42,523,69"/>
 </map>
 </div>
 
@@ -280,7 +280,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00073">73</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00074">74</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00054">54</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00055">55</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00086">86</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00087">87</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
 </div>
 </div>
@@ -359,9 +359,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00060">60</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00061">61</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -385,9 +385,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00067">67</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00068">68</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -411,9 +411,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00062">62</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00063">63</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -437,9 +437,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00061">61</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00062">62</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -463,9 +463,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00059">59</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00060">60</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -489,9 +489,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00064">64</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00065">65</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -515,9 +515,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00063">63</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00064">64</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -541,9 +541,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00058">58</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00059">59</a> of file <a class="el" href="leaf__gbw__nikolov_8h_source.html">leaf_gbw_nikolov.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00093">leaf_gbw_nikolov::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__gbw__nikolov_8h_source.html#l00094">leaf_gbw_nikolov::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ BioCro module implementation</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></li><li class="navelem"><a class="el" href="classstandard_b_m_l_1_1leaf__gbw__nikolov.html">leaf_gbw_nikolov</a></li>
-    <li class="footer">Generated on Wed Jul 12 2023 16:21:13 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Jul 20 2023 14:44:23 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

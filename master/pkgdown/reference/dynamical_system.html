@@ -27,17 +27,20 @@
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <h6 class="dropdown-header" data-toc-skip>GENERAL BIOCRO USAGE</h6>
+    <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="../articles/a_practical_guide_to_biocro.pdf">A Practical Guide to BioCro (PDF)</a>
-    <a class="dropdown-item" href="../articles/a_practical_guide_to_biocro.R">    R code</a>
-    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/a_practical_guide_to_biocro.R">    [R code]</a>
     <a class="dropdown-item" href="../articles/quantitative_model_comparison.pdf">Quantitative Comparison Between Two Photosynthesis Models (PDF)</a>
-    <a class="dropdown-item" href="../articles/quantitative_model_comparison.R">    R code</a>
-    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/quantitative_model_comparison.R">    [R code]</a>
     <a class="dropdown-item" href="../articles/BioCro-II_Paper--Section-1.1-example.html">BioCro II Paper: Section 1.1 Example (HTML)</a>
-    <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="../articles/an_introduction_to_biocro.pdf">An Introduction to BioCro for Those Who Want to Add Models (PDF)</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="../articles/avoiding_pitfalls_fvcb.html">Avoiding Pitfalls When Using the FvCB Model</a>
+    <h6 class="dropdown-header" data-toc-skip>CROP GROWTH MODELING TOPICS</h6>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/avoiding_pitfalls_fvcb.html">Avoiding Pitfalls When Using the FvCB Model (HTML)</a>
+    <a class="dropdown-item" href="../articles/thick_layer_absorption.html">Light Absorption by a Thick Layer (HTML)</a>
+    <a class="dropdown-item" href="../articles/ball_berry_model.html">Using the Ball-Berry Model (HTML)</a>
   </div>
 </li>
 <li class="nav-item">
@@ -242,6 +245,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  betaSeneStem</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  betaShell</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  betaStem</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  beta_PSII</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  canopy_assimilation_rate</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  canopy_transpiration_rate</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  chil</span>
@@ -314,16 +318,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  retrans_rhizome</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rfl</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rh</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rsdf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rsec</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Assim_layer_0</span>
@@ -356,6 +350,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Gs_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Gs_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Gs_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_2</span>
@@ -366,6 +370,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_2</span>
@@ -376,16 +390,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  soil_air_entry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  soil_b_coefficient</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  soil_clod_size</span>
@@ -433,6 +437,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Gs_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Gs_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Gs_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_2</span>
@@ -443,6 +457,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_2</span>
@@ -453,16 +477,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tbase</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  temp</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  theta</span>
@@ -471,7 +485,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tpu_rate_max</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  vmax1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  vmax_n_intercept</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  water_stress_approach</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  windspeed</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  windspeed_height</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  windspeed_layer_0</span>
@@ -610,6 +623,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  betaSeneStem</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  betaShell</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  betaStem</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  beta_PSII</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  canopy_assimilation_rate</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  canopy_transpiration_rate</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  chil</span>
@@ -682,16 +696,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  retrans_rhizome</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rfl</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rh</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  rh_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rsdf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  rsec</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Assim_layer_0</span>
@@ -724,6 +728,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Gs_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Gs_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Gs_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_Rp_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_2</span>
@@ -734,6 +748,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_TransR_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_absorbed_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_2</span>
@@ -744,16 +768,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_fraction_layer_9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  shaded_incident_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  soil_air_entry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  soil_b_coefficient</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  soil_clod_size</span>
@@ -801,6 +815,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Gs_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Gs_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Gs_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_Rp_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_2</span>
@@ -811,6 +835,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_TransR_layer_9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_absorbed_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_2</span>
@@ -821,16 +855,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_fraction_layer_9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  sunlit_incident_ppfd_layer_9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tbase</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  temp</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  theta</span>
@@ -839,7 +863,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tpu_rate_max</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  vmax1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  vmax_n_intercept</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  water_stress_approach</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  windspeed</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  windspeed_height</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  windspeed_layer_0</span>

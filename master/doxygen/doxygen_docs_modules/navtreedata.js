@@ -49,6 +49,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -58,18 +59,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classstandard_b_m_l_1_1buck__swvp.html#ae6517cdf4a282ddbfbb6e3b7b711b898",
-"classstandard_b_m_l_1_1c4__assimilation.html#a29678a5f4d4da10e4d36afa9f124ed8a",
-"classstandard_b_m_l_1_1example__model__mass__gain.html#ab4b3621a5f8a323afdf9cce61e1339cf",
-"classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html",
-"classstandard_b_m_l_1_1no__leaf__resp__neg__assim__partitioning__growth__calculator.html#aeb7d0f98bdc1cd0db02924c85edcf130",
-"classstandard_b_m_l_1_1partitioning__coefficient__selector.html#a1408d51fca6314319c1311056ff91de0",
-"classstandard_b_m_l_1_1poincare__clock.html#a391e9fd4e949f6e987eb654a11b1e451",
-"classstandard_b_m_l_1_1soil__evaporation.html#a391e9fd4e949f6e987eb654a11b1e451",
-"classstandard_b_m_l_1_1stomata__water__stress__sigmoid.html#af6f92f691315e6c4996c2d18db52dac0",
-"classstandard_b_m_l_1_1thermal__time__senescence.html#a43f709f7cdf26c296e8df2d355a8db36",
-"functions_func_l.html",
-"structc3__str.html#ac72aab455ed835560d5b9afd64c777eb"
+"classstandard_b_m_l_1_1buck__swvp.html",
+"classstandard_b_m_l_1_1c3__leaf__photosynthesis.html#a914fef1ec1756cab231b94329813a704",
+"classstandard_b_m_l_1_1c4__leaf__photosynthesis.html#a919fc3e37d4f8a3b9037ffcc80efcbdc",
+"classstandard_b_m_l_1_1leaf__gbw__thornley.html",
+"classstandard_b_m_l_1_1multilayer__canopy__properties.html#ae58b083acd1d6542d27a2c1d660d2b33",
+"classstandard_b_m_l_1_1parameter__calculator.html#a61a56ea391f48800f8230c70639f3a2a",
+"classstandard_b_m_l_1_1penman__monteith__leaf__temperature.html#a677d8e15fc11df2b4559409565c2a269",
+"classstandard_b_m_l_1_1senescence__logistic.html#a7d334f6331d585f373283ba009ed7bab",
+"classstandard_b_m_l_1_1soybean__development__rate__calculator.html#afcf47e062058f668af87713c8690daff",
+"classstandard_b_m_l_1_1thermal__time__development__rate__calculator.html#aea092e452134a2b15705dc9220367fba",
+"classstandard_b_m_l_1_1varying___jmax25.html#afcf47e062058f668af87713c8690daff",
+"photosynthesis__outputs_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
