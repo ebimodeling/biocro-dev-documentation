@@ -79,6 +79,29 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="3.0.0" id="changes-in-biocro-version-300">CHANGES IN BioCro VERSION 3.0.0<a class="anchor" aria-label="anchor" href="#changes-in-biocro-version-300"></a></h2>
+<div class="section level3">
+<h3 id="major-changes-3-0-0">MAJOR CHANGES<a class="anchor" aria-label="anchor" href="#major-changes-3-0-0"></a></h3>
+<ul><li><p>This version introduces the concept of distinct module libraries, allowing users to develop modules in private and to create collections of related modules. There is an associated syntax change, where modules must now be specified using <em>fully-qualified names</em> that include a module library name and the local name of a module within that library; for example, the module that was previously known as <code>thermal_time_linear</code> must now be referred to as <code>BioCro:thermal_time_linear</code>.</p></li>
+<li><p>Any R package representing a BioCro module library must now have four non-exported functions related to accessing its modules: <code>get_all_modules</code>, <code>get_all_quantities</code>, <code>module_creators</code>, and <code>framework_version</code>. When a fully-qualified module name such as <code>library_name:local_module_name</code> is passed to a function such as <code>module_info</code>, an internal call to <code>library_name:::module_creators(module_name)</code> will be made to retrieve a pointer to a module. Hence, <code>library_name</code> must be the same as the module library package name. This is a required part of a method for passing C objects from a module library to the core BioCro framework via R; the full details are not discussed here.</p></li>
+<li><p>The code in the <code>src</code> directory has been reorganized to reflect the division between framework code, module code, and “R-to-C” code discussed in the manuscript; now, <code>src/framework</code> contains the core C++ code, <code>src/module_library</code> contains the module code, and the “R-to-C” code can be found directly in <code>src</code>.</p></li>
+<li><p>The C++ framework code in <code>src/framework</code> has been moved to a separate repository and licensed under the GNU LGPL; it is included in the BioCro R package repository as a Git submodule. This allows us to use a permissive license for the BioCro R package while still protecting the code that assembles and solves models. Associated with this change, the BioCro R package is now licensed under the MIT license. See <code>LICENSE.note</code> for details.</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="minor-changes-3-0-0">MINOR CHANGES<a class="anchor" aria-label="anchor" href="#minor-changes-3-0-0"></a></h3>
+<ul><li><p>The <code>soil_type_selector</code> module has been removed and replaced with a data object called <code>soil_parameters</code>. For crop models that previously set the <code>soil_type_indicator</code> to <code>6</code> to choose the soil parameter values, this parameter has been replaced with the values from <code>soil_parameters$clay_loam</code>.</p></li>
+<li><p>Crop model definitions are now stored as single lists rather than as multiple objects; for example, <code>soybean_parameters</code> and <code>soybean_initial_values</code> are now stored as two elements of the <code>soybean</code> list: <code>soybean$parameters</code> and <code>soybean$initial_values</code>.</p></li>
+<li><p>The function returned by <code>partial_run_biocro</code> can now properly respond to vectors and lists of named elements.</p></li>
+<li><p>Module testing functions have been added to the package namespace.</p></li>
+<li><p>Many small improvements have been made to the documentation and the module code in <code>src/module_library</code>; these changes are too numerous to list here.</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="bug-fixes-3-0-0">BUG FIXES<a class="anchor" aria-label="anchor" href="#bug-fixes-3-0-0"></a></h3>
+<ul><li><p>The elements of the <code>arg_names</code> input to <code>partial_run_biocro</code> can now be in any order; previously, they were required to be supplied in the same order as the appear in the other inputs to <code>partial_run_biocro</code>, for example, the names of any initial values were required to come before the names of any parameters. If the arguments were supplied in the wrong order, then the inputs to the function returned by <code>partial_run_biocro</code> would be interpreted in the wrong order.</p></li>
+<li><p>A bug that sometimes caused the last time point of a simulation to contain NaN for all quantities has been fixed; this was related to an out-of-bounds error when accessing vector elements in the C++ function <code>dynamical_system::update_drivers</code>.</p></li>
+</ul></div>
+</div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.0.0" id="changes-in-biocro-version-200">CHANGES IN BioCro VERSION 2.0.0<a class="anchor" aria-label="anchor" href="#changes-in-biocro-version-200"></a></h2>
 <div class="section level3">
 <h3 id="major-changes-2-0-0">MAJOR CHANGES<a class="anchor" aria-label="anchor" href="#major-changes-2-0-0"></a></h3>
