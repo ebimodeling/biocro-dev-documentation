@@ -94,8 +94,9 @@ $(document).ready(function(){initNavTree('_aux_bio_cro_8cpp.html',''); initResiz
   <div class="headertitle"><div class="title">AuxBioCro.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;<a class="el" href="c4photo_8h_source.html">c4photo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bio_cro_8h_source.html">BioCro.h</a>&quot;</code><br />
@@ -109,18 +110,19 @@ $(document).ready(function(){initNavTree('_aux_bio_cro_8cpp.html',''); initResiz
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2src_2module__library_2_aux_bio_cro_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2src_2module__library_2_aux_bio_cro_8cpp" id="a_2github_2workspace_2src_2module__library_2_aux_bio_cro_8cpp">
-<area shape="rect" title=" " alt="" coords="267,5,465,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,84,121"/>
-<area shape="rect" title=" " alt="" coords="108,95,163,121"/>
-<area shape="rect" title=" " alt="" coords="369,169,427,196"/>
-<area shape="rect" href="c4photo_8h.html" title=" " alt="" coords="187,95,265,121"/>
-<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="691,95,761,121"/>
-<area shape="rect" title=" " alt="" coords="463,244,627,271"/>
-<area shape="rect" href="water__and__air__properties_8h.html" title=" " alt="" coords="341,95,519,121"/>
-<area shape="rect" href="sun_m_l_8h.html" title=" " alt="" coords="594,95,666,121"/>
-<area shape="rect" href="photosynthesis__outputs_8h.html" title=" " alt="" coords="141,169,311,196"/>
-<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="617,169,710,196"/>
-<area shape="rect" title=" " alt="" coords="651,244,697,271"/>
+<area shape="rect" title=" " alt="" coords="327,5,525,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,60,121"/>
+<area shape="rect" title=" " alt="" coords="84,95,163,121"/>
+<area shape="rect" title=" " alt="" coords="187,95,262,121"/>
+<area shape="rect" title=" " alt="" coords="334,169,393,196"/>
+<area shape="rect" href="c4photo_8h.html" title=" " alt="" coords="783,95,861,121"/>
+<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="591,95,661,121"/>
+<area shape="rect" title=" " alt="" coords="455,244,619,271"/>
+<area shape="rect" href="water__and__air__properties_8h.html" title=" " alt="" coords="337,95,515,121"/>
+<area shape="rect" href="sun_m_l_8h.html" title=" " alt="" coords="686,95,758,121"/>
+<area shape="rect" href="photosynthesis__outputs_8h.html" title=" " alt="" coords="737,169,907,196"/>
+<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="605,169,698,196"/>
+<area shape="rect" title=" " alt="" coords="643,244,689,271"/>
 </map>
 </div>
 </div>
@@ -207,7 +209,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00606">606</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00620">620</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,9 +287,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00177">177</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00191">191</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00019">ET_Str::boundary_layer_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00016">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00369">leaf_boundary_layer_conductance_nikolov()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00030">saturation_vapor_pressure()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00064">TempToDdryA()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00120">TempToLHV()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00173">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00015">ET_Str::TransR</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00019">ET_Str::boundary_layer_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00016">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00383">leaf_boundary_layer_conductance_nikolov()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00030">saturation_vapor_pressure()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00064">TempToDdryA()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00120">TempToLHV()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00173">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00015">ET_Str::TransR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00008">CanAC()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -401,11 +403,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The boundary layer conductance in m / s </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00369">369</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00383">383</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="water__and__air__properties_8h_source.html#l00030">saturation_vapor_pressure()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l00177">EvapoTrans2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l00191">EvapoTrans2()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -496,7 +498,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The boundary layer conductance in m / s </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00467">467</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00481">481</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00016">c3EvapoTrans()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -558,7 +560,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00168">168</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00182">182</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00008">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00008">CanAC()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -603,9 +605,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00018">18</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00036">36</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l01062">rootDist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l01076">rootDist()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -717,7 +719,7 @@ into the response of plant production to climate change?: development and
 experiments with WIMOVAC: (Windows Intuitive Model of Vegetation response
 to Atmosphere &amp; Climate Change)" (University of Essex, 2002) </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01042">1042</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01056">1056</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -789,7 +791,7 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
 <p ><code>h(x) = exp(ln(h0) - ln(h0) * x) = exp(-B * (1 - x))</code></p>
 <p >The equation takes this form in Humphries's thesis. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00150">150</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00164">164</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00012">MAXLAY</a>.</p>
 
@@ -833,11 +835,11 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01062">1062</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01076">1076</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00018">poisson_density()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l01062">rootDist()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00056">rd_str::rootDist</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00036">poisson_density()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l01076">rootDist()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00056">rd_str::rootDist</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l01062">rootDist()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00727">soilML()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l01076">rootDist()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00741">soilML()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -889,7 +891,7 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01051">1051</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01065">1065</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00050">seqRD_str::rootDepths</a>.</p>
 
@@ -999,11 +1001,11 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00510">510</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00524">524</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="water__and__air__properties_8h_source.html#l00030">saturation_vapor_pressure()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00064">TempToDdryA()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00120">TempToLHV()</a>, <a class="el" href="water__and__air__properties_8h_source.html#l00173">TempToSFS()</a>, and <a class="el" href="sun_m_l_8cpp_source.html#l00079">thick_layer_absorption()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l00727">soilML()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l00741">soilML()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1239,9 +1241,9 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00727">727</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00741">741</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00032">soilML_str::cws</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">soilML_str::drainage</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">soilML_str::Nleach</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">soilML_str::rcoefPhoto</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">soilML_str::rcoefSpleaf</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l01062">rootDist()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">soilML_str::rootDist</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00056">rd_str::rootDist</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00510">SoilEvapo()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00035">soilML_str::SoilEvapo</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00032">soilML_str::cws</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">soilML_str::drainage</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">soilML_str::Nleach</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">soilML_str::rcoefPhoto</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">soilML_str::rcoefSpleaf</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l01076">rootDist()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">soilML_str::rootDist</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00056">rd_str::rootDist</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00524">SoilEvapo()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00035">soilML_str::SoilEvapo</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1343,7 +1345,7 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00660">660</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00674">674</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00023">ws_str::awc</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00026">ws_str::Nleach</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00024">ws_str::psim</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00025">ws_str::runoff</a>.</p>
 
@@ -1390,7 +1392,7 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
 <p>Wind profile function. </p>
 <p >Preconditions: <code>WindSpeed</code> is non-negative. <code>LAI</code> is non-negative <code>nlayers</code> is at least 1 and at most MAXLAY. <code>wind_speed_profile</code> is an array of at least size <code>nlayers</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00051">51</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00065">65</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00008">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00008">CanAC()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00102">multilayer_canopy_properties::run()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1415,7 +1417,7 @@ to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></li>
-    <li class="footer">Generated on Fri Sep 15 2023 17:39:59 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 17:51:27 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
